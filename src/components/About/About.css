@@ -1,0 +1,78 @@
+/* Base Styles for Mobile First Approach */
+#about {
+  max-width: 800px; /* Smaller max width */
+  margin: 0 auto; /* Center align the section */
+  padding: 10px; /* Reduced padding */
+  color: #ccd6f6; /* Text color */
+  font-size: 0.8rem; /* Smaller font size */
+  line-height: 1.4; /* Reduced line height */
+}
+
+#about p {
+  margin-bottom: 0.75rem; /* Reduced space between paragraphs */
+}
+
+#about ul {
+  list-style-type: none; /* Remove default bullet points */
+  padding-left: 0; /* Remove default padding */
+}
+
+#about li {
+  margin-bottom: 0.5rem; /* Reduced space between list items */
+  padding-left: 15px; /* Reduced space to the left */
+  position: relative; /* Position for custom bullet */
+  font-size: 0.8rem; /* Smaller font size for list items */
+}
+
+#about li::before {
+  content: "•"; /* Custom bullet point */
+  color: #64ffda; /* Bullet color */
+  position: absolute;
+  left: 0;
+  font-size: 1rem; /* Smaller bullet */
+  top: 0; /* Align bullet with text */
+}
+/* Tablet Styles */
+@media (min-width: 768px) {
+  #about {
+    font-size: 0.9rem; /* Slightly larger font size */
+    padding: 15px; /* Small increase in padding */
+  }
+
+  #about p {
+    margin-bottom: 1rem; /* Adjust space between paragraphs */
+  }
+
+  #about li {
+    margin-bottom: 0.75rem; /* Adjust space between list items */
+    padding-left: 20px; /* Adjust left padding */
+  }
+
+  #about li::before {
+    font-size: 1.2rem; /* Slightly larger bullet */
+  }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+  #about {
+    font-size: 1rem; /* Slightly larger font size for readability */
+    padding: 20px; /* Increase padding for desktops */
+  }
+
+  #about li {
+    margin-bottom: 1rem; /* More space between list items */
+    padding-left: 25px; /* Increase left padding */
+  }
+
+  #about li::before {
+    font-size: 1.3rem; /* Slightly larger bullet */
+  }
+}
+/* Import Google Fonts in your CSS */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+body,
+#about {
+  font-family: "Roboto", sans-serif; /* Apply the font family */
+}

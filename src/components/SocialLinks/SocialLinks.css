@@ -1,0 +1,30 @@
+.social-links {
+  /* position: fixed;
+  bottom: 50px;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; */
+  position: absolute; /* Use absolute positioning */
+  top: 80%; /* Vertically center */
+  left: 17%; /* Horizontally center */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Shift content back by 50% to center correctly */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ccd6f6;
+  padding-top: 300px;
+}
+
+.social-links a {
+  color: #ccd6f6;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #64ffda;
+}
