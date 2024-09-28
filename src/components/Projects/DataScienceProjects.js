@@ -1,14 +1,14 @@
 import React from "react";
 import ProjectCard from "./ProjectCard"; // Reuse ProjectCard component
-import churnImage from "../../assets/images/main.png"; // Import project images
-import loanImage from "../../assets/images/main.png";
+import EDA from "../../assets/images/EDA.png"; // Import project images
+import loanImage from "../../assets/images/EDA1.png";
 import "./ProjectCard.css"; // Import CSS for styling
 
 const DataScienceProjects = () => {
   const projects = [
     {
-      image: churnImage, // Add the image for the project
-      title: "Customer Churn Prediction",
+      image: EDA, // Add the image for the project
+      title: "Exploratory Data Analysis",
       description:
         "Built a machine learning model to predict customer churn using historical data. The model uses decision trees, random forests, and logistic regression to predict whether a customer will leave a company based on their behavior.",
       stars: 645,
