@@ -13,7 +13,7 @@ const DataScienceProjects = () => {
         "Built a machine learning model to predict customer churn using historical data. The model uses decision trees, random forests, and logistic regression to predict whether a customer will leave a company based on their behavior.",
       stars: 645,
       technologies: ["Python", "Pandas", "Scikit-learn", "Matplotlib"],
-      link: "https://github.com/yourrepo/customer-churn-prediction", // Replace with your actual link
+      link: "https://github.com/itsjk0307/Exploratory-Data-Analysis-EDA-Project/blob/main/Titanic-EDA-Project.ipynb", // Replace with your actual link
     },
     {
       image: loanImage, // Add the image for the project
