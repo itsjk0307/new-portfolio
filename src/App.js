@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import LeftSide from "./components/LeftSide/LeftSide";
+import LeftSideWrapper from "./components/LeftSide/LeftSideWrapper";
 import RightSide from "./components/RightSide/RightSide";
 import Projects from "./components/Projects/Projects";
 import WebDevelopmentProjects from "./components/Projects/WebDevelopmentProjects";
@@ -9,7 +9,7 @@ import AIProjects from "./components/Projects/AIProjects";
 import PortfolioProject from "./components/Projects/PortfolioProject"; // Specific detailed projects
 import CustomerChurnProject from "./components/Projects/ProjectDetails/CustomerChurnProject";
 import HeartDiseasePrediction from "./components/Projects/ProjectDetails/HeartDiseasePrediction";
-import Navbar from "./components/Navbar/Navbar"; // Fixed Navbar
+// import Navbar from "./components/Navbar/Navbar"; // Fixed Navbar
 // import Content from "./components/Content"; // Your main content (About, Projects, etc.)
 import "./styles/App.css";
 
@@ -55,14 +55,11 @@ function App() {
 
   return (
     <>
-      <div className="App">
-        <Navbar /> {/* Fixed Navbar */}
-        {/* <Content /> Main content */}
-      </div>
+      <div className="App">{/* <Navbar /> Fixed Navbar */}</div>
       <Router>
         <div className="main-container">
           <div className="app-container">
-            <LeftSide activeSection={activeSection} />
+            <LeftSideWrapper activeSection={activeSection} />
             <Routes>
               <Route path="/" element={<RightSide />} />
               <Route path="/projects" element={<Projects />} />

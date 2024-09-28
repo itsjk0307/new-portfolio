@@ -20,76 +20,25 @@ pre {
 
 /* Main container to center the content with spacing around it */
 .main-container {
-  display: flex;
-  justify-content: center; /* Horizontally center the entire layout */
-  align-items: center; /* Vertically center the entire layout */
-  min-height: 100vh; /* Full viewport height */
-  padding: 40px; /* Padding around the content */
-  background-color: #0a192f; /* Background color */
-  background-color: var(--background-color);
-  color: var(--text-color);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  max-width: 1200px; /* Maximum width for the container */
+  margin: 0 auto; /* Centers the container on the page */
+  padding-top: 20px;
 }
 
 /* Container for the app's main content */
 .app-container {
-  max-width: 1200px; /* Maximum width of the website */
-  width: 100%; /* Ensure it takes full width */
-  display: flex; /* Flex layout to align left and right side */
-  justify-content: center; /* Space between left and right */
-  align-items: center; /* Align items at the top by default */
-}
-
-.left-side {
-  text-align: left; /* Align left-side content */
-}
-
-.right-side {
-  text-align: left; /* Align right-side content */
-  scrollbar-width: none; /* Firefox: Hide scrollbar */
-  overflow-y: auto; /* Enable vertical scrolling if necessary */
-}
-
-/* Hide scrollbar but allow scrolling on Webkit browsers */
-.right-side::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  display: flex;
+  justify-content: center;
 }
 
 /* App-header styling for the header section */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding: 0 2rem; /* Add padding to the header */
 }
 
-/* Social icons at the bottom (left side) */
-.social-icons {
-  margin-top: auto; /* Push to the bottom of the left side */
-  display: flex;
-  gap: 20px; /* Spacing between icons */
-}
-
-.social-icons a {
-  color: #64ffda;
-  font-size: 24px;
-}
-
-/* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .app-container {
-    flex-direction: column; /* Stack left and right vertically */
-    padding: 20px;
-  }
-
-  .left-side,
-  .right-side {
-    width: 100%; /* Ensure both sides take full width on small screens */
-    margin: 0; /* Remove extra margin */
+    display: grid;
   }
 }

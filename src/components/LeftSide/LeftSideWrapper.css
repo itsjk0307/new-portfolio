@@ -1,0 +1,74 @@
+/* Default styles (desktop) */
+.wrapper-container {
+  display: flex; /* Use flexbox */
+  justify-content: flex-start; /* Align left side to the start */
+  align-items: flex-start; /* Align top */
+  width: 100%; /* Full width */
+}
+
+.left-side-wrapper {
+  position: fixed; /* Fixed position */
+  top: 50px; /* Distance from the top */
+  width: 350px; /* Fixed width for left-side */
+}
+
+/* Laptop (max-width: 1280px) */
+@media (max-width: 1280px) {
+  .wrapper-container {
+    justify-content: center; /* Center align container */
+    align-items: flex-start; /* Align items to the top */
+  }
+
+  .left-side-wrapper {
+    left: 10px; /* Adjust left position */
+    width: 300px; /* Adjusted width */
+  }
+}
+
+/* Tablet (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .wrapper-container {
+    justify-content: center; /* Center align container */
+    align-items: flex-start; /* Align items to the top */
+  }
+
+  .left-side-wrapper {
+    position: relative; /* Remove fixed positioning */
+    top: auto; /* Reset top */
+    left: auto; /* Reset left */
+    width: 100%; /* Full width */
+    padding: 0 10px; /* Add padding */
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  .wrapper-container {
+    justify-content: center; /* Center align container */
+    padding: 0 10px; /* Padding for mobile */
+  }
+
+  .left-side-wrapper {
+    position: relative; /* Remove fixed positioning */
+    top: auto; /* Reset top */
+    left: auto; /* Reset left */
+    width: 100%; /* Full width */
+    padding: 0 10px; /* Padding for mobile */
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .wrapper-container {
+    justify-content: center; /* Center align container */
+    padding: 0 5px; /* Minimal padding */
+  }
+
+  .left-side-wrapper {
+    position: relative; /* Remove fixed positioning */
+    top: auto; /* Reset top */
+    left: auto; /* Reset left */
+    width: 100%; /* Full width */
+    padding: 0 5px; /* Padding for small mobile */
+  }
+}

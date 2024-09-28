@@ -1,11 +1,9 @@
 /* Base Styles for Mobile First Approach */
 #about {
-  max-width: 800px; /* Smaller max width */
-  margin: 0 auto; /* Center align the section */
-  padding: 10px; /* Reduced padding */
   color: #ccd6f6; /* Text color */
   font-size: 0.8rem; /* Smaller font size */
   line-height: 1.4; /* Reduced line height */
+  padding: 10px 15px; /* Padding for mobile devices */
 }
 
 #about p {
@@ -33,10 +31,12 @@
   top: 0; /* Align bullet with text */
 }
 /* Tablet Styles */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   #about {
     font-size: 0.9rem; /* Slightly larger font size */
-    padding: 15px; /* Small increase in padding */
+    padding: 20px 30px; /* More padding for tablets */
+    max-width: 700px; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the content */
   }
 
   #about p {
@@ -52,16 +52,17 @@
     font-size: 1.2rem; /* Slightly larger bullet */
   }
 }
-
-/* Desktop Styles */
-@media (min-width: 1024px) {
+/* Laptop Styles */
+@media (min-width: 1024px) and (max-width: 1279px) {
   #about {
-    font-size: 1rem; /* Slightly larger font size for readability */
-    padding: 20px; /* Increase padding for desktops */
+    font-size: 1rem; /* Standard font size for laptops */
+    padding: 20px 40px; /* Increase padding */
+    max-width: 800px; /* Slightly wider content */
+    margin: 0 auto; /* Center the content */
   }
 
   #about li {
-    margin-bottom: 1rem; /* More space between list items */
+    margin-bottom: 0.85rem; /* Adjust space between list items */
     padding-left: 25px; /* Increase left padding */
   }
 
@@ -69,10 +70,21 @@
     font-size: 1.3rem; /* Slightly larger bullet */
   }
 }
-/* Import Google Fonts in your CSS */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+/* Desktop Styles */
+@media (min-width: 1280px) {
+  #about {
+    font-size: 1.1rem; /* Slightly larger font size for readability */
+    padding: 30px 50px; /* Increase padding for larger screens */
+    max-width: 900px; /* Max width for the section */
+    margin: 0 auto; /* Center the content */
+  }
 
-body,
-#about {
-  font-family: "Roboto", sans-serif; /* Apply the font family */
+  #about li {
+    margin-bottom: 1rem; /* More space between list items */
+    padding-left: 30px; /* More left padding */
+  }
+
+  #about li::before {
+    font-size: 1.4rem; /* Slightly larger bullet */
+  }
 }

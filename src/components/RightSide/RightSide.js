@@ -7,17 +7,10 @@ import "./RightSide.css";
 
 const RightSide = () => {
   return (
-    <div className="right-side">
-      {/* About Section */}
+    <div className="right-side-wrapper">
       <About />
-
-      {/* Experience Section */}
       <Experience />
-
-      {/* Projects Section */}
       <Projects />
-
-      {/* Contact Section */}
       {/* <Contact /> */}
     </div>
   );

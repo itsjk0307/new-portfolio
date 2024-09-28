@@ -1,30 +1,80 @@
+/* Base Icon Styles for Larger Devices */
 .social-links {
-  /* position: fixed;
-  bottom: 50px;
-  left: 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px; */
-  position: absolute; /* Use absolute positioning */
-  top: 80%; /* Vertically center */
-  left: 17%; /* Horizontally center */
-  transform: translate(
-    -50%,
-    -50%
-  ); /* Shift content back by 50% to center correctly */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #ccd6f6;
-  padding-top: 300px;
+  padding-top: 8rem;
 }
 
 .social-links a {
-  color: #ccd6f6;
-  font-size: 24px;
-  transition: color 0.3s ease;
+  color: #ccd6f6; /* Icon color */
+  font-size: 1.5rem; /* Default icon size */
+  transition: color 0.3s ease, font-size 0.3s ease; /* Smooth transitions */
 }
 
 .social-links a:hover {
-  color: #64ffda;
+  color: #64ffda; /* Hover color */
+}
+
+/* Adjustments for Large Devices (Desktops) */
+@media (min-width: 1780px) {
+  .social-links {
+    padding-top: 22rem;
+  }
+  .social-links a {
+    font-size: 1.8rem; /* Slightly larger icon size */
+  }
+}
+
+/* Adjustments for Laptops */
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .social-links a {
+    font-size: 1.8rem; /* Icon size for laptops */
+  }
+}
+
+/* Tablet and smaller */
+@media (max-width: 1024px) {
+  .social-links {
+    bottom: auto; /* Remove fixed positioning */
+    position: relative; /* Relative positioning */
+    padding-top: 6rem; /* Space above the icons */
+    justify-content: center; /* Center icons */
+    align-items: center; /* Center items */
+    gap: 15px; /* Reduced gap */
+  }
+
+  .social-links a {
+    font-size: 1.8rem; /* Adjust icon size */
+  }
+}
+
+/* Mobile and smaller (only padding-top) */
+@media (max-width: 768px) {
+  .social-links {
+    padding-top: 4rem; /* Padding for spacing from the top */
+    bottom: auto; /* No bottom alignment */
+    position: relative; /* Relative positioning */
+    justify-content: center; /* Center icons horizontally */
+    flex-direction: row; /* Arrange icons horizontally */
+    gap: 15px; /* Reduced gap */
+  }
+
+  .social-links a {
+    font-size: 1.8rem; /* Smaller icon size */
+  }
+}
+
+/* Small Mobile (only padding-top) */
+@media (max-width: 480px) {
+  .social-links {
+    padding-top: 0.1rem; /* Padding for spacing from the top */
+    padding-left: 1rem;
+    bottom: auto; /* No bottom alignment */
+    position: relative; /* Relative positioning */
+    justify-content: center; /* Center icons horizontally */
+    flex-direction: row; /* Arrange icons horizontally */
+    gap: 10px; /* Reduced gap */
+  }
+
+  .social-links a {
+    font-size: 1.8rem; /* Smaller icon size */
+  }
 }

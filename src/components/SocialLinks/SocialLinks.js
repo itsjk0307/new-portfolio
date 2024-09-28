@@ -11,9 +11,13 @@ import "./SocialLinks.css";
 
 function SocialLinks() {
   return (
-    <div className="social-links" style={{ display: "flex" }}>
+    <div className="social-links">
       <div style={{ display: "flex", gap: "20px" }}>
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/itsjk0307"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaGithub />
         </a>
         <a
@@ -37,7 +41,7 @@ function SocialLinks() {
           <FaTelegram />
         </a>
         <a
-          href="https://telegram.com"
+          href="https://telegram.com/@itsmetkm03"
           target="_blank"
           rel="noopener noreferrer"
         >

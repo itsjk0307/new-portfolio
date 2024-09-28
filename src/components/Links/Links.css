@@ -1,0 +1,78 @@
+/* Base Styles for Navigation Items */
+.nav-item1 {
+  margin: 20px 0;
+  position: relative;
+  list-style-type: none; /* Remove list dots */
+  font-weight: bold;
+}
+
+.nav-item1 a {
+  font-size: 1.1rem;
+  color: #8892b0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+  padding-left: 20px; /* Add padding to create space between stick and text */
+}
+
+.nav-item1 a:hover {
+  color: #64ffda;
+}
+
+.nav-item1.active a {
+  color: #64ffda;
+  font-weight: bold;
+}
+
+.nav-link1 {
+  color: #8892b0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  position: relative;
+  transition: color 0.3s ease;
+  padding-left: 20px; /* Add padding to create space between stick and text */
+}
+
+.nav-link1::before {
+  content: "";
+  position: absolute;
+  left: -45px; /* Position the stick to the left of the text */
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 10px; /* Initial stick size */
+  background-color: #64ffda;
+  transition: width 0.3s ease;
+}
+
+.nav-link1:hover::before {
+  width: 50px; /* Lengthen the stick on hover */
+}
+
+.nav-item1.active .nav-link1 {
+  color: #64ffda;
+}
+
+.nav-item1.active .nav-link1::before {
+  width: 50px; /* Keep the stick long for active items */
+}
+
+/* Responsive Design Adjustments */
+/* Tablet and Smaller - Hide the Navigation Links */
+@media (max-width: 1024px) {
+  .nav-item1 {
+    display: none; /* Hide nav items on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-item1 {
+    display: none; /* Keep hidden on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-item1 {
+    display: none; /* Keep hidden on small mobile */
+  }
+}

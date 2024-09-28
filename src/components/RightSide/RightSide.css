@@ -1,77 +1,77 @@
-.right-side {
-  margin-left: 35%;
-  padding: 100px 50px;
-  color: #ccd6f6;
-  height: 100vh;
-  overflow-y: auto; /* Scroll only when necessary */
+/* Base Styles (Mobile First Approach) */
+.right-side-wrapper {
+  padding-left: 0; /* No padding by default for mobile devices */
 }
 
-section {
-  margin-bottom: 200px; /* Increase margin between sections */
+.right-side {
+  color: #ccd6f6;
+  height: 100vh;
+  scrollbar-width: none; /* Firefox: Hide scrollbar */
+  overflow-y: auto; /* Enable vertical scrolling if necessary */
+  flex: 1;
+}
+
+/* Hide scrollbar but allow scrolling on Webkit browsers */
+.right-side::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
 }
 
 section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 30px;
+  font-size: 2rem; /* Smaller font size for mobile */
+  margin-bottom: 20px; /* Less margin */
   color: #64ffda;
 }
 
 section p {
-  font-size: 1.2rem;
+  font-size: 1rem; /* Smaller font size for mobile */
   color: #8892b0;
-  line-height: 1.8;
-}
-.right-toolbar {
-  position: fixed;
-  right: 60px;
-  top: 20px;
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  z-index: 1000;
+  line-height: 1.6; /* Adjusted line height */
 }
 
-.right-toolbar button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  color: #ccd6f6;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .right-side-wrapper {
+    padding-left: 0; /* No padding for tablet */
+  }
+
+  section h2 {
+    font-size: 2.2rem; /* Slightly larger font size */
+  }
+
+  section p {
+    font-size: 1.1rem; /* Slightly larger font size */
+    line-height: 1.7; /* Slightly larger line height */
+  }
 }
 
-.right-toolbar button:hover {
-  color: #64ffda;
+/* Laptop Styles */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .right-side-wrapper {
+    padding-left: 50px; /* Add some padding for laptop screens */
+  }
+
+  section h2 {
+    font-size: 2.4rem; /* Larger font size for laptop */
+  }
+
+  section p {
+    font-size: 1.2rem; /* Larger font size */
+    line-height: 1.8; /* Larger line height */
+  }
 }
 
-.language-container {
-  position: relative;
-}
+/* Desktop Styles */
+@media (min-width: 1280px) {
+  .right-side-wrapper {
+    padding-left: 150px; /* Full padding for desktop screens */
+  }
 
-.language-dropdown {
-  position: absolute;
-  top: 40px; /* Adjust this based on your button size */
-  right: -22px;
-  background-color: #0a192f;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-}
+  section h2 {
+    font-size: 2.5rem; /* Largest font size for desktop */
+  }
 
-.language-dropdown button {
-  background-color: transparent;
-  border: none;
-  color: #ccd6f6;
-  cursor: pointer;
-  padding: 5px 10px;
-}
-
-.language-dropdown button:hover {
-  background-color: #2c3e50; /* Darker background on hover */
-  transform: translateY(-5px); /* Slight lift effect on hover */
-  border-radius: 8px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  section p {
+    font-size: 1.2rem; /* Larger font size */
+    line-height: 1.8; /* Larger line height */
+  }
 }

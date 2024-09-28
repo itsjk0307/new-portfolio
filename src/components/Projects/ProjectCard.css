@@ -1,27 +1,39 @@
 /* Project Card Container */
 .project-card {
   display: flex;
+  flex-direction: row;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-bottom: 20px;
   padding: 20px;
-  /* box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); */
+  padding-left: 50px;
 }
 
+/* Hover effect */
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px); /* Move the card up slightly */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increase shadow depth */
+  background-color: rgba(255, 255, 255, 0.03); /* Slightly darker background */
   border-radius: 8px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  background-color: #2c3e50;
+}
+/* Image Wrapper */
+.project-image-wapper {
+  width: 200px; /* Larger size for desktop and laptop */
+  height: auto; /* Maintain aspect ratio */
+  overflow: hidden; /* Hide overflow */
 }
 
 /* Image Section */
 .project-image img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
+  width: 100%; /* Image width to 100% of the wrapper */
+  height: 100%; /* Image height to 100% of the wrapper */
+  object-fit: cover; /* Scale the image to cover the entire wrapper */
   border-radius: 8px;
+  transition: transform 0.3s ease, border 0.3s ease;
+  padding-top: 35px;
+}
+.project-card:hover .project-image img {
+  transform: scale(1.05); /* Slight zoom effect on hover */
 }
 
 /* Project Details */
@@ -30,8 +42,8 @@
   padding-left: 20px;
 }
 
-.project-details h3 {
-  font-size: 1.6rem;
+.project-details h4 {
+  font-size: 1rem;
   color: #64ffda;
   display: flex;
   justify-content: space-between;
@@ -40,17 +52,17 @@
   position: relative;
 }
 
-.project-details h3 a {
+.project-details h4 a {
   text-decoration: none; /* Remove underline */
   color: #64ffda;
   transition: color 0.3s ease;
 }
 
-.project-details h3:hover a {
+.project-details h4:hover a {
   text-decoration: underline; /* Add underline on hover */
 }
 
-.project-details h3 a::after {
+.project-details h4 a::after {
   content: " ↗"; /* Add an arrow after the link */
   font-size: 1.1rem;
   margin-left: 5px; /* Adjust space between title and arrow */
@@ -67,18 +79,102 @@
 .project-technologies {
   margin-top: 20px;
   display: flex;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
   gap: 10px;
 }
 
 .technology-badge {
-  background-color: #64ffda;
-  color: #0a192f;
+  background-color: rgba(255, 255, 255, 0.03);
+  color: #fff;
   padding: 5px 10px;
   border-radius: 4px;
   font-size: 0.85rem;
 }
 
-.technology-badge:hover {
-  background-color: #64ffda;
-  color: #0a192f;
+/* Responsive Design */
+
+/* Tablet and smaller */
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column; /* Stack image and details vertically */
+    align-items: center;
+    text-align: center; /* Center-align text for better readability */
+  }
+
+  .project-image-wapper {
+    width: 100%; /* Full width for mobile and tablet */
+    max-width: 400px; /* Max width for the image */
+  }
+
+  .project-image img {
+    width: 100%; /* Image takes full width of wrapper */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .project-details {
+    padding-left: 0; /* Remove left padding */
+    padding-top: 20px; /* Add space between image and details */
+  }
+
+  .project-details h4 {
+    font-size: 1.4rem; /* Slightly larger heading */
+  }
+
+  .project-details p {
+    font-size: 1rem; /* Adjust paragraph font size */
+  }
+}
+
+/* Mobile and smaller */
+@media (max-width: 480px) {
+  .project-card {
+    padding: 15px; /* Less padding for smaller screens */
+  }
+
+  .project-details h4 {
+    font-size: 1.2rem; /* Smaller heading for mobile */
+  }
+
+  .project-details p {
+    font-size: 0.9rem; /* Smaller paragraph text */
+  }
+
+  .project-technologies {
+    gap: 5px; /* Less space between badges */
+  }
+
+  .technology-badge {
+    font-size: 0.75rem; /* Smaller badge font */
+    padding: 4px 8px; /* Less padding */
+  }
+}
+
+/* Laptop and larger */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .project-image-wapper {
+    width: 500px; /* Larger size for desktop */
+  }
+
+  .project-details h4 {
+    font-size: 1.2rem; /* Adjust font size for laptops */
+  }
+
+  .project-details p {
+    font-size: 1rem; /* Adjust paragraph font size */
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  .project-image-wapper {
+    width: 500px; /* Larger size for desktop */
+  }
+
+  .project-details h4 {
+    font-size: 1.3rem; /* Larger heading for desktop */
+  }
+
+  .project-details p {
+    font-size: 1.1rem; /* Larger paragraph text */
+  }
 }
