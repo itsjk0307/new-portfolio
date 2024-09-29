@@ -54,7 +54,7 @@ const WebDevelopmentProjects = () => {
         "Built a full-stack e-commerce platform with payment integration and real-time inventory tracking. Features include secure checkout, user authentication, and order management.",
       stars: 320,
       technologies: ["React", "Node.js", "MongoDB", "Stripe API"],
-      link: "https://ecommerceplatform.com", // Add actual project link
+      link: "https://banking-app-zeta.vercel.app/", // Add actual project link
     },
     {
       image: vizzano, // Update this with the actual image
