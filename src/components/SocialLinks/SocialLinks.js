@@ -27,21 +27,29 @@ function SocialLinks() {
         >
           <FaLinkedin />
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.x.com/itsmetkm03"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaTwitter />
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.instagram.com/itsjk0307"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaInstagram />
         </a>
         <a
-          href="https://telegram.com"
+          href="https://t.me/itsmetkm03"
           target="_blank"
           rel="noopener noreferrer"
         >
           <FaTelegram />
         </a>
         <a
-          href="https://telegram.com/@itsmetkm03"
+          href="https://wa.me/821098021777"
           target="_blank"
           rel="noopener noreferrer"
         >
