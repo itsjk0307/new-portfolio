@@ -16,11 +16,11 @@
 }
 
 .nav-item1 a:hover {
-  color: #64ffda;
+  color: #fff;
 }
 
 .nav-item1.active a {
-  color: #64ffda;
+  color: #fff;
   font-weight: bold;
 }
 
@@ -41,7 +41,7 @@
   transform: translateY(-50%);
   height: 2px;
   width: 10px; /* Initial stick size */
-  background-color: #64ffda;
+  background-color: #fff;
   transition: width 0.3s ease;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .nav-item1.active .nav-link1 {
-  color: #64ffda;
+  color: #fff;
 }
 
 .nav-item1.active .nav-link1::before {

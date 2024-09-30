@@ -1,1 +1,118 @@
+#projects {
+  padding: 40px 20px; /* Smaller padding for mobile devices */
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
 
+.project-category {
+  margin-bottom: 30px; /* Adjust spacing for mobile */
+}
+
+.project {
+  margin-bottom: 20px; /* Reduced margin for mobile */
+}
+
+.project h3 {
+  font-size: 1.2rem; /* Smaller font size for headings */
+  color: var(--link-color);
+  transition: color 0.3s ease;
+}
+
+.project p {
+  margin-bottom: 8px; /* Reduced margin for paragraphs */
+  font-size: 0.9rem; /* Smaller font size for paragraphs */
+  color: var(--text-color);
+}
+
+.project a {
+  color: var(--link-color);
+  font-size: 0.9rem; /* Smaller font size for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project a:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+/* Tablet view */
+@media (min-width: 481px) and (max-width: 1024px) {
+  #projects {
+    padding: 60px 40px; /* Increase padding for tablets */
+  }
+
+  .project-category {
+    margin-bottom: 40px; /* Increase spacing between categories */
+  }
+
+  .project {
+    margin-bottom: 25px; /* Increase margin for projects */
+  }
+
+  .project h3 {
+    font-size: 1.4rem; /* Increase font size for headings */
+  }
+
+  .project p {
+    font-size: 1rem; /* Increase font size for paragraphs */
+    margin-bottom: 10px; /* Adjust margin */
+  }
+
+  .project a {
+    font-size: 1rem; /* Increase font size for links */
+  }
+}
+/* Laptop view */
+@media (min-width: 1025px) and (max-width: 1279px) {
+  #projects {
+    padding: 70px 50px; /* Increase padding for laptops */
+  }
+
+  .project-category {
+    margin-bottom: 50px; /* More space between categories */
+  }
+
+  .project {
+    margin-bottom: 30px; /* Larger margin for projects */
+  }
+
+  .project h3 {
+    font-size: 1.6rem; /* Increase font size for headings */
+  }
+
+  .project p {
+    font-size: 1.1rem; /* Larger font size for paragraphs */
+    margin-bottom: 12px; /* Adjust margin */
+  }
+
+  .project a {
+    font-size: 1.1rem; /* Larger font size for links */
+  }
+}
+/* Desktop view */
+@media (min-width: 1280px) {
+  #projects {
+    padding: 80px 60px; /* More padding for large screens */
+  }
+
+  .project-category {
+    margin-bottom: 60px; /* Maximum spacing between categories */
+  }
+
+  .project {
+    margin-bottom: 40px; /* More space between projects */
+  }
+
+  .project h3 {
+    font-size: 1.8rem; /* Maximum heading size */
+  }
+
+  .project p {
+    font-size: 1.2rem; /* Larger font size for paragraphs */
+    margin-bottom: 14px; /* Adjust margin */
+  }
+
+  .project a {
+    font-size: 1.2rem; /* Larger font size for links */
+  }
+}

@@ -48,7 +48,7 @@
 
 .project-details h4 {
   font-size: 1rem;
-  color: #64ffda;
+  color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,6 +66,7 @@
   content: " ↗"; /* Add an arrow after the link */
   font-size: 1.1rem;
   margin-left: 5px; /* Adjust space between title and arrow */
+  color: #64ffda;
 }
 
 .project-details p {
