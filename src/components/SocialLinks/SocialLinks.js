@@ -2,11 +2,11 @@ import React from "react";
 import {
   FaGithub,
   FaLinkedin,
-  FaTwitter,
   FaTelegram,
   FaInstagram,
   FaWhatsapp,
 } from "react-icons/fa"; // Ensure this import
+import { FaXTwitter } from "react-icons/fa6";
 import "./SocialLinks.css";
 
 function SocialLinks() {
@@ -32,7 +32,7 @@ function SocialLinks() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaTwitter />
+          <FaXTwitter />
         </a>
         <a
           href="https://www.instagram.com/itsjk0307"
