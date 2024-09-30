@@ -9,7 +9,8 @@
   font-size: 2.1rem; /* Base font size for larger screens */
   line-height: 1.2;
   margin-bottom: 10px;
-  color: #ccd6f6;
+  /* color: #ccd6f6; */
+  color: #fff;
 }
 
 .sub-title {

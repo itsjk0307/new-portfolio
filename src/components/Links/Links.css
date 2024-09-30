@@ -58,7 +58,6 @@
 }
 
 /* Responsive Design Adjustments */
-/* Tablet and Smaller - Hide the Navigation Links */
 @media (max-width: 1024px) {
   .nav-item1 {
     display: none; /* Hide nav items on tablets */

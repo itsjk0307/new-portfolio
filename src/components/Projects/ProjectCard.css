@@ -16,6 +16,10 @@
   background-color: rgba(255, 255, 255, 0.03); /* Slightly darker background */
   border-radius: 8px;
 }
+.project-card:hover .project-title {
+  color: #64ffda;
+}
+
 /* Image Wrapper */
 .project-image-wapper {
   width: 200px; /* Larger size for desktop and laptop */
@@ -58,10 +62,6 @@
   transition: color 0.3s ease;
 }
 
-.project-details h4:hover a {
-  text-decoration: underline; /* Add underline on hover */
-}
-
 .project-details h4 a::after {
   content: " ↗"; /* Add an arrow after the link */
   font-size: 1.1rem;
@@ -85,10 +85,10 @@
 
 .technology-badge {
   background-color: rgba(255, 255, 255, 0.03);
-  color: #fff;
   padding: 5px 10px;
   border-radius: 4px;
   font-size: 0.85rem;
+  color: #64ffda;
 }
 
 /* Responsive Design */

@@ -16,7 +16,6 @@ const WebDevelopmentProjects = () => {
       title: "RainbowTech AI Platform",
       description:
         "Developed a responsive and interactive personal portfolio website to showcase my work. Used React for the frontend and Express.js for the backend.",
-      stars: 500, // Or remove if you don't need it
       technologies: ["React", "Express", "Node.js", "CSS"],
       link: "https://yourportfolio.com", // Add actual project link
     },
@@ -113,7 +112,6 @@ const WebDevelopmentProjects = () => {
           image={project.image}
           title={project.title}
           description={project.description}
-          stars={project.stars}
           technologies={project.technologies}
           link={project.link}
         />

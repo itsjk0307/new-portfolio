@@ -2,14 +2,15 @@ import React from "react";
 import WebDevelopmentProjects from "./WebDevelopmentProjects";
 import DataScienceProjects from "./DataScienceProjects";
 import AIProjects from "./AIProjects";
+import "./Projects.css";
 
 const Projects = () => {
   return (
-    <section id="projects">
+    <div>
       <WebDevelopmentProjects />
       <DataScienceProjects />
       <AIProjects />
-    </section>
+    </div>
   );
 };
 
