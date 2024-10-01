@@ -15,7 +15,7 @@ const WebDevelopmentProjects = () => {
       image: main, // Update this with the actual image
       title: "RainbowTech AI Platform",
       description:
-        "Developed a responsive and interactive personal portfolio website to showcase my work. Used React for the frontend and Express.js for the backend.",
+        "Co-developed a platform that detects structural problem areas in buildings and walls, generates PDF reports, and calculates costs and materials needed for repairs. Worked on data manipulation and report generation, optimizing the workflow for construction projects.",
       technologies: [
         "HTML",
         "SCSS",
@@ -27,13 +27,13 @@ const WebDevelopmentProjects = () => {
         "Apollo Client",
         "MobX",
       ],
-      link: "https://yourportfolio.com", // Add actual project link
+      // link: "https://yourportfolio.com", // Add actual project link
     },
     {
       image: main, // Update this with the actual image
-      title: " RAP 3D Platform",
+      title: "RAP 3D Platform",
       description:
-        "Built a full-stack e-commerce platform with payment integration and real-time inventory tracking. Features include secure checkout, user authentication, and order management.",
+        "Built a 3D platform with real-time collaboration features using Three.js and React Three Fiber. Implemented the user interface and interactive 3D features, ensuring a seamless design experience for users.",
       technologies: [
         "HTML",
         "CSS",
@@ -44,13 +44,13 @@ const WebDevelopmentProjects = () => {
         "Luva UI Library",
         "MUI",
       ],
-      link: "https://ecommerceplatform.com", // Add actual project link
+      // link: "https://ecommerceplatform.com", // Add actual project link
     },
     {
       image: main, // Update this with the actual image
       title: "RAP File Managament",
       description:
-        "Built a full-stack e-commerce platform with payment integration and real-time inventory tracking. Features include secure checkout, user authentication, and order management.",
+        "Created a secure file management system with cross-platform mobile compatibility using React Native. Integrated WebViewer for in-app PDF viewing and optimized synchronization across devices.",
       technologies: [
         "HTML",
         "CSS",
@@ -59,13 +59,13 @@ const WebDevelopmentProjects = () => {
         "React Native",
         "Webviwer",
       ],
-      link: "https://ecommerceplatform.com", // Add actual project link
+      // link: "https://ecommerceplatform.com", // Add actual project link
     },
     {
       image: greenshop, // Update this with the actual image
       title: "Green Shop",
       description:
-        "Built a full-stack e-commerce platform with payment integration and real-time inventory tracking. Features include secure checkout, user authentication, and order management.",
+        "Developed an eco-themed landing page that promotes sustainable practices and products. The platform features clean and minimalistic UI/UX with smooth transitions, showcasing environmental benefits and green initiatives. Integrated responsive design for optimal viewing across devices",
       technologies: [
         "HTML",
         "CSS",
@@ -78,41 +78,41 @@ const WebDevelopmentProjects = () => {
     },
     {
       image: bank, // Update this with the actual image
-      title: "Online Bank Platform",
+      title: "Financial Management Platform",
       description:
-        "Built a full-stack e-commerce platform with payment integration and real-time inventory tracking. Features include secure checkout, user authentication, and order management.",
+        "Developed a responsive and secure banking application that allows users to manage accounts, transfer funds, and monitor transactions in real-time. The app focuses on user-friendly navigation, robust authentication, and seamless user experience across devices.",
       technologies: ["React", "Javascript", "HTML", "CSS"],
       link: "https://banking-app-zeta.vercel.app/", // Add actual project link
     },
     {
       image: vizzano, // Update this with the actual image
-      title: "Vizzano",
+      title: "Vizzano App",
       description:
-        "Built a full-stack e-commerce platform with payment integration and real-time inventory tracking. Features include secure checkout, user authentication, and order management.",
+        "Created an interactive fashion platform for showcasing products in a visually engaging way. The app focuses on delivering an immersive user experience with sleek design, smooth navigation, and high-quality visuals, providing users with easy access to explore and purchase the latest collections",
       technologies: ["React", "Javascript", "HTML", "CSS"],
       link: "https://vizzano-mikro.vercel.app/", // Add actual project link
     },
     {
       image: trillo, // Update this with the actual image
-      title: "Trillo",
+      title: "Trillo – Travel Booking App",
       description:
-        "Built a full-stack e-commerce platform with payment integration and real-time inventory tracking. Features include secure checkout, user authentication, and order management.",
+        "Developed a responsive travel booking platform with a sleek and modern interface. The app allows users to search for flights, hotels, and rental cars while offering features like user reviews and dynamic filters. It provides seamless navigation and real-time updates for a smooth booking experience.",
       technologies: ["React", "Javascript", "HTML", "CSS"],
       link: "https://trillo-omega.vercel.app/", // Add actual project link
     },
     {
       image: memory, // Update this with the actual image
-      title: "Memory Game",
+      title: "Interactive Puzzle Challenge",
       description:
-        "Built a full-stack e-commerce platform with payment integration and real-time inventory tracking. Features include secure checkout, user authentication, and order management.",
+        " Developed an interactive memory game designed to improve concentration and cognitive skills. The game involves flipping cards to match pairs, with progressively challenging levels. It features a clean interface, responsive design, and smooth animations for an engaging user experience",
       technologies: ["React", "Javascript", "HTML", "CSS"],
       link: "https://memory-game-itsjk0307.vercel.app/", // Add actual project link
     },
     {
       image: portfolio, // Update this with the actual image
-      title: "First Personal Portfolio",
+      title: "Portfolio Website",
       description:
-        "Built a full-stack e-commerce platform with payment integration and real-time inventory tracking. Features include secure checkout, user authentication, and order management.",
+        "Personal portfolio built with React showcasing web development projects and skills, featuring a minimalist design and responsive layout for a smooth user experience across devices.",
       technologies: ["React", "Javascript", "HTML", "CSS"],
       link: "https://portfolio07-sigma.vercel.app/", // Add actual project link
     },
@@ -120,7 +120,7 @@ const WebDevelopmentProjects = () => {
       image: monster, // Update this with the actual image
       title: "Monster Rolodex",
       description:
-        "Built a full-stack e-commerce platform with payment integration and real-time inventory tracking. Features include secure checkout, user authentication, and order management.",
+        "A fun, interactive monster card collection game where users can search for and view a variety of monster characters. Built with React and integrated with API data for dynamically loading monster information",
       technologies: ["React", "Javascript", "Typescript", "HTML", "CSS"],
       link: "https://mymonsters-roledox.vercel.app/", // Add actual project link
     },

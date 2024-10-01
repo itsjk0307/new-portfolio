@@ -9,18 +9,18 @@ const AIProjects = () => {
       image: heartImage, // Add the image for the project
       title: "Heart Disease Prediction",
       description:
-        "Developed an AI model to predict the risk of heart disease using patient data. This model utilizes machine learning algorithms such as Decision Trees, Random Forests, and Neural Networks for high-accuracy predictions.",
+        "Developed a machine learning model to predict the risk of heart disease based on patient data. The model uses Decision Trees, Random Forests, and Logistic Regression to classify patient health conditions and improve diagnostic predictions.",
       stars: 700,
-      technologies: ["Python", "TensorFlow", "Keras", "Scikit-learn"],
+      technologies: ["Python", "Scikit-learn", "Pandas", "Matplotlib"],
       link: "https://github.com/itsjk0307/Heart-Disease-Prediction/blob/main/Heart%20Disease%20Prediction.ipynb", // Replace with your actual link
     },
     {
       image: cusChurn, // Add the image for the project
-      title: "Customer-Churn-Prediction",
+      title: "Customer Churn Prediction",
       description:
-        "Created a deep learning model to generate captions for images using Convolutional Neural Networks (CNN) and Long Short-Term Memory (LSTM) networks. This project uses large datasets and transfer learning.",
+        "Built a machine learning model to predict customer churn using historical data. The model employs Logistic Regression and Random Forest classifiers to forecast churn rates and provide actionable insights to reduce customer attrition.",
       stars: 550,
-      technologies: ["Python", "TensorFlow", "Keras", "NLP"],
+      technologies: ["Python", "TensorFlow", "Keras", "Pandas", "Matplotlib"],
       link: "https://github.com/itsjk0307/Customer-Churn-Prediction/blob/main/Customer%20Churn%20Prediction.ipynb", // Replace with your actual link
     },
     // Add more AI projects here as needed

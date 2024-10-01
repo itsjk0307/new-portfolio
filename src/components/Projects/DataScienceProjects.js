@@ -10,18 +10,25 @@ const DataScienceProjects = () => {
       image: EDA, // Add the image for the project
       title: "Exploratory Data Analysis",
       description:
-        "Built a machine learning model to predict customer churn using historical data. The model uses decision trees, random forests, and logistic regression to predict whether a customer will leave a company based on their behavior.",
+        "Conducted an in-depth exploratory data analysis on the Titanic dataset. Utilized various data visualization techniques to identify key factors that contributed to survival rates among passengers. Cleaned and processed the dataset to reveal insights such as age, gender, and class distribution.",
       stars: 645,
-      technologies: ["Python", "Pandas", "Scikit-learn", "Matplotlib"],
+      technologies: ["Python", "Pandas", "Matplotlib", "Jupyter Notebook"],
       link: "https://github.com/itsjk0307/Exploratory-Data-Analysis-EDA-Project/blob/main/Titanic-EDA-Project.ipynb", // Replace with your actual link
     },
     {
       image: loanImage, // Add the image for the project
       title: "Loan Eligibility Prediction",
       description:
-        "Created a model to predict loan eligibility based on various factors like income, loan amount, and credit history. The project uses classification algorithms like Logistic Regression and Random Forests.",
+        "Developed a classification model to predict loan eligibility based on several criteria, including income, loan amount, and credit history. This project involves data cleaning, feature selection, and implementation of machine learning algorithms such as Logistic Regression and Random Forests to ensure accurate predictions.",
       stars: 320,
-      technologies: ["Python", "Scikit-learn", "Pandas", "Seaborn"],
+      technologies: [
+        "Python",
+        "Scikit-learn",
+        "Pandas",
+        "Seaborn",
+        "Logistic Regression",
+        "Random Forest",
+      ],
       link: "https://github.com/yourrepo/loan-eligibility-prediction", // Replace with your actual link
     },
     // Add more data science projects here as needed
