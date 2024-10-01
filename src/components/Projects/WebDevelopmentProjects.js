@@ -16,7 +16,17 @@ const WebDevelopmentProjects = () => {
       title: "RainbowTech AI Platform",
       description:
         "Developed a responsive and interactive personal portfolio website to showcase my work. Used React for the frontend and Express.js for the backend.",
-      technologies: ["React", "Express", "Node.js", "CSS"],
+      technologies: [
+        "HTML",
+        "SCSS",
+        "Javascript",
+        "React",
+        "Typescript",
+        "Next JS",
+        "GraphQL",
+        "Apollo Client",
+        "MobX",
+      ],
       link: "https://yourportfolio.com", // Add actual project link
     },
     {
@@ -24,8 +34,16 @@ const WebDevelopmentProjects = () => {
       title: " RAP 3D Platform",
       description:
         "Built a full-stack e-commerce platform with payment integration and real-time inventory tracking. Features include secure checkout, user authentication, and order management.",
-      stars: 320,
-      technologies: ["React", "Node.js", "MongoDB", "Stripe API"],
+      technologies: [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "React",
+        "Three Js",
+        "React Three Fiber",
+        "Luva UI Library",
+        "MUI",
+      ],
       link: "https://ecommerceplatform.com", // Add actual project link
     },
     {
@@ -33,8 +51,14 @@ const WebDevelopmentProjects = () => {
       title: "RAP File Managament",
       description:
         "Built a full-stack e-commerce platform with payment integration and real-time inventory tracking. Features include secure checkout, user authentication, and order management.",
-      stars: 320,
-      technologies: ["React", "Node.js", "MongoDB", "Stripe API"],
+      technologies: [
+        "HTML",
+        "CSS",
+        "Javascript",
+        "React",
+        "React Native",
+        "Webviwer",
+      ],
       link: "https://ecommerceplatform.com", // Add actual project link
     },
     {
@@ -42,8 +66,14 @@ const WebDevelopmentProjects = () => {
       title: "Green Shop",
       description:
         "Built a full-stack e-commerce platform with payment integration and real-time inventory tracking. Features include secure checkout, user authentication, and order management.",
-      stars: 320,
-      technologies: ["React", "Node.js", "MongoDB", "Stripe API"],
+      technologies: [
+        "HTML",
+        "CSS",
+        "Tailwind",
+        "Javascript",
+        "React",
+        "Node.js",
+      ],
       link: "https://greenfl.netlify.app/", // Add actual project link
     },
     {
@@ -51,8 +81,7 @@ const WebDevelopmentProjects = () => {
       title: "Online Bank Platform",
       description:
         "Built a full-stack e-commerce platform with payment integration and real-time inventory tracking. Features include secure checkout, user authentication, and order management.",
-      stars: 320,
-      technologies: ["React", "Node.js", "MongoDB", "Stripe API"],
+      technologies: ["React", "Javascript", "HTML", "CSS"],
       link: "https://banking-app-zeta.vercel.app/", // Add actual project link
     },
     {
@@ -60,8 +89,7 @@ const WebDevelopmentProjects = () => {
       title: "Vizzano",
       description:
         "Built a full-stack e-commerce platform with payment integration and real-time inventory tracking. Features include secure checkout, user authentication, and order management.",
-      stars: 320,
-      technologies: ["React", "Node.js", "MongoDB", "Stripe API"],
+      technologies: ["React", "Javascript", "HTML", "CSS"],
       link: "https://vizzano-mikro.vercel.app/", // Add actual project link
     },
     {
@@ -69,8 +97,7 @@ const WebDevelopmentProjects = () => {
       title: "Trillo",
       description:
         "Built a full-stack e-commerce platform with payment integration and real-time inventory tracking. Features include secure checkout, user authentication, and order management.",
-      stars: 320,
-      technologies: ["React", "Node.js", "MongoDB", "Stripe API"],
+      technologies: ["React", "Javascript", "HTML", "CSS"],
       link: "https://trillo-omega.vercel.app/", // Add actual project link
     },
     {
@@ -78,8 +105,7 @@ const WebDevelopmentProjects = () => {
       title: "Memory Game",
       description:
         "Built a full-stack e-commerce platform with payment integration and real-time inventory tracking. Features include secure checkout, user authentication, and order management.",
-      stars: 320,
-      technologies: ["React", "Node.js", "MongoDB", "Stripe API"],
+      technologies: ["React", "Javascript", "HTML", "CSS"],
       link: "https://memory-game-itsjk0307.vercel.app/", // Add actual project link
     },
     {
@@ -87,8 +113,7 @@ const WebDevelopmentProjects = () => {
       title: "First Personal Portfolio",
       description:
         "Built a full-stack e-commerce platform with payment integration and real-time inventory tracking. Features include secure checkout, user authentication, and order management.",
-      stars: 320,
-      technologies: ["React", "Node.js", "MongoDB", "Stripe API"],
+      technologies: ["React", "Javascript", "HTML", "CSS"],
       link: "https://portfolio07-sigma.vercel.app/", // Add actual project link
     },
     {
@@ -96,8 +121,7 @@ const WebDevelopmentProjects = () => {
       title: "Monster Rolodex",
       description:
         "Built a full-stack e-commerce platform with payment integration and real-time inventory tracking. Features include secure checkout, user authentication, and order management.",
-      stars: 320,
-      technologies: ["React", "Node.js", "MongoDB", "Stripe API"],
+      technologies: ["React", "Javascript", "Typescript", "HTML", "CSS"],
       link: "https://mymonsters-roledox.vercel.app/", // Add actual project link
     },
     // Add more web development projects here

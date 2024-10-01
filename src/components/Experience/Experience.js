@@ -16,11 +16,13 @@ const Experience = () => {
           practices and understand key aspects of frontend development.
         </p>
         <div className="skills">
-          <span className="skill-tag">HTML</span>
-          <span className="skill-tag">CSS</span>
           <span className="skill-tag">JavaScript</span>
-          <span className="skill-tag">Version Control (Git)</span>
-          <span className="skill-tag">Responsive Design</span>
+          <span className="skill-tag">React</span>
+          <span className="skill-tag">HTML5</span>
+          <span className="skill-tag">CSS3</span>
+          <span className="skill-tag">React Three Fiber</span>
+          <span className="skill-tag">Three JS</span>
+          <span className="skill-tag">Research & Development</span>
         </div>
       </div>
       {/* Experience as a Frontend Developer Researcher */}
@@ -36,11 +38,17 @@ const Experience = () => {
           application performance.
         </p>
         <div className="skills">
+          <span className="skill-tag">HTML</span>
+          <span className="skill-tag">CSS</span>
           <span className="skill-tag">JavaScript</span>
           <span className="skill-tag">React</span>
-          <span className="skill-tag">HTML5</span>
-          <span className="skill-tag">CSS3</span>
-          <span className="skill-tag">Research & Development</span>
+          <span className="skill-tag">Next Js</span>
+          <span className="skill-tag">Typescript</span>
+          <span className="skill-tag">GraphQL</span>
+          <span className="skill-tag">Apollo Client</span>
+          <span className="skill-tag">MobX</span>
+          <span className="skill-tag">Version Control (Git)</span>
+          <span className="skill-tag">Responsive Design</span>
         </div>
       </div>
 
