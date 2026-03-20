@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// Use HashRouter so direct navigation/refresh works on GitHub Pages subpaths.
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import LeftSideWrapper from "./components/LeftSide/LeftSideWrapper";
 import RightSide from "./components/RightSide/RightSide";
 import Projects from "./components/Projects/Projects";
@@ -62,6 +63,8 @@ function App() {
             <LeftSideWrapper activeSection={activeSection} />
             <Routes>
               <Route path="/" element={<RightSide />} />
+              {/* Allow About to render even if the URL hash is "#about" or similar. */}
+              <Route path="/about" element={<RightSide />} />
               <Route path="/projects" element={<Projects />} />
               <Route
                 path="/projects/web-development"
@@ -84,6 +87,8 @@ function App() {
                 path="/projects/ai/heart-disease-prediction"
                 element={<HeartDiseasePrediction />}
               />
+              {/* Fallback: prevents blank page when the hash doesn't match any route. */}
+              <Route path="*" element={<RightSide />} />
             </Routes>
             <div
               className="circle"

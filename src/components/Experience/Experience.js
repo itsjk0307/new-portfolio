@@ -4,6 +4,27 @@ import "./Experience.css";
 const Experience = () => {
   return (
     <div className="experience-container" id="experience">
+      {/* Experience as an AI Engineer */}
+      <div className="experience-card">
+        <h3 className="experience-title">AI Engineer · Quazar Inc.</h3>
+        <span className="experience-duration">February 2025 — June 2025</span>
+        <p className="experience-description">
+          Developed AI models for luxury authentication and price prediction.
+          Built deep learning pipelines and integrated them into web
+          applications for real-time decision-making.
+        </p>
+        <div className="skills">
+          <span className="skill-tag">TensorFlow</span>
+          <span className="skill-tag">PyTorch</span>
+          <span className="skill-tag">OpenCV</span>
+          <span className="skill-tag">Computer Vision</span>
+          <span className="skill-tag">Image Segmentation</span>
+          <span className="skill-tag">Deep Learning</span>
+          <span className="skill-tag">REST API</span>
+          <span className="skill-tag">Web Integration</span>
+        </div>
+      </div>
+
       {/* Experience as an Intern */}
       <div className="experience-card">
         <h3 className="experience-title">
@@ -25,6 +46,7 @@ const Experience = () => {
           <span className="skill-tag">Research & Development</span>
         </div>
       </div>
+
       {/* Experience as a Frontend Developer Researcher */}
       <div className="experience-card">
         <h3 className="experience-title">
