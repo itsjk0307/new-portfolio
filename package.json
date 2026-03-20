@@ -2,7 +2,7 @@
   "name": "new-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://itsjk0307.github.io/new-portfolio",
+  "homepage": ".",
   "deploy": "gh-pages -d build",
   "dependencies": {
     "@emotion/react": "^11.13.3",
