@@ -28,7 +28,7 @@ function SocialLinks() {
           <FaLinkedin />
         </a>
         <a
-          href="https://www.x.com/itsmetkm03"
+          href="https://www.x.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
