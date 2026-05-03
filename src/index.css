@@ -1,30 +1,121 @@
+:root {
+  color-scheme: dark;
+  --bg: #070a12;
+  --surface: rgba(255, 255, 255, 0.04);
+  --surface-2: rgba(255, 255, 255, 0.06);
+  --text: rgba(255, 255, 255, 0.92);
+  --muted: rgba(255, 255, 255, 0.72);
+  --muted-2: rgba(255, 255, 255, 0.52);
+  --border: rgba(255, 255, 255, 0.1);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --chip: rgba(255, 255, 255, 0.05);
+  --accent: #7c3aed;
+  --accent-contrast: #ffffff;
+  --shadow-sm: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 18px 60px rgba(0, 0, 0, 0.45);
+}
+
+[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f6f7fb;
+  --surface: #ffffff;
+  --surface-2: #f1f2f7;
+  --text: rgba(15, 23, 42, 0.92);
+  --muted: rgba(15, 23, 42, 0.66);
+  --muted-2: rgba(15, 23, 42, 0.48);
+  --border: rgba(15, 23, 42, 0.1);
+  --border-strong: rgba(15, 23, 42, 0.14);
+  --chip: rgba(15, 23, 42, 0.04);
+  --accent: #5b21b6;
+  --accent-contrast: #ffffff;
+  --shadow-sm: 0 10px 30px rgba(15, 23, 42, 0.08);
+  --shadow-md: 0 18px 60px rgba(15, 23, 42, 0.12);
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
 body {
   margin: 0;
-  padding: 0;
-  background-color: #0a192f;
-  font-family: "Poppins", sans-serif;
-  color: #ccd6f6;
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI,
+    Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
   font-size: 16px;
-  line-height: 1.6; /* Standard line height for better readability */
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI,
+    Roboto, Helvetica, Arial;
+  font-weight: 650;
 }
 
 code,
 pre {
-  font-family: "Roboto Mono", monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
 }
 
 html {
-  scroll-behavior: smooth; /* Smooth scrolling */
+  scroll-behavior: smooth;
 }
 
 * {
   box-sizing: border-box;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--accent) 35%, transparent);
+}
+
+.section-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 clamp(1.1rem, 4vw, 1.75rem);
+}
+
+.section-head {
+  margin-bottom: clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.section-title {
+  margin: 0 0 0.65rem;
+  font-size: clamp(1.35rem, 2.4vw, 1.75rem);
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+
+.section-subtitle {
+  margin: 0;
+  max-width: 72ch;
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.page-shell {
+  padding: clamp(1.25rem, 3vw, 2rem) 0 clamp(3rem, 6vw, 4.5rem);
+}
+
+.page-shell section {
+  color: var(--text);
+}
+
+.page-shell p,
+.page-shell li {
+  color: var(--muted);
+}
+
+.page-shell h2,
+.page-shell h3 {
+  color: var(--text);
 }

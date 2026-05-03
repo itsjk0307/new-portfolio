@@ -1,84 +1,146 @@
-/* Navbar base styles */
-.navbar {
-  position: fixed;
-  width: 100%;
-  background-color: var(--background-color);
-  z-index: 999; /* Keep it above content */
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* Center items vertically */
+.site-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(14px);
+  background: color-mix(in srgb, var(--bg) 78%, transparent);
+  border-bottom: 1px solid var(--border);
 }
 
-/* Navbar logo and title styling */
-.navbar-brand {
+.site-nav__inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0.85rem clamp(1rem, 3vw, 1.5rem);
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
-.navbar-logo {
-  height: 40px; /* Adjust the size of the logo */
-  margin-right: 10px; /* Space between logo and title */
-}
-
-.navbar-title {
-  color: #ccd6f6;
-  font-size: 24px; /* Font size for the title */
-  font-weight: bold;
-}
-
-/* Navbar links */
-.navbar ul {
-  list-style-type: none;
-  display: flex;
-  gap: 20px;
-}
-
-.navbar a {
-  color: var(--text-color);
+.site-nav__brand {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--text);
   text-decoration: none;
-  font-size: 1.2rem;
-  transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
-.navbar a:hover {
-  color: #64ffda;
+.site-nav__brand:hover {
+  color: var(--accent);
 }
 
-/* Responsive styles for mobile/tablet view */
-@media (max-width: 768px) {
-  .navbar ul {
-    flex-direction: column; /* Stack links vertically on smaller screens */
-    gap: 10px;
-    padding-left: 20px;
+.site-nav__links {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.site-nav__link {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding: 0.45rem 0.55rem;
+  border-radius: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.site-nav__link:hover {
+  color: var(--text);
+  background: var(--surface-2);
+}
+
+.site-nav__link.is-active {
+  color: var(--text);
+  background: var(--surface-2);
+}
+
+.site-nav__link--ghost {
+  border: 1px solid var(--border);
+}
+
+.site-nav__controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lang-switch {
+  display: inline-flex;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.lang-switch__btn {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 0.45rem 0.55rem;
+  cursor: pointer;
+}
+
+.lang-switch__btn.is-active {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 160ms ease, border-color 160ms ease;
+}
+
+.icon-btn:hover {
+  background: var(--surface-2);
+  border-color: var(--border-strong);
+}
+
+.site-nav__menu {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .site-nav__menu {
+    display: inline-flex;
   }
 
-  .navbar a {
-    font-size: 1rem; /* Slightly smaller font size for mobile */
+  .site-nav__links {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    padding: 0.75rem clamp(1rem, 3vw, 1.5rem) 1rem;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.25rem;
+    border-bottom: 1px solid var(--border);
+    background: color-mix(in srgb, var(--bg) 92%, transparent);
+    backdrop-filter: blur(14px);
+    display: none;
   }
 
-  .navbar {
-    padding: 10px; /* Reduced padding for mobile screens */
-  }
-}
-
-/* Extra large desktop adjustments */
-@media (min-width: 1200px) {
-  .navbar-title {
-    font-size: 28px; /* Larger font size for bigger screens */
+  .site-nav__links.is-open {
+    display: flex;
   }
 
-  .navbar-logo {
-    height: 50px; /* Adjust logo size */
+  .site-nav__link {
+    text-align: left;
   }
-}
-.navbar {
-  background-color: var(--background-color);
-}
-
-.navbar a {
-  color: var(--text-color);
-}
-
-.navbar a:hover {
-  color: var(--highlight-color);
 }

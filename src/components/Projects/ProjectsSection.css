@@ -1,0 +1,61 @@
+.projects-section {
+  padding: clamp(3.5rem, 6vw, 6rem) 0;
+}
+
+.section-head--page {
+  align-items: flex-start;
+}
+
+.back-link {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
+.section-title--xl {
+  font-size: clamp(1.75rem, 2.6vw, 2.25rem);
+}
+
+.projects-section__groups {
+  display: flex;
+  flex-direction: column;
+  gap: 2.75rem;
+}
+
+.projects-section__group-title {
+  margin: 0 0 1rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+  font-weight: 600;
+}
+
+.projects-section__grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.projects-section__footer {
+  margin-top: 2rem;
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.text-link:hover {
+  text-decoration: underline;
+}

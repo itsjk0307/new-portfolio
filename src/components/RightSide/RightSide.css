@@ -1,77 +1,14 @@
-/* Base Styles (Mobile First Approach) */
-.right-side-wrapper {
-  padding-left: 0; /* No padding by default for mobile devices */
+.home-main {
+  min-height: 100vh;
 }
 
-.right-side {
-  color: #ccd6f6;
-  height: 100vh;
-  scrollbar-width: none; /* Firefox: Hide scrollbar */
-  overflow-y: auto; /* Enable vertical scrolling if necessary */
-  flex: 1;
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem 0 3rem;
 }
 
-/* Hide scrollbar but allow scrolling on Webkit browsers */
-.right-side::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
-}
-
-section h2 {
-  font-size: 2rem; /* Smaller font size for mobile */
-  margin-bottom: 20px; /* Less margin */
-  color: #64ffda;
-}
-
-section p {
-  font-size: 1rem; /* Smaller font size for mobile */
-  color: #8892b0;
-  line-height: 1.6; /* Adjusted line height */
-}
-
-/* Tablet Styles */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .right-side-wrapper {
-    padding-left: 0; /* No padding for tablet */
-  }
-
-  section h2 {
-    font-size: 2.2rem; /* Slightly larger font size */
-  }
-
-  section p {
-    font-size: 1.1rem; /* Slightly larger font size */
-    line-height: 1.7; /* Slightly larger line height */
-  }
-}
-
-/* Laptop Styles */
-@media (min-width: 1024px) and (max-width: 1279px) {
-  .right-side-wrapper {
-    padding-left: 50px; /* Add some padding for laptop screens */
-  }
-
-  section h2 {
-    font-size: 2.4rem; /* Larger font size for laptop */
-  }
-
-  section p {
-    font-size: 1.2rem; /* Larger font size */
-    line-height: 1.8; /* Larger line height */
-  }
-}
-
-/* Desktop Styles */
-@media (min-width: 1280px) {
-  .right-side-wrapper {
-    padding-left: 150px; /* Full padding for desktop screens */
-  }
-
-  section h2 {
-    font-size: 2.5rem; /* Largest font size for desktop */
-  }
-
-  section p {
-    font-size: 1.2rem; /* Larger font size */
-    line-height: 1.8; /* Larger line height */
-  }
+.site-footer__note {
+  margin: 0;
+  color: var(--muted-2);
+  font-size: 0.875rem;
 }

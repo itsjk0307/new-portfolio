@@ -1,173 +1,68 @@
-/* Mobile First Approach */
-.experience-container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
+.experience-section {
+  padding: clamp(3.5rem, 6vw, 6rem) 0;
+}
+
+.experience-grid {
+  display: grid;
+  gap: 1rem;
 }
 
 .experience-card {
-  padding: 15px;
-  border-radius: 8px;
-  color: #ccd6f6;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  padding: 1.25rem;
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
 }
 
-/* Hover effect */
 .experience-card:hover {
-  background-color: rgba(255, 255, 255, 0.03);
-  transform: translateY(-5px);
-}
-.experience-card:hover .experience-title {
-  color: #64ffda; /* Change title color on hover */
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
 }
 
-.experience-title {
-  font-size: 0.9rem; /* Smaller font size for title */
-  color: #edf3f2;
-  margin-bottom: 5px;
+.experience-card__title {
+  margin: 0 0 0.25rem;
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+  color: var(--text);
 }
 
-.experience-duration {
-  font-size: 0.8rem; /* Smaller font size for duration */
-  color: #dfe2eb;
-  margin-bottom: 10px;
-
-  color: #8892b0;
+.experience-card__company {
+  font-weight: 650;
+  color: var(--muted);
+  font-size: 0.95rem;
 }
 
-.experience-description {
-  font-size: 0.9rem; /* Smaller font size for description */
-  line-height: 1.4; /* Adjusted line height */
-  margin-bottom: 10px;
-
-  color: #8892b0;
+.experience-card__period {
+  margin: 0.35rem 0 0.85rem;
+  font-size: 0.85rem;
+  color: var(--muted-2);
 }
 
-.skills {
+.experience-card__desc {
+  margin: 0 0 1rem;
+  color: var(--muted);
+  line-height: 1.65;
+  font-size: 0.95rem;
+}
+
+.experience-card__tags {
   display: flex;
-  flex-wrap: wrap; /* Wrap skills to the next line on small screens */
-  gap: 8px; /* Adjusted gap */
+  flex-wrap: wrap;
+  gap: 0.45rem;
 }
 
-.skill-tag {
-  background-color: rgba(255, 255, 255, 0.03);
-  padding: 4px 8px; /* Smaller padding */
-  border-radius: 4px;
-  font-size: 0.75rem; /* Smaller font size for tags */
-  /* color: #8892b0; */
-  color: #64ffda;
+.experience-tag {
+  font-size: 0.78rem;
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  background: var(--chip);
 }
 
-.resume-link {
-  margin-top: 15px; /* Reduced margin */
-}
-
-.resume-link a {
-  color: #64ffda;
-  font-size: 0.95rem; /* Smaller font size */
-  text-decoration: none;
-  display: inline-block;
-}
-
-.resume-link a:hover {
-  text-decoration: underline;
-}
-
-/* Tablet Styles */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .experience-container {
-    padding: 25px; /* Increase padding for tablets */
-  }
-
-  .experience-card {
-    padding: 18px; /* Increase padding for tablets */
-  }
-
-  .experience-title {
-    font-size: 1rem; /* Slightly larger font size */
-  }
-
-  .experience-duration {
-    font-size: 0.85rem; /* Slightly larger font size */
-  }
-
-  .experience-description {
-    font-size: 0.95rem; /* Slightly larger font size */
-    line-height: 1.5; /* Increase line height */
-  }
-
-  .skill-tag {
-    font-size: 0.8rem; /* Slightly larger font size */
-  }
-
-  .resume-link a {
-    font-size: 1rem; /* Slightly larger font size */
-  }
-}
-
-/* Laptop Styles */
-@media (min-width: 1024px) and (max-width: 1279px) {
-  .experience-container {
-    padding: 30px; /* Further increase padding */
-    gap: 20px; /* Increase gap between experience cards */
-  }
-
-  .experience-card {
-    padding: 22px; /* Increase padding */
-  }
-
-  .experience-title {
-    font-size: 1.1rem; /* Larger font size for laptops */
-  }
-
-  .experience-duration {
-    font-size: 0.9rem; /* Larger font size for laptops */
-  }
-
-  .experience-description {
-    font-size: 1rem; /* Larger font size */
-    line-height: 1.6; /* Larger line height */
-  }
-
-  .skill-tag {
-    font-size: 0.85rem; /* Larger font size */
-  }
-
-  .resume-link a {
-    font-size: 1.05rem; /* Larger font size */
-  }
-}
-
-/* Desktop Styles */
-@media (min-width: 1280px) {
-  .experience-container {
-    padding: 40px; /* Further increase padding for desktops */
-    gap: 25px; /* Increase gap */
-  }
-
-  .experience-card {
-    padding: 25px; /* Larger padding */
-  }
-
-  .experience-title {
-    font-size: 1.2rem; /* Larger font size for desktops */
-  }
-
-  .experience-duration {
-    font-size: 1rem; /* Larger font size */
-  }
-
-  .experience-description {
-    font-size: 0.9rem; /* Larger font size */
-    line-height: 1.6; /* Larger line height */
-  }
-
-  .skill-tag {
-    font-size: 0.9rem; /* Larger font size */
-  }
-
-  .resume-link a {
-    font-size: 1.1rem; /* Larger font size */
-  }
+.experience-resume {
+  margin-top: 1.75rem;
 }

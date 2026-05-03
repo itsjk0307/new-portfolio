@@ -1,103 +1,61 @@
-import React, { useEffect, useState } from "react";
-// Use HashRouter so direct navigation/refresh works on GitHub Pages subpaths.
+import React from "react";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
-import LeftSideWrapper from "./components/LeftSide/LeftSideWrapper";
+import Navbar from "./components/Navbar/Navbar";
 import RightSide from "./components/RightSide/RightSide";
 import Projects from "./components/Projects/Projects";
 import WebDevelopmentProjects from "./components/Projects/WebDevelopmentProjects";
 import DataScienceProjects from "./components/Projects/DataScienceProjects";
 import AIProjects from "./components/Projects/AIProjects";
-import PortfolioProject from "./components/Projects/PortfolioProject"; // Specific detailed projects
+import PortfolioProject from "./components/Projects/PortfolioProject";
 import CustomerChurnProject from "./components/Projects/ProjectDetails/CustomerChurnProject";
 import HeartDiseasePrediction from "./components/Projects/ProjectDetails/HeartDiseasePrediction";
-// import Navbar from "./components/Navbar/Navbar"; // Fixed Navbar
-// import Content from "./components/Content"; // Your main content (About, Projects, etc.)
+import PageShell from "./components/layout/PageShell";
 import "./styles/App.css";
 
 function App() {
-  const [position, setPosition] = useState({ x: 0, y: 0 });
-  const [activeSection, setActiveSection] = useState("");
-
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      setPosition({ x: e.clientX, y: e.clientY });
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
-
-  useEffect(() => {
-    const sections = document.querySelectorAll("section");
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const id = entry.target.getAttribute("id");
-            setActiveSection(id);
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    sections.forEach((section) => {
-      observer.observe(section);
-    });
-
-    return () => {
-      sections.forEach((section) => observer.unobserve(section));
-    };
-  }, []);
-
   return (
-    <>
-      <div className="App">{/* <Navbar /> Fixed Navbar */}</div>
-      <Router>
-        <div className="main-container">
-          <div className="app-container">
-            <LeftSideWrapper activeSection={activeSection} />
-            <Routes>
-              <Route path="/" element={<RightSide />} />
-              {/* Allow About to render even if the URL hash is "#about" or similar. */}
-              <Route path="/about" element={<RightSide />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route
-                path="/projects/web-development"
-                element={<WebDevelopmentProjects />}
-              />
-              <Route
-                path="/projects/data-science"
-                element={<DataScienceProjects />}
-              />
-              <Route path="/projects/ai" element={<AIProjects />} />
-              <Route
-                path="/projects/web-development/portfolio"
-                element={<PortfolioProject />}
-              />
-              <Route
-                path="/projects/data-science/customer-churn"
-                element={<CustomerChurnProject />}
-              />
-              <Route
-                path="/projects/ai/heart-disease-prediction"
-                element={<HeartDiseasePrediction />}
-              />
-              {/* Fallback: prevents blank page when the hash doesn't match any route. */}
-              <Route path="*" element={<RightSide />} />
-            </Routes>
-            <div
-              className="circle"
-              style={{ left: `${position.x}px`, top: `${position.y}px` }}
-            ></div>
-          </div>
-        </div>
-      </Router>
-    </>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<RightSide />} />
+        <Route path="/about" element={<RightSide />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route
+          path="/projects/web-development"
+          element={<WebDevelopmentProjects />}
+        />
+        <Route
+          path="/projects/data-science"
+          element={<DataScienceProjects />}
+        />
+        <Route path="/projects/ai" element={<AIProjects />} />
+        <Route
+          path="/projects/web-development/portfolio"
+          element={
+            <PageShell>
+              <PortfolioProject />
+            </PageShell>
+          }
+        />
+        <Route
+          path="/projects/data-science/customer-churn"
+          element={
+            <PageShell>
+              <CustomerChurnProject />
+            </PageShell>
+          }
+        />
+        <Route
+          path="/projects/ai/heart-disease-prediction"
+          element={
+            <PageShell>
+              <HeartDiseasePrediction />
+            </PageShell>
+          }
+        />
+        <Route path="*" element={<RightSide />} />
+      </Routes>
+    </Router>
   );
 }
 

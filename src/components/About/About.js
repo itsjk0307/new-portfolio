@@ -1,43 +1,35 @@
 import React from "react";
+import { useLanguage } from "../../context/LanguageContext";
 import "./About.css";
 
-const About = () => {
+const BULLET_KEYS = [0, 1, 2, 3];
+
+function About() {
+  const { t } = useLanguage();
+
   return (
-    <section id="about">
-      <p>
-        Hi, I’m Jamshid, a Frontend Engineer passionate about building seamless
-        and intuitive digital experiences. I focus on writing clean, efficient
-        code, and take pride in creating web applications that not only look
-        stunning but are also highly functional and accessible.
-      </p>
-      <ul>
-        <li>
-          <strong>Collaborative projects:</strong> Worked with diverse teams to
-          bring creative ideas to life.
-        </li>
-        <li>
-          <strong>UI design and performance:</strong> Specialized in designing
-          pixel-perfect UIs and optimizing performance.
-        </li>
-        <li>
-          <strong>High-quality deliverables:</strong> Committed to providing
-          engaging, responsive, and enjoyable user experiences.
-        </li>
-        <li>
-          <strong>Continuous learning:</strong> Passionate about exploring the
-          latest in web technologies and learning new skills.
-        </li>
-        <li>
-          <strong>Personal projects:</strong> Frequently work on personal
-          projects that keep my creativity flowing.
-        </li>
-      </ul>
-      <p>
-        I’m always excited to take on new challenges and continue growing in
-        this ever-evolving industry.
-      </p>
+    <section className="about-section" id="about">
+      <div className="section-inner">
+        <header className="section-head">
+          <h2 className="section-title">{t("about.title")}</h2>
+          <p className="section-subtitle about-section__lead">{t("about.lead")}</p>
+        </header>
+
+        <ul className="about-list">
+          {BULLET_KEYS.map((i) => (
+            <li className="about-list__item" key={i}>
+              <div className="about-list__title">
+                {t(`about.bullets.${i}.title`)}
+              </div>
+              <p className="about-list__text">{t(`about.bullets.${i}.text`)}</p>
+            </li>
+          ))}
+        </ul>
+
+        <p className="about-section__closing">{t("about.closing")}</p>
+      </div>
     </section>
   );
-};
+}
 
 export default About;

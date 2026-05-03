@@ -1,44 +1,10 @@
-/* Default to dark theme */
+/* Legacy theme variables (kept for any older selectors) */
 :root {
-  --background-color: #0a192f;
-  --text-color: #ccd6f6;
+  --background-color: var(--bg);
+  --text-color: var(--text);
 }
 
-/* Light theme styles */
 [data-theme="light"] {
-  --background-color: #ffffff;
-  --text-color: #000000;
-}
-body {
-  font-family: "Calibre", sans-serif;
-}
-
-code,
-pre {
-  font-family: "SF Mono", monospace;
-}
-
-/* Main container to center the content with spacing around it */
-.main-container {
-  max-width: 1200px; /* Maximum width for the container */
-  margin: 0 auto; /* Centers the container on the page */
-  padding-top: 20px;
-}
-
-/* Container for the app's main content */
-.app-container {
-  display: flex;
-  justify-content: center;
-}
-
-/* App-header styling for the header section */
-.App-header {
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-@media (max-width: 768px) {
-  .app-container {
-    display: grid;
-  }
+  --background-color: var(--bg);
+  --text-color: var(--text);
 }

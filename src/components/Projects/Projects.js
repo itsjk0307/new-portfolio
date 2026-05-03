@@ -1,17 +1,12 @@
 import React from "react";
-import WebDevelopmentProjects from "./WebDevelopmentProjects";
-import DataScienceProjects from "./DataScienceProjects";
-import AIProjects from "./AIProjects";
-// import "./Projects.css";
+import ProjectsSection from "./ProjectsSection";
 
-const Projects = () => {
+function Projects() {
   return (
-    <div id="projects">
-      <WebDevelopmentProjects />
-      <DataScienceProjects />
-      <AIProjects />
-    </div>
+    <main className="page-shell">
+      <ProjectsSection preview={false} variant="page" />
+    </main>
   );
-};
+}
 
 export default Projects;

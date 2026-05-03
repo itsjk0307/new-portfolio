@@ -1,90 +1,57 @@
-/* Base Styles for Mobile First Approach */
-#about {
-  color: #ccd6f6; /* Text color */
-  font-size: 0.8rem; /* Smaller font size */
-  line-height: 1.4; /* Reduced line height */
-  padding: 10px 15px; /* Padding for mobile devices */
+.about-section {
+  padding: clamp(3.5rem, 6vw, 6rem) 0;
 }
 
-#about p {
-  margin-bottom: 0.75rem; /* Reduced space between paragraphs */
+.about-section__lead {
+  max-width: 70ch;
 }
 
-#about ul {
-  list-style-type: none; /* Remove default bullet points */
-  padding-left: 0; /* Remove default padding */
+.about-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
 }
 
-#about li {
-  margin-bottom: 0.5rem; /* Reduced space between list items */
-  padding-left: 15px; /* Reduced space to the left */
-  position: relative; /* Position for custom bullet */
-  font-size: 0.8rem; /* Smaller font size for list items */
-}
-
-#about li::before {
-  content: "•"; /* Custom bullet point */
-  color: #64ffda; /* Bullet color */
-  position: absolute;
-  left: 0;
-  font-size: 1rem; /* Smaller bullet */
-  top: 0; /* Align bullet with text */
-}
-/* Tablet Styles */
-@media (min-width: 768px) and (max-width: 1023px) {
-  #about {
-    font-size: 0.9rem; /* Slightly larger font size */
-    padding: 20px 30px; /* More padding for tablets */
-    max-width: 700px; /* Limit the width for better readability */
-    margin: 0 auto; /* Center the content */
-  }
-
-  #about p {
-    margin-bottom: 1rem; /* Adjust space between paragraphs */
-  }
-
-  #about li {
-    margin-bottom: 0.75rem; /* Adjust space between list items */
-    padding-left: 20px; /* Adjust left padding */
-  }
-
-  #about li::before {
-    font-size: 1.2rem; /* Slightly larger bullet */
+@media (min-width: 900px) {
+  .about-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-/* Laptop Styles */
-@media (min-width: 1024px) and (max-width: 1279px) {
-  #about {
-    font-size: 1rem; /* Standard font size for laptops */
-    padding: 20px 40px; /* Increase padding */
-    max-width: 800px; /* Slightly wider content */
-    margin: 0 auto; /* Center the content */
-  }
 
-  #about li {
-    margin-bottom: 0.85rem; /* Adjust space between list items */
-    padding-left: 25px; /* Increase left padding */
-  }
-
-  #about li::before {
-    font-size: 1.3rem; /* Slightly larger bullet */
-  }
+.about-list__item {
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+  padding: 1.1rem 1.15rem;
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
 }
-/* Desktop Styles */
-@media (min-width: 1280px) {
-  #about {
-    font-size: 1.1rem; /* Slightly larger font size for readability */
-    padding: 30px 50px; /* Increase padding for larger screens */
-    max-width: 900px; /* Max width for the section */
-    margin: 0 auto; /* Center the content */
-  }
 
-  #about li {
-    margin-bottom: 1rem; /* More space between list items */
-    padding-left: 30px; /* More left padding */
-  }
+.about-list__item:hover {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
 
-  #about li::before {
-    font-size: 1.4rem; /* Slightly larger bullet */
-  }
+.about-list__title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text);
+  margin-bottom: 0.35rem;
+}
+
+.about-list__text {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+  font-size: 0.95rem;
+}
+
+.about-section__closing {
+  margin: 2rem 0 0;
+  color: var(--muted);
+  line-height: 1.7;
+  max-width: 70ch;
 }

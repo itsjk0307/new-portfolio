@@ -1,91 +1,53 @@
-import React from "react";
+import React, { useMemo } from "react";
+import { useLanguage } from "../../context/LanguageContext";
 import "./Experience.css";
 
-const Experience = () => {
+function Experience() {
+  const { t } = useLanguage();
+
+  const items = useMemo(() => {
+    const raw = t("experience.items");
+    return Array.isArray(raw) ? raw : [];
+  }, [t]);
+
   return (
-    <div className="experience-container" id="experience">
-      {/* Experience as an AI Engineer */}
-      <div className="experience-card">
-        <h3 className="experience-title">AI Engineer · Quazar Inc.</h3>
-        <span className="experience-duration">February 2025 — June 2025</span>
-        <p className="experience-description">
-          Developed AI models for luxury authentication and price prediction.
-          Built deep learning pipelines and integrated them into web
-          applications for real-time decision-making.
-        </p>
-        <div className="skills">
-          <span className="skill-tag">TensorFlow</span>
-          <span className="skill-tag">PyTorch</span>
-          <span className="skill-tag">OpenCV</span>
-          <span className="skill-tag">Computer Vision</span>
-          <span className="skill-tag">Image Segmentation</span>
-          <span className="skill-tag">Deep Learning</span>
-          <span className="skill-tag">REST API</span>
-          <span className="skill-tag">Web Integration</span>
+    <section className="experience-section" id="experience">
+      <div className="section-inner">
+        <header className="section-head">
+          <h2 className="section-title">{t("experience.title")}</h2>
+        </header>
+
+        <div className="experience-grid">
+          {items.map((item) => (
+            <article className="experience-card" key={item.id}>
+              <h3 className="experience-card__title">{item.title}</h3>
+              <div className="experience-card__company">{item.company}</div>
+              <div className="experience-card__period">{item.period}</div>
+              <p className="experience-card__desc">{item.description}</p>
+              <div className="experience-card__tags">
+                {(item.skills || []).map((skill) => (
+                  <span className="experience-tag" key={skill}>
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <div className="experience-resume">
+          <a
+            className="text-link"
+            href={t("experience.resumeUrl")}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {t("experience.resume")}
+          </a>
         </div>
       </div>
-
-      {/* Experience as an Intern */}
-      <div className="experience-card">
-        <h3 className="experience-title">
-          Frontend Developer Intern · RainbowTech
-        </h3>
-        <span className="experience-duration">March 2023 — July 2023</span>
-        <p className="experience-description">
-          Assisted in building and maintaining user interfaces for various web
-          projects. Worked closely with senior developers to learn best
-          practices and understand key aspects of frontend development.
-        </p>
-        <div className="skills">
-          <span className="skill-tag">JavaScript</span>
-          <span className="skill-tag">React</span>
-          <span className="skill-tag">HTML5</span>
-          <span className="skill-tag">CSS3</span>
-          <span className="skill-tag">React Three Fiber</span>
-          <span className="skill-tag">Three JS</span>
-          <span className="skill-tag">Research & Development</span>
-        </div>
-      </div>
-
-      {/* Experience as a Frontend Developer Researcher */}
-      <div className="experience-card">
-        <h3 className="experience-title">
-          Frontend Developer Researcher · RainbowTech
-        </h3>
-        <span className="experience-duration">July 2023 — September 2024</span>
-        <p className="experience-description">
-          Conducted extensive research on the latest frontend technologies and
-          frameworks to improve the development process. Collaborated with the
-          development team to implement optimized user interfaces and improve
-          application performance.
-        </p>
-        <div className="skills">
-          <span className="skill-tag">HTML</span>
-          <span className="skill-tag">CSS</span>
-          <span className="skill-tag">JavaScript</span>
-          <span className="skill-tag">React</span>
-          <span className="skill-tag">Next Js</span>
-          <span className="skill-tag">Typescript</span>
-          <span className="skill-tag">GraphQL</span>
-          <span className="skill-tag">Apollo Client</span>
-          <span className="skill-tag">MobX</span>
-          <span className="skill-tag">Version Control (Git)</span>
-          <span className="skill-tag">Responsive Design</span>
-        </div>
-      </div>
-
-      {/* View Full Résumé Link */}
-      <div className="resume-link">
-        <a
-          href="https://drive.google.com/file/d/1um1zw9LT1Zi8kQs-EYhjWdFkmR5xjYU6/view?usp=drive_link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Full Résumé ↗
-        </a>
-      </div>
-    </div>
+    </section>
   );
-};
+}
 
 export default Experience;
