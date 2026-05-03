@@ -6,36 +6,20 @@ import React, {
   useMemo,
   useState,
 } from "react";
+import {
+  getInitialTheme,
+  readStoredTheme,
+  THEME_STORAGE_KEY,
+} from "../theme/themeStorage";
 
 export const ThemeContext = createContext(null);
-
-const STORAGE_KEY = "portfolio-theme";
-
-function readStoredTheme() {
-  try {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored === "light" || stored === "dark") return stored;
-  } catch {
-    // ignore
-  }
-  return null;
-}
-
-function getSystemTheme() {
-  if (typeof window === "undefined" || !window.matchMedia) return "dark";
-  return window.matchMedia("(prefers-color-scheme: dark)").matches
-    ? "dark"
-    : "light";
-}
 
 function applyTheme(theme) {
   document.documentElement.setAttribute("data-theme", theme);
 }
 
 export const ThemeProvider = ({ children }) => {
-  const [theme, setTheme] = useState(
-    () => readStoredTheme() || getSystemTheme()
-  );
+  const [theme, setTheme] = useState(getInitialTheme);
 
   useEffect(() => {
     applyTheme(theme);
@@ -58,7 +42,7 @@ export const ThemeProvider = ({ children }) => {
     setTheme((prev) => {
       const next = prev === "dark" ? "light" : "dark";
       try {
-        localStorage.setItem(STORAGE_KEY, next);
+        localStorage.setItem(THEME_STORAGE_KEY, next);
       } catch {
         // ignore
       }

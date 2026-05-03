@@ -14,7 +14,7 @@ function scrollToId(id) {
   window.scrollTo({ top: Math.max(0, y), behavior: "smooth" });
 }
 
-const SECTION_IDS = ["about", "experience", "projects", "skills", "contact"];
+const SECTION_IDS = ["projects", "experience", "skills", "contact"];
 
 function Navbar() {
   const { t, locale, setLocale } = useLanguage();
@@ -22,7 +22,7 @@ function Navbar() {
   const location = useLocation();
   const navigate = useNavigate();
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState("about");
+  const [active, setActive] = useState("projects");
 
   const isHome = location.pathname === "/" || location.pathname === "/about";
 
@@ -51,9 +51,8 @@ function Navbar() {
 
   const navItems = useMemo(
     () => [
-      { id: "about", label: t("nav.about") },
-      { id: "experience", label: t("nav.experience") },
       { id: "projects", label: t("nav.projects") },
+      { id: "experience", label: t("nav.experience") },
       { id: "skills", label: t("nav.skills") },
       { id: "contact", label: t("nav.contact") },
     ],
@@ -73,11 +72,20 @@ function Navbar() {
   return (
     <header className="site-nav">
       <div className="site-nav__inner">
-        <Link className="site-nav__brand" to="/" onClick={() => setOpen(false)}>
-          {t("nav.brand")}
-        </Link>
+        <div className="site-nav__left">
+          <Link
+            className="site-nav__brand"
+            to="/"
+            onClick={() => setOpen(false)}
+          >
+            {t("nav.brandFull")}
+          </Link>
+        </div>
 
-        <nav className={`site-nav__links ${open ? "is-open" : ""}`} aria-label="Primary">
+        <nav
+          className={`site-nav__center ${open ? "is-open" : ""}`}
+          aria-label="Primary"
+        >
           {navItems.map((item) => (
             <button
               key={item.id}
@@ -88,26 +96,21 @@ function Navbar() {
               {item.label}
             </button>
           ))}
-          <Link
-            className="site-nav__link site-nav__link--ghost"
-            to="/projects"
-            onClick={() => setOpen(false)}
-          >
-            {t("nav.allProjects")}
-          </Link>
         </nav>
 
-        <div className="site-nav__controls">
+        <div className="site-nav__right">
           <div className="lang-switch" role="group" aria-label="Language">
-            {["en", "ko", "uz"].map((code) => (
-              <button
-                key={code}
-                type="button"
-                className={`lang-switch__btn ${locale === code ? "is-active" : ""}`}
-                onClick={() => setLocale(code)}
-              >
-                {code.toUpperCase()}
-              </button>
+            {["en", "ko", "uz"].map((code, i) => (
+              <React.Fragment key={code}>
+                {i > 0 ? <span className="lang-switch__sep" aria-hidden /> : null}
+                <button
+                  type="button"
+                  className={`lang-switch__btn ${locale === code ? "is-active" : ""}`}
+                  onClick={() => setLocale(code)}
+                >
+                  {code.toUpperCase()}
+                </button>
+              </React.Fragment>
             ))}
           </div>
 

@@ -1,0 +1,487 @@
+.quazar-cs {
+  padding-bottom: clamp(3rem, 6vw, 5rem);
+}
+
+.quazar-cs__inner {
+  max-width: 920px;
+}
+
+.quazar-cs__hero {
+  margin-bottom: clamp(2rem, 4vw, 2.75rem);
+  padding-bottom: clamp(1.5rem, 3vw, 2rem);
+  border-bottom: 1px solid var(--border);
+}
+
+.quazar-cs__eyebrow {
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.quazar-cs__title {
+  margin: 0 0 0.65rem;
+  font-size: clamp(1.85rem, 3.5vw, 2.45rem);
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+}
+
+.quazar-cs__lead {
+  margin: 0 0 1.25rem;
+  max-width: 62ch;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.quazar-cs__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.quazar-cs__chips li {
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  background: var(--chip);
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.quazar-card {
+  margin-bottom: 1.25rem;
+  padding: 1.4rem 1.5rem;
+  border-radius: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+}
+
+.quazar-card--accent {
+  margin-bottom: 0;
+  border-color: color-mix(in srgb, var(--accent) 35%, var(--border));
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--accent) 12%, var(--surface)),
+    var(--surface)
+  );
+}
+
+.quazar-card--stat {
+  border-color: color-mix(in srgb, var(--accent) 22%, var(--border));
+}
+
+.quazar-card--diagram {
+  border-color: var(--border-strong);
+}
+
+.quazar-card__h {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.85rem;
+  font-size: 1.05rem;
+  letter-spacing: -0.02em;
+}
+
+.quazar-card__h--sm {
+  font-size: 0.95rem;
+}
+
+.quazar-card__subh {
+  margin: 1.25rem 0 0.5rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.quazar-card__icon {
+  flex-shrink: 0;
+  color: var(--accent);
+  width: 1.15em;
+  height: 1.15em;
+}
+
+.quazar-card__icon--inline {
+  width: 1em;
+  height: 1em;
+}
+
+.quazar-card__p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+  font-size: 0.98rem;
+}
+
+.quazar-card__p--tight {
+  margin-top: 0.75rem;
+}
+
+.quazar-card__note {
+  margin: 1rem 0 0;
+  font-size: 0.82rem;
+  color: var(--muted-2);
+  line-height: 1.55;
+}
+
+.quazar-section {
+  margin-bottom: clamp(1.75rem, 3vw, 2.25rem);
+}
+
+.quazar-section__head {
+  margin-bottom: 1.25rem;
+}
+
+.quazar-section__title {
+  margin: 0 0 0.5rem;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+
+.quazar-section__intro {
+  margin: 0;
+  max-width: 65ch;
+  color: var(--muted);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.quazar-pipeline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 0;
+  margin-bottom: 1.5rem;
+}
+
+.quazar-pipeline__node {
+  flex: 1 1 160px;
+  min-width: 140px;
+  padding: 1rem 1.1rem;
+  border-radius: 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+}
+
+.quazar-pipeline__idx {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.quazar-pipeline__text {
+  margin: 0;
+  font-size: 0.88rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.quazar-pipeline__connector {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  min-height: 3rem;
+  position: relative;
+}
+
+@media (min-width: 720px) {
+  .quazar-pipeline__connector {
+    width: 2.25rem;
+    min-height: auto;
+    align-self: center;
+  }
+}
+
+.quazar-pipeline__line {
+  display: none;
+}
+
+@media (min-width: 720px) {
+  .quazar-pipeline__line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--border-strong), var(--muted-2));
+    opacity: 0.5;
+  }
+}
+
+.quazar-pipeline__chev {
+  color: var(--muted-2);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+@media (min-width: 720px) {
+  .quazar-pipeline__chev {
+    display: none;
+  }
+}
+
+@media (max-width: 719px) {
+  .quazar-pipeline__connector::before {
+    content: "↓";
+    font-size: 0.9rem;
+    color: var(--muted-2);
+  }
+}
+
+.quazar-pipeline__ensemble {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.quazar-pipeline__ensemble-bar {
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--accent) 55%, transparent),
+    transparent
+  );
+}
+
+.quazar-split {
+  display: grid;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+@media (min-width: 800px) {
+  .quazar-split {
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.35fr);
+    align-items: start;
+  }
+}
+
+.quazar-stat__label {
+  margin: 0 0 0.15rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted-2);
+}
+
+.quazar-stat__value {
+  margin: 0 0 0.75rem;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  font-family: var(--font-display);
+  color: var(--accent);
+}
+
+.quazar-list {
+  margin: 0.75rem 0 0;
+  padding-left: 1.2rem;
+  color: var(--muted);
+  line-height: 1.65;
+  font-size: 0.92rem;
+}
+
+.quazar-list li {
+  margin-bottom: 0.4rem;
+}
+
+.quazar-list--roles {
+  margin-top: 0.25rem;
+}
+
+.quazar-model-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  margin: 1rem 0;
+}
+
+.quazar-model-tile {
+  padding: 1rem;
+  border-radius: 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+}
+
+.quazar-model-tile__h {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.quazar-model-tile__p {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.quazar-arch-svg {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  overflow: auto;
+}
+
+.quazar-arch-svg__inner {
+  display: block;
+  min-width: 640px;
+  width: 100%;
+  height: auto;
+}
+
+.quazar-figures {
+  margin-top: clamp(2rem, 4vw, 2.5rem);
+  padding-top: clamp(1.5rem, 3vw, 2rem);
+  border-top: 1px solid var(--border);
+}
+
+.quazar-figures__grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+}
+
+.quazar-fig {
+  margin: 0;
+}
+
+.quazar-fig__btn {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-radius: 12px;
+  cursor: zoom-in;
+  overflow: hidden;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.quazar-fig__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.quazar-fig__btn:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.quazar-fig__btn img {
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.quazar-fig__fallback {
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: linear-gradient(160deg, var(--surface-2), var(--surface));
+}
+
+.quazar-fig__fallback-label {
+  font-size: 0.85rem;
+  color: var(--muted);
+  text-align: center;
+}
+
+.quazar-fig__cap {
+  margin: 0.5rem 0 0;
+  font-size: 0.8rem;
+  color: var(--muted-2);
+  line-height: 1.45;
+}
+
+.quazar-lb {
+  position: fixed;
+  inset: 0;
+  z-index: 220;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.quazar-lb__backdrop {
+  position: absolute;
+  inset: 0;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.78);
+  cursor: pointer;
+}
+
+.quazar-lb__panel {
+  position: relative;
+  z-index: 1;
+  max-width: min(96vw, 1000px);
+  max-height: min(92vh, 900px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.quazar-lb__close {
+  position: absolute;
+  top: -2.5rem;
+  right: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 1.35rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.quazar-lb__img {
+  max-width: 100%;
+  max-height: min(78vh, 760px);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 1px solid var(--border-strong);
+  box-shadow: var(--shadow-md);
+}
+
+.quazar-lb__cap {
+  margin: 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #e5e7eb;
+  max-width: 52ch;
+}

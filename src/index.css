@@ -1,35 +1,45 @@
+/* Shared tokens (not theme-specific) */
 :root {
-  color-scheme: dark;
-  --bg: #070a12;
-  --surface: rgba(255, 255, 255, 0.04);
-  --surface-2: rgba(255, 255, 255, 0.06);
-  --text: rgba(255, 255, 255, 0.92);
-  --muted: rgba(255, 255, 255, 0.72);
-  --muted-2: rgba(255, 255, 255, 0.52);
-  --border: rgba(255, 255, 255, 0.1);
-  --border-strong: rgba(255, 255, 255, 0.16);
-  --chip: rgba(255, 255, 255, 0.05);
-  --accent: #7c3aed;
+  --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --accent: #6366f1;
   --accent-contrast: #ffffff;
-  --shadow-sm: 0 10px 30px rgba(0, 0, 0, 0.35);
-  --shadow-md: 0 18px 60px rgba(0, 0, 0, 0.45);
+}
+
+/* Dark — default page + card surfaces per spec */
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #0b0f19;
+  --surface: #111827;
+  --surface-2: #1a2332;
+  --text: #f3f4f6;
+  --muted: #9ca3af;
+  --muted-2: #6b7280;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.14);
+  --chip: rgba(255, 255, 255, 0.06);
+  --shadow-sm: 0 8px 28px rgba(0, 0, 0, 0.45);
+  --shadow-md: 0 20px 50px rgba(0, 0, 0, 0.55);
+  --glow-soft: 0 0 0 1px color-mix(in srgb, var(--accent) 14%, transparent);
+  --glow-accent: 0 0 32px color-mix(in srgb, var(--accent) 28%, transparent);
 }
 
 [data-theme="light"] {
   color-scheme: light;
-  --bg: #f6f7fb;
+  --bg: #f9fafb;
   --surface: #ffffff;
-  --surface-2: #f1f2f7;
-  --text: rgba(15, 23, 42, 0.92);
-  --muted: rgba(15, 23, 42, 0.66);
-  --muted-2: rgba(15, 23, 42, 0.48);
-  --border: rgba(15, 23, 42, 0.1);
-  --border-strong: rgba(15, 23, 42, 0.14);
-  --chip: rgba(15, 23, 42, 0.04);
-  --accent: #5b21b6;
+  --surface-2: #f3f4f6;
+  --text: #111827;
+  --muted: #4b5563;
+  --muted-2: #6b7280;
+  --border: rgba(17, 24, 39, 0.08);
+  --border-strong: rgba(17, 24, 39, 0.12);
+  --chip: rgba(17, 24, 39, 0.06);
+  --accent: #4f46e5;
   --accent-contrast: #ffffff;
-  --shadow-sm: 0 10px 30px rgba(15, 23, 42, 0.08);
-  --shadow-md: 0 18px 60px rgba(15, 23, 42, 0.12);
+  --shadow-sm: 0 8px 28px rgba(17, 24, 39, 0.06);
+  --shadow-md: 0 20px 50px rgba(17, 24, 39, 0.08);
+  --glow-soft: 0 0 0 1px color-mix(in srgb, var(--accent) 12%, transparent);
+  --glow-accent: 0 0 28px color-mix(in srgb, var(--accent) 20%, transparent);
 }
 
 html,
@@ -54,9 +64,8 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Inter", ui-sans-serif, system-ui, -apple-system, Segoe UI,
-    Roboto, Helvetica, Arial;
-  font-weight: 650;
+  font-family: var(--font-display);
+  font-weight: 600;
 }
 
 code,

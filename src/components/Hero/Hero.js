@@ -1,6 +1,8 @@
 import React from "react";
-import { FiArrowDownRight } from "react-icons/fi";
+import { motion } from "framer-motion";
+import { FiArrowDownRight, FiDownload } from "react-icons/fi";
 import { useLanguage } from "../../context/LanguageContext";
+import { useHeroContainerProps, useHeroItemProps } from "../motion/heroMotion";
 import "./Hero.css";
 
 function scrollToId(id) {
@@ -12,14 +14,23 @@ function scrollToId(id) {
 
 function Hero() {
   const { t } = useLanguage();
+  const resumeUrl = t("experience.resumeUrl");
+  const container = useHeroContainerProps();
+  const item = useHeroItemProps();
 
   return (
     <section className="hero" id="top">
-      <div className="section-inner hero__inner">
-        <h1 className="hero__name">{t("hero.name")}</h1>
-        <p className="hero__role">{t("hero.role")}</p>
-        <p className="hero__tagline">{t("hero.tagline")}</p>
-        <div className="hero__actions">
+      <motion.div className="section-inner hero__inner" {...container}>
+        <motion.h1 className="hero__name" {...item}>
+          {t("hero.name")}
+        </motion.h1>
+        <motion.p className="hero__role" {...item}>
+          {t("hero.role")}
+        </motion.p>
+        <motion.p className="hero__tagline" {...item}>
+          {t("hero.tagline")}
+        </motion.p>
+        <motion.div className="hero__actions" {...item}>
           <button
             type="button"
             className="btn btn-primary"
@@ -28,16 +39,17 @@ function Hero() {
             {t("hero.ctaProjects")}
             <FiArrowDownRight aria-hidden />
           </button>
-          <button
-            type="button"
+          <a
             className="btn btn-ghost"
-            onClick={() => scrollToId("contact")}
+            href={resumeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            {t("hero.ctaContact")}
-          </button>
-        </div>
-        <p className="hero__hint">{t("hero.scrollHint")}</p>
-      </div>
+            <FiDownload aria-hidden />
+            {t("hero.ctaResume")}
+          </a>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }

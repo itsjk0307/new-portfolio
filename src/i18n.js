@@ -1,22 +1,31 @@
-// src/i18n.js
 import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
-import HttpApi from "i18next-http-backend";
+import { initReactI18next } from "react-i18next";
+import en from "./locales/en.json";
+import ko from "./locales/ko.json";
+import uz from "./locales/uz.json";
 
-i18n
-  .use(HttpApi)
+/** Must match `lookupLocalStorage` in detection and Navbar / docs. */
+export const LOCALE_STORAGE_KEY = "portfolio-locale";
+
+export const initPromise = i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    supportedLngs: ["en", "ko", "uz"], // Supported languages
-    fallbackLng: "en", // Fallback language
-    detection: {
-      order: ["cookie", "localStorage", "htmlTag", "path", "subdomain"],
-      caches: ["cookie"],
+    fallbackLng: "en",
+    supportedLngs: ["en", "ko", "uz"],
+    defaultNS: "translation",
+    ns: ["translation"],
+    interpolation: { escapeValue: false },
+    resources: {
+      en: { translation: en },
+      ko: { translation: ko },
+      uz: { translation: uz },
     },
-    backend: {
-      loadPath: "/locales/{{lng}}/translation.json", // Path to translation files
+    detection: {
+      order: ["localStorage"],
+      lookupLocalStorage: LOCALE_STORAGE_KEY,
+      caches: ["localStorage"],
     },
     react: {
       useSuspense: false,

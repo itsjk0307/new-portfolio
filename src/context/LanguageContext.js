@@ -1,83 +1,44 @@
-import React, {
-  createContext,
-  useCallback,
-  useContext,
-  useEffect,
-  useMemo,
-  useState,
-} from "react";
-import { SUPPORTED_LOCALES, translations } from "../i18n/locales";
+import React, { useCallback, useEffect, useMemo } from "react";
+import { I18nextProvider, useTranslation } from "react-i18next";
+import i18n from "../i18n";
 
-export const LanguageContext = createContext(null);
+export const SUPPORTED_LOCALES = ["en", "ko", "uz"];
 
-const STORAGE_KEY = "portfolio-locale";
-
-function readStoredLocale() {
-  try {
-    const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored && SUPPORTED_LOCALES.includes(stored)) return stored;
-  } catch {
-    // ignore
-  }
-  return "en";
+export function LanguageProvider({ children }) {
+  return <I18nextProvider i18n={i18n}>{children}</I18nextProvider>;
 }
 
-function getByPath(obj, path) {
-  return path.split(".").reduce((acc, key) => {
-    if (acc && Object.prototype.hasOwnProperty.call(acc, key)) {
-      return acc[key];
-    }
-    return undefined;
-  }, obj);
-}
+/**
+ * Thin wrapper over react-i18next so existing components keep using `useLanguage()`.
+ * Use `t(key, { returnObjects: true })` for arrays/objects in JSON.
+ */
+export function useLanguage() {
+  const { t, i18n } = useTranslation();
 
-export const LanguageProvider = ({ children }) => {
-  const [locale, setLocaleState] = useState(readStoredLocale);
+  const locale = useMemo(
+    () => (i18n.resolvedLanguage || i18n.language || "en").split("-")[0],
+    [i18n.language, i18n.resolvedLanguage]
+  );
 
-  const setLocale = useCallback((next) => {
-    if (!SUPPORTED_LOCALES.includes(next)) return;
-    setLocaleState(next);
-    try {
-      localStorage.setItem(STORAGE_KEY, next);
-    } catch {
-      // ignore
-    }
-    document.documentElement.lang = next;
-  }, []);
-
-  const dictionary = translations[locale] || translations.en;
-
-  const t = useCallback(
-    (path, fallback) => {
-      const value = getByPath(dictionary, path);
-      if (value !== undefined) return value;
-      if (fallback !== undefined) return fallback;
-      const fromEn = getByPath(translations.en, path);
-      return fromEn !== undefined ? fromEn : path;
+  const setLocale = useCallback(
+    (next) => {
+      if (!SUPPORTED_LOCALES.includes(next)) return;
+      void i18n.changeLanguage(next);
     },
-    [dictionary]
+    [i18n]
   );
 
   useEffect(() => {
     document.documentElement.lang = locale;
   }, [locale]);
 
-  const value = useMemo(
-    () => ({ locale, setLocale, t, supportedLocales: SUPPORTED_LOCALES }),
+  return useMemo(
+    () => ({
+      locale,
+      setLocale,
+      t,
+      supportedLocales: SUPPORTED_LOCALES,
+    }),
     [locale, setLocale, t]
   );
-
-  return (
-    <LanguageContext.Provider value={value}>
-      {children}
-    </LanguageContext.Provider>
-  );
-};
-
-export function useLanguage() {
-  const ctx = useContext(LanguageContext);
-  if (!ctx) {
-    throw new Error("useLanguage must be used within LanguageProvider");
-  }
-  return ctx;
 }

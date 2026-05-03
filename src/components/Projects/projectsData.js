@@ -15,6 +15,7 @@ import greenshop from "../../assets/images/greenshop.png";
 
 /**
  * Central project metadata. Copy is resolved via i18n keys under `projects.items.<slug>`.
+ * Optional `gallery`: extra screenshots for the detail page (hero uses `image`).
  * @type {Array<{
  *   slug: string,
  *   category: ProjectCategory,
@@ -22,10 +23,45 @@ import greenshop from "../../assets/images/greenshop.png";
  *   technologies: string[],
  *   github: string | null,
  *   demo: string | null,
- *   detailPath?: string
+ *   gallery?: string[]
  * }>}
  */
 export const projectsData = [
+  {
+    slug: "quazarLuxuryAuth",
+    category: "ai",
+    image: vizzano,
+    technologies: [
+      "Python",
+      "PyTorch",
+      "TensorFlow",
+      "YOLO",
+      "OpenCV",
+      "Computer Vision",
+      "Image Classification",
+      "Ensemble Methods",
+    ],
+    github: null,
+    demo: null,
+    gallery: [vizzano, main],
+  },
+  {
+    slug: "logMonitoringDashboard",
+    category: "ai",
+    image: bank,
+    technologies: [
+      "FastAPI",
+      "scikit-learn",
+      "TF-IDF",
+      "Logistic Regression",
+      "Next.js",
+      "Recharts",
+      "Python",
+    ],
+    github: null,
+    demo: null,
+    gallery: [bank, main],
+  },
   {
     slug: "heartDisease",
     category: "ai",
@@ -34,7 +70,7 @@ export const projectsData = [
     github:
       "https://github.com/itsjk0307/Heart-Disease-Prediction/blob/main/Heart%20Disease%20Prediction.ipynb",
     demo: null,
-    detailPath: "/projects/ai/heart-disease-prediction",
+    gallery: [heartImage],
   },
   {
     slug: "customerChurn",
@@ -44,7 +80,7 @@ export const projectsData = [
     github:
       "https://github.com/itsjk0307/Customer-Churn-Prediction/blob/main/Customer%20Churn%20Prediction.ipynb",
     demo: null,
-    detailPath: "/projects/data-science/customer-churn",
+    gallery: [cusChurn],
   },
   {
     slug: "edaTitanic",
@@ -54,6 +90,7 @@ export const projectsData = [
     github:
       "https://github.com/itsjk0307/Exploratory-Data-Analysis-EDA-Project/blob/main/Titanic-EDA-Project.ipynb",
     demo: null,
+    gallery: [EDA, loanImage],
   },
   {
     slug: "loanEligibility",
@@ -69,6 +106,7 @@ export const projectsData = [
     ],
     github: "https://github.com/yourrepo/loan-eligibility-prediction",
     demo: null,
+    gallery: [loanImage, EDA],
   },
   {
     slug: "rainbowAi",
@@ -87,6 +125,7 @@ export const projectsData = [
     ],
     github: null,
     demo: null,
+    gallery: [main],
   },
   {
     slug: "rap3d",
@@ -104,6 +143,7 @@ export const projectsData = [
     ],
     github: null,
     demo: null,
+    gallery: [main],
   },
   {
     slug: "rapFiles",
@@ -112,6 +152,7 @@ export const projectsData = [
     technologies: ["HTML", "CSS", "JavaScript", "React", "React Native"],
     github: null,
     demo: null,
+    gallery: [main],
   },
   {
     slug: "greenShop",
@@ -120,6 +161,7 @@ export const projectsData = [
     technologies: ["HTML", "CSS", "Tailwind", "JavaScript", "React", "Node.js"],
     github: null,
     demo: "https://greenfl.netlify.app/",
+    gallery: [greenshop, main],
   },
   {
     slug: "banking",
@@ -128,6 +170,7 @@ export const projectsData = [
     technologies: ["React", "JavaScript", "HTML", "CSS"],
     github: null,
     demo: "https://banking-app-zeta.vercel.app/",
+    gallery: [bank, main],
   },
   {
     slug: "vizzano",
@@ -136,6 +179,7 @@ export const projectsData = [
     technologies: ["React", "JavaScript", "HTML", "CSS"],
     github: null,
     demo: "https://vizzano-mikro.vercel.app/",
+    gallery: [vizzano, main],
   },
   {
     slug: "trillo",
@@ -144,6 +188,7 @@ export const projectsData = [
     technologies: ["React", "JavaScript", "HTML", "CSS"],
     github: null,
     demo: "https://trillo-omega.vercel.app/",
+    gallery: [trillo, main],
   },
   {
     slug: "memory",
@@ -152,6 +197,7 @@ export const projectsData = [
     technologies: ["React", "JavaScript", "HTML", "CSS"],
     github: null,
     demo: "https://memory-game-itsjk0307.vercel.app/",
+    gallery: [memory, main],
   },
   {
     slug: "portfolioSite",
@@ -160,6 +206,7 @@ export const projectsData = [
     technologies: ["React", "JavaScript", "HTML", "CSS"],
     github: "https://github.com/itsjk0307",
     demo: "https://portfolio07-sigma.vercel.app/",
+    gallery: [portfolio, main],
   },
   {
     slug: "monsterRolodex",
@@ -168,9 +215,15 @@ export const projectsData = [
     technologies: ["React", "JavaScript", "TypeScript", "HTML", "CSS"],
     github: null,
     demo: "https://mymonsters-roledox.vercel.app/",
+    gallery: [monster, main],
   },
 ];
 
 export function getProjectsByCategory(category) {
   return projectsData.filter((p) => p.category === category);
+}
+
+/** @param {string} slug */
+export function getProjectBySlug(slug) {
+  return projectsData.find((p) => p.slug === slug) ?? null;
 }

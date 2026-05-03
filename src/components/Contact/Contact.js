@@ -1,88 +1,83 @@
 import React from "react";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaTelegram,
-  FaInstagram,
-  FaWhatsapp,
-} from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FiMail, FiPhone } from "react-icons/fi";
 import { useLanguage } from "../../context/LanguageContext";
+import { useScrollFadeProps } from "../motion/scrollReveal";
 import "./Contact.css";
 
 function Contact() {
   const { t } = useLanguage();
+  const email = t("contact.email");
+  const mailto = email ? `mailto:${email}` : null;
+  const phone = (t("contact.phone") || "").trim();
+  const telHref = phone
+    ? `tel:${phone.replace(/[\s-]/g, "")}`
+    : null;
+  const scrollFade = useScrollFadeProps();
 
   return (
-    <section className="contact-section" id="contact">
+    <motion.section className="contact-section" id="contact" {...scrollFade}>
       <div className="section-inner">
-        <header className="section-head">
+        <div className="section-head">
           <h2 className="section-title">{t("contact.title")}</h2>
           <p className="section-subtitle">{t("contact.body")}</p>
-        </header>
+        </div>
 
-        <div className="contact-panel">
-          <div>
-            <div className="contact-kicker">{t("contact.locationLabel")}</div>
-            <div className="contact-value">{t("contact.location")}</div>
-          </div>
+        <div className="contact-grid">
+          {email ? (
+            <a
+              className="contact-card"
+              href={mailto}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="contact-card__icon" aria-hidden>
+                <FiMail />
+              </span>
+              <span className="contact-card__label">{t("contact.emailLabel")}</span>
+              <span className="contact-card__value">{email}</span>
+            </a>
+          ) : null}
 
-          <div>
-            <div className="contact-kicker">{t("contact.socialHeading")}</div>
-            <div className="contact-social">
-              <a
-                href="https://github.com/itsjk0307"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="GitHub"
-              >
-                <FaGithub />
-              </a>
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="LinkedIn"
-              >
-                <FaLinkedin />
-              </a>
-              <a
-                href="https://www.x.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="X"
-              >
-                <FaXTwitter />
-              </a>
-              <a
-                href="https://www.instagram.com/itsjk0307"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Instagram"
-              >
-                <FaInstagram />
-              </a>
-              <a
-                href="https://t.me/itsmetkm03"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Telegram"
-              >
-                <FaTelegram />
-              </a>
-              <a
-                href="https://wa.me/821098021777"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="WhatsApp"
-              >
-                <FaWhatsapp />
-              </a>
-            </div>
-          </div>
+          {phone && telHref ? (
+            <a className="contact-card" href={telHref}>
+              <span className="contact-card__icon" aria-hidden>
+                <FiPhone />
+              </span>
+              <span className="contact-card__label">{t("contact.phoneLabel")}</span>
+              <span className="contact-card__value">{phone}</span>
+            </a>
+          ) : null}
+
+          <a
+            className="contact-card"
+            href="https://github.com/itsjk0307"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="contact-card__icon" aria-hidden>
+              <FaGithub />
+            </span>
+            <span className="contact-card__label">{t("contact.githubLabel")}</span>
+            <span className="contact-card__value">{t("contact.githubValue")}</span>
+          </a>
+
+          <a
+            className="contact-card"
+            href="https://www.linkedin.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span className="contact-card__icon" aria-hidden>
+              <FaLinkedin />
+            </span>
+            <span className="contact-card__label">{t("contact.linkedinLabel")}</span>
+            <span className="contact-card__value">{t("contact.linkedinValue")}</span>
+          </a>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

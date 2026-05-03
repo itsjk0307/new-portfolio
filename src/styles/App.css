@@ -1,9 +1,5 @@
-/* Legacy theme variables (kept for any older selectors) */
-:root {
-  --background-color: var(--bg);
-  --text-color: var(--text);
-}
-
+/* Legacy aliases for any older selectors */
+[data-theme="dark"],
 [data-theme="light"] {
   --background-color: var(--bg);
   --text-color: var(--text);

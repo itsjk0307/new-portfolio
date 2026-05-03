@@ -1,23 +1,28 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { useLanguage } from "../../context/LanguageContext";
+import { useScrollFadeProps } from "../motion/scrollReveal";
 import "./Skills.css";
 
-const GROUP_KEYS = ["aiMl", "frontend", "backend", "tools"];
+const GROUP_KEYS = ["aiMl", "backend", "frontend", "tools"];
 
 function Skills() {
   const { t } = useLanguage();
+  const scrollFade = useScrollFadeProps();
 
   return (
-    <section className="skills-section" id="skills">
+    <motion.section className="skills-section" id="skills" {...scrollFade}>
       <div className="section-inner">
-        <header className="section-head">
+        <div className="section-head">
           <h2 className="section-title">{t("skills.title")}</h2>
           <p className="section-subtitle">{t("skills.subtitle")}</p>
-        </header>
+        </div>
 
         <div className="skills-grid">
           {GROUP_KEYS.map((key) => {
-            const itemsRaw = t(`skills.groups.${key}.items`);
+            const itemsRaw = t(`skills.groups.${key}.items`, {
+              returnObjects: true,
+            });
             const items = Array.isArray(itemsRaw) ? itemsRaw : [];
             return (
               <div className="skills-card" key={key}>
@@ -34,7 +39,7 @@ function Skills() {
           })}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

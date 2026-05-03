@@ -10,10 +10,10 @@ function About() {
   return (
     <section className="about-section" id="about">
       <div className="section-inner">
-        <header className="section-head">
+        <div className="section-head">
           <h2 className="section-title">{t("about.title")}</h2>
           <p className="section-subtitle about-section__lead">{t("about.lead")}</p>
-        </header>
+        </div>
 
         <ul className="about-list">
           {BULLET_KEYS.map((i) => (

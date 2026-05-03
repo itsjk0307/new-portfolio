@@ -16,7 +16,7 @@ function ProjectCategoryPage({ category }) {
   const items = getProjectsByCategory(category);
 
   const labels = {
-    problem: t("projects.problemLabel"),
+    summary: t("projects.summaryLabel"),
     tech: t("projects.techLabel"),
     demo: t("projects.demo"),
     github: t("projects.source"),
@@ -26,7 +26,7 @@ function ProjectCategoryPage({ category }) {
   return (
     <main className="page-shell">
       <div className="section-inner">
-        <header className="section-head section-head--page">
+        <div className="section-head section-head--page">
           <Link className="back-link" to="/projects">
             {t("projectsPage.backProjects")}
           </Link>
@@ -34,24 +34,24 @@ function ProjectCategoryPage({ category }) {
             {t(`projects.${TITLES[category]}`)}
           </h1>
           <p className="section-subtitle">{t("projectsPage.subtitle")}</p>
-        </header>
+        </div>
 
         <div className="projects-section__grid">
           {items.map((project) => {
             const copy = t(`projects.items.${project.slug}`);
-            const problem =
+            const summary =
               copy?.problemShort || copy?.problem || project.slug;
             const title = copy?.title || project.slug;
             return (
               <PortfolioProjectCard
                 key={project.slug}
                 title={title}
-                problem={problem}
+                summary={summary}
                 technologies={project.technologies}
                 image={project.image}
                 githubUrl={project.github}
                 demoUrl={project.demo}
-                detailPath={project.detailPath}
+                detailPath={`/projects/${project.slug}`}
                 labels={labels}
               />
             );

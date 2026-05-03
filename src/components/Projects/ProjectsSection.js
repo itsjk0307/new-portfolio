@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import { useLanguage } from "../../context/LanguageContext";
+import { useScrollFadeProps } from "../motion/scrollReveal";
 import { projectsData } from "./projectsData";
 import PortfolioProjectCard from "./PortfolioProjectCard";
 import "./ProjectsSection.css";
@@ -17,7 +19,7 @@ function ProjectsSection({ preview = false, variant = "home" }) {
   const { t } = useLanguage();
 
   const labels = {
-    problem: t("projects.problemLabel"),
+    summary: t("projects.summaryLabel"),
     tech: t("projects.techLabel"),
     demo: t("projects.demo"),
     github: t("projects.source"),
@@ -33,12 +35,17 @@ function ProjectsSection({ preview = false, variant = "home" }) {
   const sliceItems = (items) => (preview ? items.slice(0, 2) : items);
 
   const isPage = variant === "page";
+  const scrollFade = useScrollFadeProps();
 
   return (
-    <section className="projects-section" id={isPage ? undefined : "projects"}>
+    <motion.section
+      className="projects-section"
+      id={isPage ? undefined : "projects"}
+      {...scrollFade}
+    >
       <div className="section-inner">
         {isPage ? (
-          <header className="section-head section-head--page">
+          <div className="section-head section-head--page">
             <Link className="back-link" to="/">
               {t("projectsPage.backHome")}
             </Link>
@@ -46,12 +53,12 @@ function ProjectsSection({ preview = false, variant = "home" }) {
               {t("projectsPage.title")}
             </h1>
             <p className="section-subtitle">{t("projectsPage.subtitle")}</p>
-          </header>
+          </div>
         ) : (
-          <header className="section-head">
+          <div className="section-head">
             <h2 className="section-title">{t("projects.title")}</h2>
             <p className="section-subtitle">{t("projects.subtitle")}</p>
-          </header>
+          </div>
         )}
 
         <div className="projects-section__groups">
@@ -61,19 +68,19 @@ function ProjectsSection({ preview = false, variant = "home" }) {
               <div className="projects-section__grid">
                 {sliceItems(group.items).map((project) => {
                   const copy = t(`projects.items.${project.slug}`);
-                  const problem =
+                  const summary =
                     copy?.problemShort || copy?.problem || project.slug;
                   const title = copy?.title || project.slug;
                   return (
                     <PortfolioProjectCard
                       key={project.slug}
                       title={title}
-                      problem={problem}
+                      summary={summary}
                       technologies={project.technologies}
                       image={project.image}
                       githubUrl={project.github}
                       demoUrl={project.demo}
-                      detailPath={project.detailPath}
+                      detailPath={`/projects/${project.slug}`}
                       labels={labels}
                     />
                   );
@@ -91,7 +98,7 @@ function ProjectsSection({ preview = false, variant = "home" }) {
           </div>
         ) : null}
       </div>
-    </section>
+    </motion.section>
   );
 }
 

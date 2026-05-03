@@ -1,0 +1,669 @@
+{
+  "nav": {
+    "brand": "Jamshid",
+    "brandFull": "Jamshid Khaytbaev",
+    "about": "소개",
+    "experience": "경력",
+    "projects": "프로젝트",
+    "skills": "기술",
+    "contact": "연락",
+    "allProjects": "전체 프로젝트",
+    "menuOpen": "메뉴 열기",
+    "menuClose": "메뉴 닫기"
+  },
+  "hero": {
+    "name": "Jamshid Khaytbaev",
+    "role": "AI 엔지니어 & 풀스택 개발자",
+    "tagline": "컴퓨터 비전, NLP, 확장 가능한 웹 기술을 사용해 프로덕션 수준의 AI 시스템을 구축합니다.",
+    "ctaProjects": "프로젝트 보기",
+    "ctaResume": "이력서 다운로드"
+  },
+  "about": {
+    "title": "소개",
+    "lead": "저는 연구형 실험과 안정적인 소프트웨어 전달 사이를 연결하는 AI 엔지니어이자 풀스택 개발자입니다.",
+    "bullets": [
+      {
+        "title": "프로덕션 AI",
+        "text": "CV/NLP를 위한 엔드투엔드 파이프라인: 데이터, 학습, 평가, 배포, 모니터링."
+      },
+      {
+        "title": "풀스택 통합",
+        "text": "모델을 실사용 가능하고 관측 가능하며 유지보수하기 쉽게 만드는 React/TypeScript와 API."
+      },
+      {
+        "title": "협업",
+        "text": "명확한 커뮤니케이션, 반복적 전달, 이해관계자와의 실용적 트레이드오프."
+      },
+      {
+        "title": "품질 & UX",
+        "text": "접근성 있는 인터페이스, 성능을 고려한 UI, 세심한 오류 처리."
+      }
+    ],
+    "closing": "어려운 문제, 깔끔한 인터페이스, 프로덕션에서 신뢰할 수 있는 소프트웨어를 만드는 일을 좋아합니다."
+  },
+  "experience": {
+    "title": "경력",
+    "subtitle": "모델, 통합, 제품 임팩트에 초점을 맞춘 역할입니다.",
+    "resume": "이력서 전체 보기",
+    "resumeUrl": "https://drive.google.com/file/d/1um1zw9LT1Zi8kQs-EYhjWdFkmR5xjYU6/view?usp=drive_link",
+    "items": [
+      {
+        "id": "quazar",
+        "title": "AI 엔지니어",
+        "company": "Quazar Inc.",
+        "period": "2025년 2월 — 2025년 6월",
+        "description": "럭셔리 정품 감정 및 가격 예측을 위한 AI 모델을 개발했습니다. 딥러닝 파이프라인을 구축하고 실시간 의사결정을 위해 웹 애플리케이션에 통합했습니다.",
+        "bullets": [
+          "인증·가격 책정을 위한 컴퓨터 비전 모델을 오프라인/온라인 평가와 함께 전달했습니다.",
+          "엔드투엔드 딥러닝 파이프라인과 실시간 의사결정을 위한 프로덕션 REST 통합을 구축했습니다.",
+          "지연·신뢰성·유지보수 측면에서 엔지니어링 팀과 협업했습니다."
+        ],
+        "skills": [
+          "TensorFlow",
+          "PyTorch",
+          "OpenCV",
+          "Computer Vision",
+          "Image Segmentation",
+          "Deep Learning",
+          "REST API",
+          "Web Integration"
+        ]
+      },
+      {
+        "id": "rainbow-intern",
+        "title": "프론트엔드 개발 인턴",
+        "company": "RainbowTech",
+        "period": "2023년 3월 — 2023년 7월",
+        "description": "웹 프로젝트의 사용자 인터페이스를 구축하고 유지보수했습니다. 시니어 개발자와 함께 모범 사례를 학습하고 인터랙티브 3D 경험에 기여했습니다.",
+        "bullets": [
+          "시니어 리뷰와 함께 고객용 웹 제품의 반응형 UI를 전달했습니다.",
+          "React Three Fiber와 Three.js로 인터랙티브 3D 경험에 기여했습니다.",
+          "여러 내부 프로젝트에서 UI 일관성과 컴포넌트 재사용을 개선했습니다."
+        ],
+        "skills": [
+          "JavaScript",
+          "React",
+          "HTML5",
+          "CSS3",
+          "React Three Fiber",
+          "Three.js",
+          "R&D"
+        ]
+      },
+      {
+        "id": "rainbow-researcher",
+        "title": "프론트엔드 개발 리서처",
+        "company": "RainbowTech",
+        "period": "2023년 7월 — 2024년 9월",
+        "description": "전달 속도를 높이기 위해 최신 프론트엔드 스택을 조사했습니다. 최적화된 UI, 성능 개선, 확장 가능한 클라이언트 아키텍처를 구현했습니다.",
+        "bullets": [
+          "Next.js, TypeScript, GraphQL 등 최신 스택을 벤치마킹해 전달 속도를 높였습니다.",
+          "프로덕션 앱에서 최적화된 UI와 측정 가능한 성능 개선을 구현했습니다.",
+          "Apollo Client, MobX, Git 워크플로로 클라이언트 아키텍처를 확장했습니다."
+        ],
+        "skills": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Next.js",
+          "TypeScript",
+          "GraphQL",
+          "Apollo Client",
+          "MobX",
+          "Git",
+          "Responsive Design"
+        ]
+      }
+    ]
+  },
+  "projectsPage": {
+    "title": "프로젝트",
+    "subtitle": "카테고리별로 살펴보세요. AI 프로젝트가 먼저 표시됩니다.",
+    "backHome": "홈으로",
+    "backProjects": "프로젝트 목록으로"
+  },
+  "projects": {
+    "title": "주요 프로젝트",
+    "subtitle": "AI/ML, 데이터 사이언스, 풀스택 웹 전반의 문제 중심 하이라이트—명확성과 임팩트에 맞춰 정리했습니다.",
+    "sectionAi": "AI & 머신러닝",
+    "sectionDs": "데이터 사이언스",
+    "sectionWeb": "웹 개발",
+    "summaryLabel": "요약",
+    "techLabel": "기술 스택",
+    "demo": "라이브 데모",
+    "source": "GitHub",
+    "viewAll": "전체 프로젝트 보기",
+    "details": "자세히",
+    "items": {
+      "quazarLuxuryAuth": {
+        "title": "럭셔리 백 인증 — Quazar AI",
+        "problem": "럭셔리 리셀·인증 워크플로는 SKU, 조명, 촬영 조건 전반에서 확장 가능하고 해석 가능한 일관된 근거가 필요합니다. 단일 전역 분류기 점수만으로는 부족합니다.",
+        "problemShort": "YOLO 크롭, 질감 특징, 다중 모델 점수, 가중 앙상블 융합이 있는 부위 인지 CV 파이프라인.",
+        "detail": {
+          "overview": "이 사례 연구 페이지는 Quazar 인증 스택을 설명합니다: 검출, 전처리, 부위 분류기, 대규모 앙상블 집계.",
+          "myRole": "데이터/라벨링 파이프라인, YOLO 크롭 하위 시스템, 부위 인지 평가가 있는 모델 실험.",
+          "pipeline": [
+            "객체 검출 백본으로 백 부위 검출.",
+            "표준화된 관심 영역을 위한 YOLO 크롭.",
+            "LBP 스타일 신호를 포함한 질감 인지 전처리.",
+            "부위별 다중 모델 분류 및 선택.",
+            "백 수준 판정을 위한 가중 앙상블 집계."
+          ],
+          "results": "대규모 정제 이미지에서 사람 검토에 적합한 해석 가능하고 임계값 조정 가능한 진품 결정으로 이어지는 운영 경로.",
+          "galleryCaptions": [
+            "사례 연구 그림"
+          ]
+        }
+      },
+      "logMonitoringDashboard": {
+        "title": "AI 시스템 모니터링 대시보드",
+        "problem": "대용량 비정형 로그가 운영자를 압도하고 수동 분류는 회귀와 노이즈성 오탐을 놓치기 쉽습니다. 확장 가능한 NLP 점수화가 필요합니다.",
+        "problemShort": "FastAPI의 TF-IDF + 로지스틱 회귀, Next.js 대시보드, Recharts, 실시간 신뢰도.",
+        "detail": {
+          "overview": "NLP 로그 모니터링 제품: 전처리, 벡터화, 이중 분류 헤드, SaaS형 분석 UI.",
+          "myRole": "sklearn 파이프라인부터 API 계약과 대시보드 시각화 패턴까지.",
+          "pipeline": [
+            "원시 로그 수집·정규화.",
+            "TF-IDF 특징 추출.",
+            "심각도·범주 로지스틱 회귀.",
+            "JSON 점수를 대시보드·웹훅으로."
+          ],
+          "results": "키워드, 보정 임계값, SRE 워크플로에 맞춘 차트로 빠른 RCA.",
+          "galleryCaptions": [
+            "대시보드 UI"
+          ]
+        }
+      },
+      "heartDisease": {
+        "title": "심장병 예측",
+        "problem": "임상가는 후속 조치 우선순위를 정하고 놓치는 위험을 줄이기 위해 구조화된 환자 데이터에서 빠르고 해석 가능한 스크리닝 신호가 필요합니다.",
+        "problemShort": "견고한 ML 베이스라인으로 환자 특성에서 심장병 위험을 스크리닝합니다.",
+        "detail": {
+          "overview": "해석 가능한 베이스라인으로 구조화된 환자 특성에서 심장병 위험을 추정하는 정리된 ML 연구(임상 배포용이 아님).",
+          "myRole": "데이터 준비, 베이스라인 모델링, 교차 검증, 노트북 결과물에 대한 지표·한계 보고를 담당했습니다.",
+          "pipeline": [
+            "특성 수집·정리, 결측 처리 및 스케일링.",
+            "로지스틱·트리 기반 등 고전 모델 학습·비교.",
+            "층화 분할 평가, 혼동 행렬·ROC류 지표 점검.",
+            "실제 스크리닝에 필요한 요건과 함께 결론 정리."
+          ],
+          "results": "기준 데이터셋에서 분리 성능을 정리하고, 누수·클래스 불균형·외부 검증 필요성을 명확히 논의했습니다.",
+          "galleryCaptions": [
+            "프로젝트 시각 요약"
+          ]
+        }
+      },
+      "customerChurn": {
+        "title": "고객 이탈 예측",
+        "problem": "리텐션 팀은 수익이 줄어들기 전에 행동 및 계약 데이터에서 조기 이탈 신호가 필요합니다.",
+        "problemShort": "전통적인 ML 모델과 명확한 평가 지표로 이탈을 예측합니다.",
+        "detail": {
+          "overview": "갱신 전에 이탈 위험 고객을 찾기 위한 행동·계약형 특성 기반 이탈 모델링 연습입니다.",
+          "myRole": "특성 기반 베이스라인, 간단한 신경망·고전 모델 조정, 이해관계자용 평가 선택 문서화를 수행했습니다.",
+          "pipeline": [
+            "분포·상관 프로파일링, 예측 기간 라벨 정의.",
+            "표 특성 설계 및 가능한 경우 시간 순 분할.",
+            "Keras/TensorFlow·고전 모델 학습, 정밀도/재현율 균형.",
+            "리텐션을 위한 위험 순위 해석과 권고."
+          ],
+          "results": "비즈니스 입력으로 임계값을 정할 맥락과 함께 오탐·미탐 강조가 있는 순위 지표를 제시했습니다.",
+          "galleryCaptions": [
+            "모델링 개요"
+          ]
+        }
+      },
+      "edaTitanic": {
+        "title": "탐색적 데이터 분석 (타이타닉)",
+        "problem": "모델링 전에 지저분한 표 데이터를 신뢰할 수 있는 플롯과 가설로 전환합니다.",
+        "problemShort": "타이타닉 데이터셋에서 생존 요인을 찾기 위한 EDA 및 시각화.",
+        "detail": {
+          "overview": "예측 모델 전에 타이타닉 데이터의 품질, 관계, 가설을 검증하는 탐색 분석입니다.",
+          "myRole": "일변량·이변량 분석, 시각화, 재현 가능한 노트북 서술을 담당했습니다.",
+          "pipeline": [
+            "데이터 적재, dtype·결측·중복 점검.",
+            "생존과 범주·수치 요인 플롯, 단순 가설 검토.",
+            "이상치와 인코딩 필요성 확인.",
+            "모델링 킥오프용 핵심 플롯·시사점 정리."
+          ],
+          "results": "어떤 특성이 생존 신호와 맞는지와 데이터 한계를 분명히 해 후속 특성 공학에 연결했습니다.",
+          "galleryCaptions": [
+            "EDA 하이라이트",
+            "보조 차트"
+          ]
+        }
+      },
+      "loanEligibility": {
+        "title": "대출 적격 예측",
+        "problem": "대출 담당자는 잘못된 승인을 최소화하면서 신청자 특징에서 일관되고 감사 가능한 적격 신호가 필요합니다.",
+        "problemShort": "특성 기반 인사이트가 있는 대출 적격 분류 파이프라인.",
+        "detail": {
+          "overview": "신청자 특성에서 대출 적격 신호를 분류 관점으로 연구하며 감사 가능성과 보수적 오류를 강조합니다.",
+          "myRole": "로지스틱 회귀·랜덤 포레스트 베이스라인, 특성 중요도, 오류 분석을 구현했습니다.",
+          "pipeline": [
+            "긍정/부정 클래스와 이해관계자 관점 성공 기준 정의.",
+            "수치·범주 필드 전처리, 균형·보정 점검.",
+            "모델 학습·비교, 운영 지점에서 정밀도/재현율.",
+            "승인/거절 동인과 잔여 위험 구간 보고."
+          ],
+          "results": "승인 편의와 고위험 승인 통제 사이의 트레이드오프가 문서화된 해석 가능한 베이스라인입니다.",
+          "galleryCaptions": [
+            "분석 스냅샷",
+            "모델 비교"
+          ]
+        }
+      },
+      "rainbowAi": {
+        "title": "RainbowTech AI 플랫폼",
+        "problem": "현장 팀은 건물 점검 입력에서 자동 구조 평가, PDF 보고서, 비용 추정이 필요했습니다.",
+        "problemShort": "보고 및 비용 추정이 있는 AI 보조 구조 진단.",
+        "detail": {
+          "overview": "현장 팀을 위한 구조 진단·보고·추정 워크플로를 지원하는 내부 AI 보조 플랫폼 작업입니다.",
+          "myRole": "프론트엔드 연동, 점검 입력 UI 흐름, 성능·UX 폴리시 협업에 기여했습니다.",
+          "pipeline": [
+            "클라이언트에서 구조화된 입력과 검증 상태 수집.",
+            "모델/보고 서비스 호출 및 PDF 지향 출력 렌더링.",
+            "불안정한 네트워크에서 로딩·빈 상태·오류 경로 강화.",
+            "밀도·타이포그래피·점진적 공개를 디자인과 반복."
+          ],
+          "results": "운영자의 수동 복사·붙여넣기 단계를 줄이고 입력에서 검토 가능한 산출물까지 시간을 단축했습니다.",
+          "galleryCaptions": [
+            "플랫폼 맥락"
+          ]
+        }
+      },
+      "rap3d": {
+        "title": "RAP 3D 플랫폼",
+        "problem": "사용자는 부드러운 상호작용, 안정적인 성능, 일관된 UI 시스템이 있는 협업 3D 작업 공간이 필요했습니다.",
+        "problemShort": "React와 Three.js로 구축된 실시간 협업 3D 플랫폼.",
+        "detail": {
+          "overview": "부드러운 씬 상호작용, 공유 상태, 일관된 컴포넌트 시스템을 강조한 협업 3D 작업 공간입니다.",
+          "myRole": "React Three Fiber 씬, 상호작용 핸들러, 공유 디자인 시스템과의 UI 통합을 구현했습니다.",
+          "pipeline": [
+            "씬 그래프, 재질, 웹 성능에 맞춘 조명.",
+            "입력 매핑, 카메라 컨트롤, 프레임 예산 인식.",
+            "3D와 React UI 레이어 간 상태 경계.",
+            "저사양 기기 프로파일링과 반복 수정."
+          ],
+          "results": "목표 하드웨어에서 안정적인 프레임 타임과 핵심 협업 흐름에서 예측 가능한 상호작용 지연.",
+          "galleryCaptions": [
+            "3D 작업 공간"
+          ]
+        }
+      },
+      "rapFiles": {
+        "title": "RAP 파일 관리",
+        "problem": "팀은 인앱 문서 보기와 안정적인 동기화가 있는 안전한 크로스 디바이스 파일 접근이 필요했습니다.",
+        "problemShort": "통합 PDF 뷰어가 있는 크로스 플랫폼 파일 관리.",
+        "detail": {
+          "overview": "안전한 접근 패턴, 인앱 보기, 신뢰할 수 있는 동기 의미를 갖춘 크로스 플랫폼 파일 관리입니다.",
+          "myRole": "목록/상세 UI, 문서 미리보기, 업로드·동기 상태에 대한 낙관적 UI 패턴을 구축했습니다.",
+          "pipeline": [
+            "인증 인지 데이터 레이어와 라우트 가드.",
+            "대용량 디렉터리 가상화 목록, 복원력 있는 재시도.",
+            "우아한 폴백이 있는 PDF 미리보기 통합.",
+            "현장 진단용 텔레메트리 훅."
+          ],
+          "results": "모바일과 데스크톱에서 문서 검토 마찰을 줄이고 동기 피드백을 명확히 했습니다.",
+          "galleryCaptions": [
+            "파일 경험"
+          ]
+        }
+      },
+      "greenShop": {
+        "title": "Green Shop",
+        "problem": "지속가능성 브랜드는 반응형 레이아웃과 빠른 체감 성능이 있는 선명한 랜딩 경험이 필요했습니다.",
+        "problemShort": "Tailwind와 미니멀 UI 시스템이 있는 친환경 랜딩 페이지.",
+        "detail": {
+          "overview": "반응형 레이아웃, Tailwind 유틸 스타일, 빠른 체감 로드를 갖춘 지속가능성 테마 랜딩입니다.",
+          "myRole": "섹션 레이아웃, 반응형 그리드, 이미지 처리, CTA 계층을 구현했습니다.",
+          "pipeline": [
+            "모바일 우선 레이아웃과 타입 스케일.",
+            "이미지 지연 로딩과 content-visibility 조정.",
+            "대비와 포커스 순서에 대한 접근성 점검.",
+            "캐시 친화적 자산으로 정적 호스팅 배포."
+          ],
+          "results": "Lighthouse 친화적 기본값과 유지보수 가능한 유틸 클래스로 선명한 마케팅 표현.",
+          "galleryCaptions": [
+            "랜딩 히어로",
+            "보조 레이아웃"
+          ]
+        }
+      },
+      "banking": {
+        "title": "금융 관리 플랫폼",
+        "problem": "사용자는 잔액, 이체, 거래 내역을 위한 신뢰할 수 있는 뱅킹 UI와 명확한 상태 및 피드백이 필요했습니다.",
+        "problemShort": "명확성과 내비게이션에 초점을 맞춘 반응형 뱅킹 경험.",
+        "detail": {
+          "overview": "잔액, 이체, 내역에 초점을 둔 신뢰·명확성·피드백이 강조된 뱅킹형 대시보드입니다.",
+          "myRole": "내비게이션, 계좌 카드, 거래 테이블, 빈/로딩 스켈레톤 상태를 구성했습니다.",
+          "pipeline": [
+            "다계좌 뷰를 위한 정보 구조.",
+            "카드·차트 자리·테이블 컴포넌트화.",
+            "이체·확인에 대한 미세 상호작용.",
+            "소형 폰까지 반응형 리플로우."
+          ],
+          "results": "데이터가 없을 때도 우아하게 저하되는 한눈에 읽히는 금융 UI 패턴.",
+          "galleryCaptions": [
+            "대시보드 뷰",
+            "UI 시스템 맥락"
+          ]
+        }
+      },
+      "vizzano": {
+        "title": "Vizzano 앱",
+        "problem": "패션 인벤토리는 모바일에서 강한 비주얼과 부드러운 탐색이 있는 현대적인 스토어프론트 경험이 필요했습니다.",
+        "problemShort": "세련된 UI와 반응형 레이아웃의 패션 쇼케이스 앱.",
+        "detail": {
+          "overview": "강한 이미지, 모바일 우선 탐색, 다듬어진 제품 그리드가 있는 패션 인벤토리 스토어프론트입니다.",
+          "myRole": "제품 목록 레이아웃, 반응형 미디어, 엄지 도달에 맞춘 내비게이션을 구축했습니다.",
+          "pipeline": [
+            "혼합 종횡비 제품 샷을 위한 그리드 시스템.",
+            "최소 레이아웃 시프트로 필터/정렬 UI.",
+            "성능 인지 이미지 크기 조정.",
+            "일반 브레이크포인트에서 기기 간 QA."
+          ],
+          "results": "중간 사양 폰에서도 일관된 간격과 읽기 쉬운 제품 메타데이터로 부드러운 탐색.",
+          "galleryCaptions": [
+            "스토어프론트",
+            "레이아웃 참고"
+          ]
+        }
+      },
+      "trillo": {
+        "title": "Trillo — 여행 예약",
+        "problem": "여행 쇼핑객은 처음부터 끝까지 이해하기 쉬운 예약 흐름으로 빠른 필터링, 신뢰할 수 있는 요약이 필요합니다.",
+        "problemShort": "필터, 리뷰, 반응형 레이아웃이 있는 여행 예약 UI.",
+        "detail": {
+          "overview": "필터, 호텔 카드, 리뷰, 이해하기 쉬운 다단계 예약 흐름이 있는 여행 예약 UI입니다.",
+          "myRole": "검색 헤더, 결과 그리드, 리뷰 모듈, 반응 규칙이 있는 CTA 진행을 구현했습니다.",
+          "pipeline": [
+            "해당 시 URL 친화 패턴으로 필터 상태 모델.",
+            "호텔·평점 카드 디자인 시스템.",
+            "가격 내역 여지가 있는 예약 사이드바.",
+            "종단 반응 패스와 엣지 케이스 카피."
+          ],
+          "results": "날짜, 인원, 가격 비교를 오가는 사용자도 방향을 잃지 않는 종단 흐름.",
+          "galleryCaptions": [
+            "검색 결과",
+            "예약 흐름"
+          ]
+        }
+      },
+      "memory": {
+        "title": "인터랙티브 퍼즐 챌린지",
+        "problem": "가벼운 인지 게임은 시끄러운 UI 없이 즐겁고 반응성이 좋으며 점진적으로 도전적이어야 합니다.",
+        "problemShort": "점진적 난이도와 부드러운 모션이 있는 메모리 카드 게임.",
+        "detail": {
+          "overview": "점진적 난이도, 모션, 최소 UI 노이즈를 갖춘 가벼운 메모리 카드 게임입니다.",
+          "myRole": "게임 상태 머신, 카드 뒤집기 애니메이션, 점수, 난이도 램프를 구현했습니다.",
+          "pipeline": [
+            "시드 공정 옵션이 있는 덱 생성·셔플.",
+            "매칭 감지, 잠금 타이밍, 승/패 모달.",
+            "모션 감소 선호에 맞춘 모션 프리셋.",
+            "터치 타겟과 오디오 오프 안전 기본값 폴리시."
+          ],
+          "results": "명확한 피드백 루프가 있는 빠른 라운드, 몇 분 안에 세션 완료 가능.",
+          "galleryCaptions": [
+            "게임플레이",
+            "모션 참고"
+          ]
+        }
+      },
+      "portfolioSite": {
+        "title": "포트폴리오 웹사이트",
+        "problem": "채용 담당자 친화적 구조, 성능, 유지보수 가능한 컴포넌트로 프로젝트와 경험을 제시합니다.",
+        "problemShort": "반응형 레이아웃과 깔끔한 정보 구조의 개인 포트폴리오.",
+        "detail": {
+          "overview": "프로젝트·경력·연락을 채용 담당자 친화 구조와 i18n으로 제시하는 개인 포트폴리오입니다.",
+          "myRole": "정보 구조, 테마, 다국어 콘텐츠, 프로젝트 상세 라우팅을 담당했습니다.",
+          "pipeline": [
+            "프로젝트와 번역용 콘텐츠 모델.",
+            "테마 토큰, 레이아웃 프리미티브, 접근 가능한 내비.",
+            "갤러리가 있는 심층 페이지로 연결되는 프로젝트 카드.",
+            "GitHub Pages용 정적 빌드·배포 경로."
+          ],
+          "results": "히어로에서 근거 있는 프로젝트 페이지까지 빠른 정적 사이트와 명확한 스토리 아크.",
+          "galleryCaptions": [
+            "사이트 개요",
+            "구조 참고"
+          ]
+        }
+      },
+      "monsterRolodex": {
+        "title": "Monster Rolodex",
+        "problem": "작은 React 애플리케이션에서 API 기반 목록, 검색, 재사용 가능한 카드 UI 패턴을 보여줍니다.",
+        "problemShort": "API 기반 React UI로 구동되는 검색 가능한 몬스터 디렉터리.",
+        "detail": {
+          "overview": "API 기반 목록, 실시간 검색, 재사용 가능한 카드 UI를 보여주는 소형 React 앱입니다.",
+          "myRole": "데이터 페칭, 검색 필터링, 로딩·오류 UI가 있는 프리젠테이션 컴포넌트를 구현했습니다.",
+          "pipeline": [
+            "몬스터 JSON 페치, 렌더링용 정규화.",
+            "디바운스된 필터가 있는 제어 검색 입력.",
+            "키보드 포커스가 가능한 카드 그리드.",
+            "네트워크 실패 시 빈·오류 상태."
+          ],
+          "results": "깔끔한 컴포넌트 경계와 예측 가능한 상태를 보여주는 반응형 디렉터리 UX.",
+          "galleryCaptions": [
+            "디렉터리 UI",
+            "컴포넌트 맥락"
+          ]
+        }
+      }
+    },
+    "projectDetail": {
+      "backToList": "프로젝트 목록으로",
+      "overview": "개요",
+      "problem": "문제 정의",
+      "myRole": "내 역할",
+      "pipeline": "시스템 파이프라인",
+      "techStack": "기술 스택",
+      "results": "결과",
+      "gallery": "스크린샷",
+      "close": "닫기",
+      "step": "{{n}}단계"
+    }
+  },
+  "skills": {
+    "title": "기술",
+    "subtitle": "엔드투엔드 제품 전달에 사용하는 AI/ML, 백엔드, 프론트엔드, 도구입니다.",
+    "groups": {
+      "aiMl": {
+        "title": "AI / ML",
+        "items": [
+          "Python",
+          "PyTorch",
+          "TensorFlow",
+          "scikit-learn",
+          "Computer Vision",
+          "NLP",
+          "Model evaluation",
+          "Experiment tracking"
+        ]
+      },
+      "frontend": {
+        "title": "프론트엔드",
+        "items": [
+          "React",
+          "TypeScript",
+          "Next.js",
+          "HTML / CSS",
+          "Responsive UI",
+          "Performance tuning",
+          "Accessibility basics"
+        ]
+      },
+      "backend": {
+        "title": "백엔드",
+        "items": [
+          "REST APIs",
+          "Node.js",
+          "GraphQL",
+          "Authentication patterns",
+          "Integration testing mindset"
+        ]
+      },
+      "tools": {
+        "title": "도구",
+        "items": [
+          "Git",
+          "Docker (basics)",
+          "CI-friendly workflows",
+          "Jupyter",
+          "VS Code"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "title": "연락",
+    "body": "AI 엔지니어링, 협업, 풀스택 제품 업무에 열려 있습니다.",
+    "emailLabel": "이메일",
+    "email": "itsjk0307@gmail.com",
+    "phoneLabel": "전화",
+    "phone": "+821032541777",
+    "githubLabel": "GitHub",
+    "githubValue": "github.com/itsjk0307",
+    "linkedinLabel": "LinkedIn",
+    "linkedinValue": "linkedin.com"
+  },
+  "footer": {
+    "note": "React로 제작. 정적 호스팅에 최적화되어 배포되었습니다."
+  },
+  "caseStudyQuazar": {
+    "eyebrow": "사례 연구 · Quazar Inc.",
+    "title": "럭셔리 백 진품 인증",
+    "subtitle": "가방 영역을 검출하고 미세한 진품 신호를 점수화한 뒤, 부위별 근거를 보정된 진품/가품 결정으로 통합하는 프로덕션 지향 컴퓨터 비전 시스템입니다.",
+    "chipsAria": "프로젝트 태그",
+    "chipCv": "컴퓨터 비전",
+    "chipDetection": "객체 검출",
+    "chipProd": "ML 시스템",
+    "overviewTitle": "개요",
+    "overviewBody": "럭셔리 백 진품 인증을 위한 엔드투엔드 AI: 판별적 영역을 국소화하고 질감 인지 특징을 추출하며 여러 백본으로 부위별 분류기를 실행하고, 운영 리스크에 맞춘 가중 앙상블로 출력을 융합합니다.",
+    "challengeTitle": "문제 정의",
+    "challengeBody": "가품은 전역 외형은 모방하지만 하드웨어·스티칭·미세 질감 일관성에서 실패합니다. 부위별 근거를 드러내고 크롭 노이즈에 안정적이며 사람 검토를 위한 해석 가능한 신호가 필요합니다.",
+    "pipelineTitle": "추론 파이프라인",
+    "pipelineIntro": "원본 이미지에서 통합 진품성까지의 순차 단계입니다. 각 단계는 평가와 임계값 조정을 위해 계측됩니다.",
+    "pipelineSteps": [
+      "객체 검출 모델이 백과 주요 구조 부위(하드웨어, 패널, 로고)를 국소화합니다.",
+      "YOLO 기반 크롭으로 관심 영역을 표준화합니다.",
+      "이미지 전처리는 질감 신호(예: LBP 변형), 조명 정규화, 품질 게이트를 강조합니다.",
+      "부위별 분류기가 여러 학습 모델로 영역별 진품성을 점수화합니다.",
+      "오프라인 지표와 안정성 검사로 부위별 최적 모델을 승격합니다."
+    ],
+    "ensembleTitle": "앙상블 집계",
+    "ensembleBody": "부위별 로짓을 보정하고 검증에서 학습된 신뢰도 사전에 따라 가중한 뒤, 정책(자동 거절, 에스컬레이션, 승인)을 위한 신뢰구간이 있는 백 수준 진품 점수로 융합합니다.",
+    "dataTitle": "데이터셋",
+    "dataStatLabel": "정제된 이미지",
+    "dataStatValue": "~140,000",
+    "dataLead": "중복 제거, 라벨 조정, 일반화 주장을 위한 누수 방지 분할이 포함된 대규모 이미지입니다.",
+    "dataBullets": [
+      "재현 가능한 버전 메타데이터가 있는 정제·라벨·구조화 분할.",
+      "지리·촬영 장치 다양성을 추적한 층화 학습/검증/테스트.",
+      "경계 쌍과 통제 촬영의 어려운 네거티브에 대한 능동 QA 루프."
+    ],
+    "modelsTitle": "모델 및 아키텍처",
+    "modelsLead": "백본 다양성은 상보적 신호를 포착합니다: 스티칭과 로고 규칙성에 대한 합성곱 귀납 편향 대 장거리 어텐션.",
+    "modelResNet": "하드웨어·모서리 중심 크롭에 안정적인 깊은 특징을 위한 잔차 블록.",
+    "modelDenseNet": "가죽·코팅 표면의 미세 질감 그라데이션을 위한 특징 재사용.",
+    "modelVit": "패널과 로고 형태에 대한 장거리 의존성을 위한 패치 어텐션.",
+    "perPartTitle": "부위당 여러 모델",
+    "perPartBody": "각 구조 부위는 여러 후보 헤드를 학습합니다. 배포 패키징 전에 홀드아웃 지표, 보정 오차, 크롭 지터 강건성으로 최적 모델을 선택합니다.",
+    "ensembleArchTitle": "가중 융합",
+    "ensembleArchBody": "출력은 부위별 판별력을 반영해 학습되거나 수동 조정된 가중치로 집계되며, 해당 시 온도 스케일링으로 통합됩니다.",
+    "architectureTitle": "아키텍처 다이어그램",
+    "architectureBody": "원시 픽셀에서 결정까지의 고수준 데이터 플레인: 검출이 국소화하고 전처리가 표준화하며 분류기가 전문화하고 앙상블이 감사 가능한 가중치로 융합합니다.",
+    "architectureNote": "다이어그램은 서빙 경로를 요약합니다. 학습에는 크롭 정책, 증강, 부위 드롭아웃에 대한 ablation이 포함되었습니다.",
+    "roleTitle": "내 역할",
+    "roleItems": [
+      "데이터 처리·라벨링 파이프라인: QC 규칙, 스키마, 학습용보내기 계약.",
+      "YOLO 기반 크롭 서비스와 주석자용 크롭 QA 시각화 구축.",
+      "모델 실험, 지표 대시보드, 앙상블 설계를 위한 부위별 오류 분석 주도."
+    ],
+    "figuresTitle": "그림 및 덱보내기",
+    "figuresLead": "PPT보내기를 흉내 낸 플레이스홀더 슬라이드입니다. public/projects/quazar-luxury/의 동일 파일명(slide-1 … slide-4)으로 PNG를 교체하세요.",
+    "slideCaptions": [
+      "시스템 맥락: 수집 → 검출 → 결정.",
+      "데이터셋 규모와 거버넌스.",
+      "모델 패밀리와 앙상블 융합.",
+      "평가 및 배포 모니터링 뷰."
+    ]
+  },
+  "caseStudyLogMonitor": {
+    "productBadge": "SaaS · ML 플랫폼",
+    "title": "AI 시스템 모니터링 대시보드",
+    "subtitle": "NLP 기반 로그 인텔리전스: 비정형 라인을 수집하고 TF-IDF로 벡터화한 뒤, 로지스틱 회귀로 심각도·이슈군을 보정된 점수로 분류하고 제품급 대시보드에 표시합니다.",
+    "pillLive": "실시간",
+    "pillNlp": "NLP + scikit-learn",
+    "pillApi": "FastAPI",
+    "overviewTitle": "개요",
+    "overviewBody": "운영 팀은 로그에 압도됩니다. 이 시스템은 각 라인을 텍스트로 다룹니다: 토큰 정규화, TF-IDF 특징, 로지스틱 회귀 헤드로 심각도(오류/경고/정보)와 이슈 범주(네트워크, 시스템, 애플리케이션, DB, 인증)를 분류합니다. FastAPI로 스트림을 점수화하고 Next.js 클라이언트가 신뢰도·키워드·차트를 렌더링합니다.",
+    "problemTitle": "문제",
+    "problemBullets": [
+      "서비스·환경 전반에서 매우 큰 일일 로그 볼륨.",
+      "수동 모니터링은 확장되지 않으며 중요 신호가 노이즈에 묻힙니다.",
+      "형식과 어휘가 제각각인 비정형 자유 텍스트 라인."
+    ],
+    "solutionTitle": "솔루션",
+    "solutionSteps": [
+      "텍스트 전처리: 소문자화, 마스킹, 토큰 정리, n-gram 제어.",
+      "스트리밍 데이터 안정성을 위해 어휘 상한이 조정된 TF-IDF 벡터화.",
+      "알림 게이팅을 위해 확률이 보정된 로지스틱 회귀 분류기.",
+      "듀얼 헤드: 심각도 라우팅과 이슈 범주로 다운스트림 플레이북에 연결."
+    ],
+    "predictIntro": "UI에 노출되는 예측:",
+    "predictSeverity": "로그 심각도 — error, warning, info",
+    "predictCategory": "이슈 범주 — network, system, application, database, auth 등",
+    "pipelineTitle": "처리 파이프라인",
+    "pipelineSubtitle": "원시 텔레메트리에서 대시보드 준비 신호까지의 엔드투엔드 경로.",
+    "pipelineSteps": [
+      "원시 로그",
+      "전처리",
+      "TF-IDF",
+      "분류",
+      "출력"
+    ],
+    "techTitle": "기술 스택",
+    "featuresTitle": "제품 기능",
+    "featureItems": [
+      "스트리밍 수집과 저지연 점수화가 있는 실시간 로그 분석.",
+      "알림 임계값 기반의 예측별 신뢰도 점수.",
+      "분류된 각 라인 옆에 표시되는 키워드 추출로 RCA 가속.",
+      "추세·심각도·범주 분해를 보여주는 대시보드 시각화(Recharts)."
+    ],
+    "chartsTitle": "분석 및 차트",
+    "chartsLead": "제품 팀이 모델 출력을 소비하는 방식을 보여주는 예시 지표(샘플 데이터)입니다.",
+    "chartVolume": "수집량(7일)",
+    "chartSeverity": "심각도 믹스(24시간)",
+    "chartCategory": "이슈 범주",
+    "apiTitle": "API 표면",
+    "apiLead": "Next.js 대시보드와 자동화 웹훅에 적합한 JSON 계약의 FastAPI 뒤 버전 REST 엔드포인트.",
+    "apiEndpoints": [
+      {
+        "method": "POST",
+        "path": "/v1/logs/analyze",
+        "desc": "원시 로그 라인 배치를 점수화합니다. 행별 심각도, 범주, 신뢰도, 상위 TF-IDF 용어를 반환합니다.",
+        "body": "{\n  \"lines\": [\n    \"2025-05-03 ERROR connection reset peer api-7\",\n    \"WARN disk 87% on db-primary\"\n  ]\n}"
+      },
+      {
+        "method": "GET",
+        "path": "/v1/metrics/summary",
+        "desc": "타일용 집계: 심각도 히스토그램, 범주 합계, 수집 속도.",
+        "body": ""
+      },
+      {
+        "method": "POST",
+        "path": "/v1/alerts/evaluate",
+        "desc": "최신 점수 창에 대해 알림 규칙을 평가합니다. Pager/Slack용 웹훅 페이로드를보냅니다.",
+        "body": "{\n  \"window_minutes\": 15,\n  \"min_confidence\": 0.82\n}"
+      }
+    ],
+    "uiTitle": "프론트엔드 UI",
+    "uiLead": "public/projects/monitoring-dashboard/의 ui-1 … ui-3 파일을 덱에서보낸 PNG로 교체하세요.",
+    "uiCaptions": [
+      "커맨드 센터: KPI 타일과 라이브 스트립.",
+      "심각도 칩, 범주 태그, 신뢰도가 있는 이슈 피드.",
+      "키워드 패널 + 추세 시각화 영역."
+    ]
+  }
+}
