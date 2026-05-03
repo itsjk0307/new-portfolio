@@ -1,0 +1,669 @@
+{
+  "nav": {
+    "brand": "Jamshid",
+    "brandFull": "Jamshid Khaytbaev",
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact",
+    "allProjects": "All projects",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu"
+  },
+  "hero": {
+    "name": "Jamshid Khaytbaev",
+    "role": "AI Engineer & Full-Stack Developer",
+    "tagline": "I build production-ready AI systems using Computer Vision, NLP, and scalable web technologies.",
+    "ctaProjects": "View projects",
+    "ctaResume": "Download résumé"
+  },
+  "about": {
+    "title": "About",
+    "lead": "I am an AI engineer and full-stack developer who bridges research-style experimentation with dependable software delivery.",
+    "bullets": [
+      {
+        "title": "Production AI",
+        "text": "End-to-end pipelines for CV/NLP: data, training, evaluation, deployment, and monitoring."
+      },
+      {
+        "title": "Full-stack integration",
+        "text": "React/TypeScript frontends and APIs that make models usable, observable, and maintainable."
+      },
+      {
+        "title": "Collaboration",
+        "text": "Clear communication, iterative delivery, and pragmatic tradeoffs with stakeholders."
+      },
+      {
+        "title": "Quality & UX",
+        "text": "Accessible interfaces, performance-aware UI, and thoughtful error handling."
+      }
+    ],
+    "closing": "I enjoy hard problems, clean interfaces, and shipping software that teams can trust in production."
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "Roles focused on models, integration, and measurable product impact.",
+    "resume": "View full résumé",
+    "resumeUrl": "https://drive.google.com/file/d/1um1zw9LT1Zi8kQs-EYhjWdFkmR5xjYU6/view?usp=drive_link",
+    "items": [
+      {
+        "id": "quazar",
+        "title": "AI Engineer",
+        "company": "Quazar Inc.",
+        "period": "February 2025 — June 2025",
+        "description": "Developed AI models for luxury authentication and price prediction. Built deep learning pipelines and integrated them into web applications for real-time decision-making.",
+        "bullets": [
+          "Shipped computer-vision models for authentication and pricing with clear offline/online evaluation.",
+          "Built end-to-end deep learning pipelines and production REST integrations for real-time decisions.",
+          "Partnered across engineering on latency, reliability, and maintainability of deployed models."
+        ],
+        "skills": [
+          "TensorFlow",
+          "PyTorch",
+          "OpenCV",
+          "Computer Vision",
+          "Image Segmentation",
+          "Deep Learning",
+          "REST API",
+          "Web Integration"
+        ]
+      },
+      {
+        "id": "rainbow-intern",
+        "title": "Frontend Developer Intern",
+        "company": "RainbowTech",
+        "period": "March 2023 — July 2023",
+        "description": "Built and maintained user interfaces for web projects. Learned best practices alongside senior developers and contributed to interactive 3D experiences.",
+        "bullets": [
+          "Delivered responsive UI for customer-facing web products with senior code review.",
+          "Contributed to interactive 3D experiences using React Three Fiber and Three.js.",
+          "Improved UI consistency and component reuse across multiple internal projects."
+        ],
+        "skills": [
+          "JavaScript",
+          "React",
+          "HTML5",
+          "CSS3",
+          "React Three Fiber",
+          "Three.js",
+          "R&D"
+        ]
+      },
+      {
+        "id": "rainbow-researcher",
+        "title": "Frontend Developer Researcher",
+        "company": "RainbowTech",
+        "period": "July 2023 — September 2024",
+        "description": "Researched modern frontend stacks to improve delivery. Implemented optimized UIs, performance improvements, and scalable client architecture.",
+        "bullets": [
+          "Benchmarked and adopted modern stacks (Next.js, TypeScript, GraphQL) to speed delivery.",
+          "Implemented optimized UIs and measurable performance wins on production apps.",
+          "Scaled client architecture with Apollo Client, MobX, and disciplined Git workflows."
+        ],
+        "skills": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Next.js",
+          "TypeScript",
+          "GraphQL",
+          "Apollo Client",
+          "MobX",
+          "Git",
+          "Responsive Design"
+        ]
+      }
+    ]
+  },
+  "projectsPage": {
+    "title": "Projects",
+    "subtitle": "Browse work by category. AI projects are listed first.",
+    "backHome": "Back to home",
+    "backProjects": "Back to projects"
+  },
+  "projects": {
+    "title": "Selected projects",
+    "subtitle": "Problem-first highlights across AI/ML, data science, and full-stack web—optimized for clarity and impact.",
+    "sectionAi": "AI & machine learning",
+    "sectionDs": "Data science",
+    "sectionWeb": "Web development",
+    "summaryLabel": "Summary",
+    "techLabel": "Tech stack",
+    "demo": "Live demo",
+    "source": "GitHub",
+    "viewAll": "View all projects",
+    "details": "Details",
+    "items": {
+      "quazarLuxuryAuth": {
+        "title": "Luxury Bag Authentication — Quazar AI",
+        "problem": "Luxury resale and authentication workflows need consistent, interpretable evidence that scales across SKUs, lighting, and capture conditions—beyond a single global classifier score.",
+        "problemShort": "Part-aware CV pipeline with YOLO crops, texture features, multi-model scoring, and weighted ensemble fusion.",
+        "detail": {
+          "overview": "Case study page documents the Quazar authentication stack: detection, preprocessing, part classifiers, and ensemble aggregation at scale.",
+          "myRole": "Data/labeling pipeline ownership, YOLO cropping subsystem, and model experimentation with part-aware evaluation.",
+          "pipeline": [
+            "Detect bag parts with an object detection backbone.",
+            "YOLO crops for standardized regions of interest.",
+            "Texture-aware preprocessing including LBP-style cues.",
+            "Part-level multi-model classification and selection.",
+            "Weighted ensemble aggregation for bag-level verdicts."
+          ],
+          "results": "Operational path from large curated imagery to interpretable, threshold-tunable authenticity decisions suitable for human-in-the-loop review.",
+          "galleryCaptions": [
+            "Case study figures"
+          ]
+        }
+      },
+      "logMonitoringDashboard": {
+        "title": "AI System Monitoring Dashboard",
+        "problem": "High-volume unstructured logs overwhelm operators; manual triage misses regressions and noisy false positives without scalable NLP scoring.",
+        "problemShort": "TF-IDF + logistic regression over FastAPI with a Next.js dashboard, Recharts, and real-time confidence.",
+        "detail": {
+          "overview": "NLP log monitoring product: preprocessing, vectorization, dual classification heads, and SaaS-style analytics UI.",
+          "myRole": "Full-stack slice from sklearn pipelines to API contracts and dashboard visualization patterns.",
+          "pipeline": [
+            "Raw logs ingested and normalized.",
+            "TF-IDF feature extraction.",
+            "Logistic regression for severity and category.",
+            "JSON scores to dashboard and alert webhooks."
+          ],
+          "results": "Operational story: faster RCA via keywords, calibrated thresholds, and charts aligned to SRE workflows.",
+          "galleryCaptions": [
+            "Dashboard UI"
+          ]
+        }
+      },
+      "heartDisease": {
+        "title": "Heart Disease Prediction",
+        "problem": "Clinicians need a fast, interpretable screening signal from structured patient data to prioritize follow-up and reduce missed risk.",
+        "problemShort": "Screen heart-disease risk from patient features with robust ML baselines.",
+        "detail": {
+          "overview": "A structured ML study on tabular patient features to estimate heart-disease risk using interpretable baselines suitable for exploration—not clinical deployment.",
+          "myRole": "Owned data preparation, baseline modeling, cross-validation, and reporting of metrics and limitations for a notebook-based deliverable.",
+          "pipeline": [
+            "Ingest and clean structured features; handle missing values and scaling.",
+            "Train and compare classical models (e.g. logistic regression, tree-based).",
+            "Evaluate with stratified splits; inspect confusion matrix and ROC-style signals.",
+            "Summarize findings, assumptions, and what would be needed for real screening."
+          ],
+          "results": "Strong baseline separation on the reference dataset with clear discussion of leakage risks, class balance, and why external validation would be required in production.",
+          "galleryCaptions": [
+            "Project visual summary"
+          ]
+        }
+      },
+      "customerChurn": {
+        "title": "Customer Churn Prediction",
+        "problem": "Retention teams need early churn signals from behavioral and contract data to intervene before revenue is lost.",
+        "problemShort": "Predict churn with classical ML models and clear evaluation metrics.",
+        "detail": {
+          "overview": "A churn modeling exercise on behavioral and contract-like features to surface at-risk customers before renewal windows close.",
+          "myRole": "Built feature-oriented baselines, tuned simple neural and classical models, and documented evaluation choices for stakeholders.",
+          "pipeline": [
+            "Profile distributions and correlations; define the prediction horizon label.",
+            "Engineer tabular features and split data with temporal discipline where possible.",
+            "Train Keras/TensorFlow and classical models; track precision/recall tradeoffs.",
+            "Deliver ranked-risk interpretation and next-step recommendations for retention."
+          ],
+          "results": "Actionable ranking metrics with emphasis on false negatives vs false positives and how thresholds would be set with business input.",
+          "galleryCaptions": [
+            "Modeling overview"
+          ]
+        }
+      },
+      "edaTitanic": {
+        "title": "Exploratory Data Analysis (Titanic)",
+        "problem": "Turn a messy tabular dataset into trustworthy plots and hypotheses before modeling begins.",
+        "problemShort": "EDA and visualization to uncover drivers of survival in the Titanic dataset.",
+        "detail": {
+          "overview": "Exploratory analysis of the classic Titanic dataset to validate data quality, relationships, and hypotheses before predictive modeling.",
+          "myRole": "Conducted univariate and bivariate analysis, visualization, and narrative synthesis in a reproducible notebook.",
+          "pipeline": [
+            "Load data; audit dtypes, missingness, and duplicates.",
+            "Plot survival vs categorical and numeric drivers; test simple hypotheses.",
+            "Check outliers and encoding needs for downstream models.",
+            "Package key plots and takeaways for a modeling kickoff."
+          ],
+          "results": "Clear story of which features align with survival signals and where data limits cap confidence—ready for principled feature engineering.",
+          "galleryCaptions": [
+            "EDA highlights",
+            "Supporting charts"
+          ]
+        }
+      },
+      "loanEligibility": {
+        "title": "Loan Eligibility Prediction",
+        "problem": "Loan officers need consistent, auditable eligibility signals from applicant features while minimizing false approvals.",
+        "problemShort": "Classification pipeline for loan eligibility with feature-driven insights.",
+        "detail": {
+          "overview": "A classification-oriented study for loan eligibility signals from applicant features, stressing auditability and conservative errors.",
+          "myRole": "Implemented logistic regression and random forest baselines, feature importance views, and error analysis.",
+          "pipeline": [
+            "Define positive/negative classes and success criteria with stakeholders in mind.",
+            "Preprocess numeric/categorical fields; balance and calibration checks.",
+            "Train and compare models; inspect precision/recall at operating points.",
+            "Report drivers of approval/deny and residual risk pockets."
+          ],
+          "results": "Interpretable baselines with documented tradeoffs between approval convenience and controlling high-risk approvals.",
+          "galleryCaptions": [
+            "Analysis snapshot",
+            "Model comparison"
+          ]
+        }
+      },
+      "rainbowAi": {
+        "title": "RainbowTech AI Platform",
+        "problem": "Field teams needed automated structural assessments, PDF reporting, and cost estimates from building inspection inputs.",
+        "problemShort": "AI-assisted structural diagnostics with reporting and cost estimation.",
+        "detail": {
+          "overview": "Internal AI-assisted platform work for structural diagnostics, reporting, and estimation workflows used by field teams.",
+          "myRole": "Contributed frontend integration, UI flows for inspection inputs, and collaboration on performance and UX polish.",
+          "pipeline": [
+            "Capture structured inspection inputs and validation states in the client.",
+            "Orchestrate calls to model/report services and render PDF-oriented outputs.",
+            "Harden loading, empty, and error paths for unreliable networks.",
+            "Iterate with design on density, typography, and progressive disclosure."
+          ],
+          "results": "Faster turnaround from raw inputs to reviewable artifacts with fewer manual copy/paste steps for operators.",
+          "galleryCaptions": [
+            "Platform context"
+          ]
+        }
+      },
+      "rap3d": {
+        "title": "RAP 3D Platform",
+        "problem": "Users needed a collaborative 3D workspace with smooth interaction, stable performance, and a cohesive UI system.",
+        "problemShort": "Real-time collaborative 3D platform built with React and Three.js.",
+        "detail": {
+          "overview": "A collaborative 3D workspace emphasizing smooth scene interaction, shared state, and a cohesive component system.",
+          "myRole": "Implemented React Three Fiber scenes, interaction handlers, and UI integration with the shared design system.",
+          "pipeline": [
+            "Scene graph setup, materials, and lighting tuned for web performance.",
+            "Input mapping, camera controls, and frame-budget awareness.",
+            "State boundaries between 3D and React UI layers.",
+            "Profiling passes on low-end devices; iterative fixes."
+          ],
+          "results": "Stable frame times on target hardware with predictable interaction latency for core collaboration flows.",
+          "galleryCaptions": [
+            "3D workspace"
+          ]
+        }
+      },
+      "rapFiles": {
+        "title": "RAP File Management",
+        "problem": "Teams needed secure cross-device file access with in-app document viewing and reliable sync.",
+        "problemShort": "Cross-platform file management with integrated PDF viewing.",
+        "detail": {
+          "overview": "Cross-platform file management with secure access patterns, in-app viewing, and dependable sync semantics.",
+          "myRole": "Built list/detail UI, document preview flows, and optimistic UI patterns for uploads and sync status.",
+          "pipeline": [
+            "Authentication-aware data layer and route guards.",
+            "Virtualized lists for large directories; resilient retries.",
+            "PDF preview integration with graceful fallbacks.",
+            "Telemetry hooks for failure diagnosis in the field."
+          ],
+          "results": "Reduced friction for teams reviewing documents on mobile and desktop with clearer sync feedback.",
+          "galleryCaptions": [
+            "File experience"
+          ]
+        }
+      },
+      "greenShop": {
+        "title": "Green Shop",
+        "problem": "A sustainability brand needed a crisp landing experience with responsive layout and fast perceived performance.",
+        "problemShort": "Eco-themed landing page with Tailwind and a minimal UI system.",
+        "detail": {
+          "overview": "A sustainability-themed landing experience with responsive layout, Tailwind utility styling, and fast perceived load.",
+          "myRole": "Implemented layout sections, responsive grids, imagery treatment, and CTA hierarchy.",
+          "pipeline": [
+            "Mobile-first layout and type scale.",
+            "Image lazy-loading and content-visibility style tuning.",
+            "Accessibility pass on contrast and focus order.",
+            "Deploy to static hosting with cache-friendly assets."
+          ],
+          "results": "Crisp marketing presentation with Lighthouse-friendly defaults and maintainable utility classes.",
+          "galleryCaptions": [
+            "Landing hero",
+            "Secondary layout"
+          ]
+        }
+      },
+      "banking": {
+        "title": "Financial Management Platform",
+        "problem": "Users needed a trustworthy banking UI for balances, transfers, and transaction history with clear states and feedback.",
+        "problemShort": "Responsive banking experience focused on clarity and navigation.",
+        "detail": {
+          "overview": "A banking-style dashboard for balances, transfers, and history with emphasis on trust, clarity, and feedback.",
+          "myRole": "Structured navigation, account cards, transaction tables, and empty/loading skeleton states.",
+          "pipeline": [
+            "Information architecture for multi-account views.",
+            "Componentized cards, charts placeholders, and tables.",
+            "Micro-interactions for transfers and confirmations.",
+            "Responsive reflow down to small phones."
+          ],
+          "results": "Coherent financial UI patterns that read well at a glance and degrade gracefully without data.",
+          "galleryCaptions": [
+            "Dashboard view",
+            "UI system context"
+          ]
+        }
+      },
+      "vizzano": {
+        "title": "Vizzano App",
+        "problem": "Fashion inventory needed a modern storefront experience with strong visuals and smooth browsing on mobile.",
+        "problemShort": "Fashion showcase app with polished UI and responsive layouts.",
+        "detail": {
+          "overview": "Fashion inventory storefront with strong imagery, mobile-first browsing, and polished product grids.",
+          "myRole": "Built product listing layouts, responsive media, and navigation tuned for thumb reach.",
+          "pipeline": [
+            "Grid systems for mixed aspect-ratio product shots.",
+            "Filter/sort UI with minimal layout shift.",
+            "Performance-conscious image sizing.",
+            "Cross-device QA on common breakpoints."
+          ],
+          "results": "Smooth browsing sessions on mid-tier phones with consistent spacing and readable product metadata.",
+          "galleryCaptions": [
+            "Storefront",
+            "Layout reference"
+          ]
+        }
+      },
+      "trillo": {
+        "title": "Trillo — Travel Booking",
+        "problem": "Travel shoppers need quick filtering, trustworthy summaries, and a booking flow that stays understandable end-to-end.",
+        "problemShort": "Travel booking UI with filters, reviews, and responsive layouts.",
+        "detail": {
+          "overview": "Travel booking UI with filters, hotel cards, reviews, and a multi-step booking flow that stays understandable.",
+          "myRole": "Implemented search header, results grid, review module, and CTA progression with responsive rules.",
+          "pipeline": [
+            "Filter state model and URL-friendly patterns where applicable.",
+            "Card design system for hotels and ratings.",
+            "Booking sidebar with price breakdown affordances.",
+            "End-to-end responsive passes and edge-case copy."
+          ],
+          "results": "End-to-end flow that keeps orientation for users juggling dates, guests, and price comparisons.",
+          "galleryCaptions": [
+            "Search results",
+            "Booking flow"
+          ]
+        }
+      },
+      "memory": {
+        "title": "Interactive Puzzle Challenge",
+        "problem": "A lightweight cognitive game should feel delightful, responsive, and progressively challenging without noisy UI.",
+        "problemShort": "Memory card game with progressive difficulty and smooth motion.",
+        "detail": {
+          "overview": "A lightweight memory card game with progressive difficulty, motion, and minimal UI noise.",
+          "myRole": "Game state machine, card flip animations, scoring, and difficulty ramp.",
+          "pipeline": [
+            "Deck generation and shuffle with seeded fairness option.",
+            "Match detection, lockout timing, and win/lose modals.",
+            "Motion presets tuned for reduced motion preference.",
+            "Polish on touch targets and audio-off safe defaults."
+          ],
+          "results": "Snappy rounds with clear feedback loops; players can finish a session in under a few minutes.",
+          "galleryCaptions": [
+            "Gameplay",
+            "Motion reference"
+          ]
+        }
+      },
+      "portfolioSite": {
+        "title": "Portfolio Website",
+        "problem": "Present projects and experience with recruiter-friendly structure, performance, and maintainable components.",
+        "problemShort": "Personal portfolio with responsive layout and clean information architecture.",
+        "detail": {
+          "overview": "Personal portfolio presenting projects, experience, and contact with recruiter-friendly structure and i18n.",
+          "myRole": "Information architecture, theming, multilingual content, and project detail routing.",
+          "pipeline": [
+            "Content model for projects and translations.",
+            "Theme tokens, layout primitives, and accessible nav.",
+            "Project cards linking to deep-dive pages with galleries.",
+            "Static build and deploy path for GitHub Pages."
+          ],
+          "results": "Fast static site with clear story arc from hero to evidence-backed project pages.",
+          "galleryCaptions": [
+            "Site overview",
+            "Structure reference"
+          ]
+        }
+      },
+      "monsterRolodex": {
+        "title": "Monster Rolodex",
+        "problem": "Demonstrate API-driven lists, search, and reusable card UI patterns in a small React application.",
+        "problemShort": "Searchable monster directory powered by API-driven React UI.",
+        "detail": {
+          "overview": "Small React app demonstrating API-driven lists, live search, and reusable card UI.",
+          "myRole": "Data fetching, search filtering, and presentational components with loading and error UI.",
+          "pipeline": [
+            "Fetch monsters JSON; normalize for rendering.",
+            "Controlled search input with debounced filter.",
+            "Card grid with keyboard-accessible focus.",
+            "Empty and error states for network failures."
+          ],
+          "results": "Responsive directory UX that showcases clean component boundaries and predictable state.",
+          "galleryCaptions": [
+            "Directory UI",
+            "Component context"
+          ]
+        }
+      }
+    },
+    "projectDetail": {
+      "backToList": "Back to all projects",
+      "overview": "Overview",
+      "problem": "Problem",
+      "myRole": "My role",
+      "pipeline": "System pipeline",
+      "techStack": "Tech stack",
+      "results": "Results",
+      "gallery": "Screenshots",
+      "close": "Close",
+      "step": "Step {{n}}"
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "AI/ML, backend, frontend, and tools I use to ship end-to-end products.",
+    "groups": {
+      "aiMl": {
+        "title": "AI / ML",
+        "items": [
+          "Python",
+          "PyTorch",
+          "TensorFlow",
+          "scikit-learn",
+          "Computer Vision",
+          "NLP",
+          "Model evaluation",
+          "Experiment tracking"
+        ]
+      },
+      "frontend": {
+        "title": "Frontend",
+        "items": [
+          "React",
+          "TypeScript",
+          "Next.js",
+          "HTML / CSS",
+          "Responsive UI",
+          "Performance tuning",
+          "Accessibility basics"
+        ]
+      },
+      "backend": {
+        "title": "Backend",
+        "items": [
+          "REST APIs",
+          "Node.js",
+          "GraphQL",
+          "Authentication patterns",
+          "Integration testing mindset"
+        ]
+      },
+      "tools": {
+        "title": "Tools",
+        "items": [
+          "Git",
+          "Docker (basics)",
+          "CI-friendly workflows",
+          "Jupyter",
+          "VS Code"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "body": "Open to AI engineering roles, collaborations, and full-stack product work.",
+    "emailLabel": "Email",
+    "email": "itsjk0307@gmail.com",
+    "phoneLabel": "Phone",
+    "phone": "+821032541777",
+    "githubLabel": "GitHub",
+    "githubValue": "github.com/itsjk0307",
+    "linkedinLabel": "LinkedIn",
+    "linkedinValue": "linkedin.com"
+  },
+  "footer": {
+    "note": "Built with React. Deployed for fast static hosting."
+  },
+  "caseStudyQuazar": {
+    "eyebrow": "Case study · Quazar Inc.",
+    "title": "Luxury Bag Authentication",
+    "subtitle": "Production-oriented computer vision system to detect bag regions, score fine-grained authenticity cues, and aggregate part-level evidence into a calibrated real-vs-fake decision.",
+    "chipsAria": "Project tags",
+    "chipCv": "Computer vision",
+    "chipDetection": "Object detection",
+    "chipProd": "ML systems",
+    "overviewTitle": "Overview",
+    "overviewBody": "End-to-end AI for luxury bag authentication: localize discriminative regions, extract texture-aware features, run part-level classifiers with multiple backbones, and fuse outputs through a weighted ensemble aligned with operational risk.",
+    "challengeTitle": "Problem framing",
+    "challengeBody": "Counterfeits mimic global appearance while failing on hardware, stitching, and micro-texture consistency. The system must surface part-specific evidence, remain stable under crop noise, and expose interpretable signals for human review—not a single global score.",
+    "pipelineTitle": "Inference pipeline",
+    "pipelineIntro": "Sequential stages from raw imagery to aggregated authenticity. Each stage is instrumented for evaluation and threshold tuning.",
+    "pipelineSteps": [
+      "Object detection model localizes bag and key structural parts (hardware, panels, logos).",
+      "YOLO-driven crops standardize regions of interest before downstream classifiers.",
+      "Image preprocessing emphasizes texture cues (e.g., LBP variants), lighting normalization, and quality gates.",
+      "Part-level classifiers score authenticity per region using multiple trained models per part.",
+      "Best-performing models per part are promoted based on offline metrics and stability checks."
+    ],
+    "ensembleTitle": "Ensemble aggregation",
+    "ensembleBody": "Per-part logits are calibrated, weighted by reliability priors learned on validation, and fused into a bag-level authenticity score with confidence intervals for downstream policy (auto-reject, escalate, accept).",
+    "dataTitle": "Dataset",
+    "dataStatLabel": "Curated images",
+    "dataStatValue": "~140,000",
+    "dataLead": "Large-scale imagery with strict hygiene: deduplication, label reconciliation, and leakage-safe splits for generalization claims.",
+    "dataBullets": [
+      "Cleaned, labeled, and structured splits with versioned metadata for reproducibility.",
+      "Stratified train/validation/test with geography and capture-device diversity tracked.",
+      "Active QA loops for borderline pairs and hard negatives sourced from controlled captures."
+    ],
+    "modelsTitle": "Models & architecture",
+    "modelsLead": "Backbone diversity captures complementary cues: convolutional inductive bias vs. long-range attention for stitching and logo regularity.",
+    "modelResNet": "Residual blocks for stable deep features on hardware and edge-heavy crops.",
+    "modelDenseNet": "Feature reuse for fine texture gradients on leather and coated surfaces.",
+    "modelVit": "Patch attention for long-range dependencies across panels and logo geometry.",
+    "perPartTitle": "Multiple models per part",
+    "perPartBody": "Each structural part trains several candidate heads; the best models are selected on held-out metrics, calibration error, and robustness to crop jitter before deployment packaging.",
+    "ensembleArchTitle": "Weighted fusion",
+    "ensembleArchBody": "Outputs are aggregated with learned or hand-tuned weights reflecting per-part discriminative power, then consolidated with temperature scaling where applicable.",
+    "architectureTitle": "Architecture diagram",
+    "architectureBody": "High-level data plane from raw pixels to decision: detection localizes, preprocessing standardizes, classifiers specialize, ensemble fuses with explicit weighting for auditability.",
+    "architectureNote": "Diagram summarizes the serving path; training included ablations on crop policies, augmentations, and part dropout for fault tolerance.",
+    "roleTitle": "My role",
+    "roleItems": [
+      "Owned data processing and labeling pipelines: QC rules, schema, and export contracts for training.",
+      "Built the YOLO-based cropping service and crop QA visualizations for annotators.",
+      "Led model experimentation, metric dashboards, and part-level error analysis for ensemble design."
+    ],
+    "figuresTitle": "Figures & deck exports",
+    "figuresLead": "Placeholder slides mimic PPT exports—replace files under public/projects/quazar-luxury/ with your deck PNGs or PDFs rasterized to the same filenames (slide-1 … slide-4) for production storytelling.",
+    "slideCaptions": [
+      "System context: ingest → detection → decision framing.",
+      "Dataset scale and governance highlights.",
+      "Model families and ensemble fusion overview.",
+      "Evaluation and deployment monitoring view."
+    ]
+  },
+  "caseStudyLogMonitor": {
+    "productBadge": "SaaS · ML platform",
+    "title": "AI System Monitoring Dashboard",
+    "subtitle": "NLP-powered log intelligence: ingest noisy unstructured lines, vectorize with TF-IDF, classify severity and issue family with calibrated scores, and surface everything in a product-grade dashboard.",
+    "pillLive": "Real-time",
+    "pillNlp": "NLP + scikit-learn",
+    "pillApi": "FastAPI",
+    "overviewTitle": "Overview",
+    "overviewBody": "Operations teams drown in logs. This system treats each line as text: normalize tokens, extract TF-IDF features, and run logistic regression heads for severity (error / warning / info) and coarse issue categories (network, system, application, database, auth). A FastAPI service scores streams; a Next.js client renders confidence, keywords, and charts for triage.",
+    "problemTitle": "Problem",
+    "problemBullets": [
+      "Very large daily log volume across services and environments.",
+      "Manual monitoring does not scale; critical signals hide in noise.",
+      "Unstructured free-text lines with heterogeneous formats and vocab drift."
+    ],
+    "solutionTitle": "Solution",
+    "solutionSteps": [
+      "Text preprocessing: lowercasing, masking, token cleanup, n-gram control.",
+      "TF-IDF vectorization with vocabulary caps tuned for stability on streaming data.",
+      "Logistic regression classifiers with calibrated probabilities for gating alerts.",
+      "Dual heads: severity routing and issue category for downstream playbooks."
+    ],
+    "predictIntro": "Predictions exposed to the UI:",
+    "predictSeverity": "Log severity — error, warning, info",
+    "predictCategory": "Issue category — network, system, application, database, auth, …",
+    "pipelineTitle": "Processing pipeline",
+    "pipelineSubtitle": "End-to-end path from raw telemetry to dashboard-ready signals.",
+    "pipelineSteps": [
+      "Raw logs",
+      "Preprocessing",
+      "TF-IDF",
+      "Classification",
+      "Output"
+    ],
+    "techTitle": "Tech stack",
+    "featuresTitle": "Product features",
+    "featureItems": [
+      "Real-time log analysis with streaming ingestion and low-latency scoring.",
+      "Confidence scores per prediction with threshold-based alerting.",
+      "Keyword extraction surfaced next to each classified line for faster RCA.",
+      "Dashboard visualization with trend, severity, and category breakdowns (Recharts)."
+    ],
+    "chartsTitle": "Analytics & charts",
+    "chartsLead": "Illustrative metrics (sample data) showing how product teams consume model outputs—swap with live API hooks in production.",
+    "chartVolume": "Ingest volume (7d)",
+    "chartSeverity": "Severity mix (24h)",
+    "chartCategory": "Issue categories",
+    "apiTitle": "API surface",
+    "apiLead": "Versioned REST endpoints behind FastAPI with JSON contracts suitable for the Next.js dashboard and automation webhooks.",
+    "apiEndpoints": [
+      {
+        "method": "POST",
+        "path": "/v1/logs/analyze",
+        "desc": "Score a batch of raw log lines. Returns severity, category, confidence, and top TF-IDF terms per row.",
+        "body": "{\n  \"lines\": [\n    \"2025-05-03 ERROR connection reset peer api-7\",\n    \"WARN disk 87% on db-primary\"\n  ]\n}"
+      },
+      {
+        "method": "GET",
+        "path": "/v1/metrics/summary",
+        "desc": "Aggregated counts for dashboard tiles: severity histogram, category totals, ingest rate.",
+        "body": ""
+      },
+      {
+        "method": "POST",
+        "path": "/v1/alerts/evaluate",
+        "desc": "Evaluate alert rules against latest scored window; emits webhook payloads for Pager/Slack integrations.",
+        "body": "{\n  \"window_minutes\": 15,\n  \"min_confidence\": 0.82\n}"
+      }
+    ],
+    "uiTitle": "Frontend UI",
+    "uiLead": "Placeholder frames mimic production screenshots—replace files under public/projects/monitoring-dashboard/ (ui-1.svg … ui-3.svg) with exported PNGs from your deck.",
+    "uiCaptions": [
+      "Command center: KPI tiles and live stream strip.",
+      "Issue feed with severity chips, category tags, and confidence.",
+      "Keywords panel + trend visualization area."
+    ]
+  }
+}

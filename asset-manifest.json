@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "./static/css/main.e1b4025d.css",
+    "main.js": "./static/js/main.e548698a.js",
+    "static/js/453.86f37d22.chunk.js": "./static/js/453.86f37d22.chunk.js",
+    "static/media/main.png": "./static/media/main.478dde7e1fe95e5b9754.png",
+    "static/media/portfolio.png": "./static/media/portfolio.155d9c2fd29185b9cafa.png",
+    "static/media/monster.png": "./static/media/monster.1461dd424b35fde5436a.png",
+    "static/media/trillo.png": "./static/media/trillo.c54041faec5ffee594fa.png",
+    "static/media/vizzano.png": "./static/media/vizzano.e1ed2c0f37c3edc4dc5c.png",
+    "static/media/greenshop.png": "./static/media/greenshop.6815bfa5d47c23813dde.png",
+    "static/media/bank.png": "./static/media/bank.77e98ddac4a69fad2135.png",
+    "static/media/EDA.png": "./static/media/EDA.e7c4e92ece643bec6933.png",
+    "static/media/EDA1.png": "./static/media/EDA1.8c82aee5d061bdd1c81d.png",
+    "static/media/heartDisease.png": "./static/media/heartDisease.d0872cbbd3bb52d57b48.png",
+    "static/media/memory.png": "./static/media/memory.3b5e698ee42c4e8cf9cf.png",
+    "static/media/cusChurn.png": "./static/media/cusChurn.bab7e76e15abb12d7807.png",
+    "index.html": "./index.html",
+    "main.e1b4025d.css.map": "./static/css/main.e1b4025d.css.map",
+    "main.e548698a.js.map": "./static/js/main.e548698a.js.map",
+    "453.86f37d22.chunk.js.map": "./static/js/453.86f37d22.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1b4025d.css",
+    "static/js/main.e548698a.js"
+  ]
+}
