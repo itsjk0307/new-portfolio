@@ -1,0 +1,220 @@
+{
+  "nav": {
+    "now": "지금",
+    "experience": "경력",
+    "work": "작업",
+    "skills": "기술",
+    "contact": "연락",
+    "skip": "본문으로 건너뛰기",
+    "themeLight": "라이트 테마로 전환",
+    "themeDark": "다크 테마로 전환",
+    "about": "소개"
+  },
+  "hero": {
+    "headline": "비전 모델부터 백엔드, 사람들이 쓰는 앱까지. AI 제품을 처음부터 끝까지 만듭니다.",
+    "now": "지금: 대정골프엔지니어링 AI 연구소에서 GreenCare 개발을 이끌고 있습니다",
+    "ctaCase": "GreenCare 케이스 스터디 보기",
+    "ctaResume": "이력서 (PDF)",
+    "map": {
+      "aria": "GreenCare 시스템: 현장 앱과 관리자 허브가 REST로 FastAPI 백엔드를 호출합니다. FastAPI는 데이터를 PostgreSQL에 저장하고 잔디 사진을 Gemini Vision API로 보냅니다.",
+      "field": "현장 앱",
+      "admin": "관리자 허브",
+      "steps": [
+        "작업자가 잔디 사진을 업로드",
+        "FastAPI가 Gemini Vision으로 전달",
+        "진단 결과가 돌아옴",
+        "리포트를 PostgreSQL에 저장"
+      ]
+    }
+  },
+  "now": {
+    "title": "지금 만들고 있는 것",
+    "lead": "GreenCare는 골프장 운영을 위한 AI 플랫폼입니다. 그린키퍼가 휴대폰으로 잔디를 촬영하고 코스 지도에 작업 구역을 표시하면, 몇 초 만에 병해 분석 결과를 받습니다. 모바일, 관리자, 백엔드 전반의 설계와 개발을 맡고 있습니다.",
+    "stepsTitle": "잔디 리포트가 처리되는 과정",
+    "steps": [
+      {
+        "title": "촬영",
+        "text": "현장 작업자가 잔디를 촬영하면 앱이 GPS 위치와 해당 홀 정보를 사진에 기록합니다."
+      },
+      {
+        "title": "분석",
+        "text": "Gemini Vision이 이미지를 읽고 예상 병해, 심각도, 신뢰도 점수를 반환합니다."
+      },
+      {
+        "title": "배정",
+        "text": "분석 결과는 코스 지도의 작업 구역이 되고, 담당 팀에 작업이 배정됩니다."
+      },
+      {
+        "title": "추적",
+        "text": "관리자는 코스별 진행 상황, 재고, 구매를 관리자 페이지에서 확인합니다."
+      }
+    ],
+    "surfacesTitle": "세 개의 앱, 하나의 시스템",
+    "surfaces": [
+      {
+        "name": "현장 앱",
+        "text": "사진 리포트, 코스 지도 작업 구역, GPS 작업 추적.",
+        "stack": "React Native, Expo, TypeScript"
+      },
+      {
+        "name": "허브·관리자",
+        "text": "코스 관리, 계정 승인, 활동 모니터링을 위한 슈퍼 관리자와 현장 운영 패널.",
+        "stack": "React, TypeScript"
+      },
+      {
+        "name": "백엔드",
+        "text": "이미지 파이프라인, 분석 작업, 리포트, 코스별 데이터 모델.",
+        "stack": "FastAPI, PostgreSQL, Gemini Vision API"
+      }
+    ],
+    "mapCaption": "샘플 코스 7번 홀: 진행 중인 작업 구역 2곳, 완료 1곳.",
+    "zones": [
+      {
+        "label": "갈색 마름병",
+        "status": "접수됨"
+      },
+      {
+        "label": "동전 마름병",
+        "status": "팀 배정"
+      },
+      {
+        "label": "건조 피해",
+        "status": "완료"
+      }
+    ],
+    "privateNote": "GreenCare는 비공개 운영 시스템이라 코드는 공개되어 있지 않습니다. 통화로 자세히 설명드릴 수 있습니다."
+  },
+  "experience": {
+    "title": "경력",
+    "present": "현재",
+    "items": [
+      {
+        "id": "daejung",
+        "role": "AI 연구소 선임연구원",
+        "org": "대정골프엔지니어링",
+        "period": "2026.05",
+        "end": "",
+        "points": [
+          "GreenCare 설계·개발 총괄: Gemini Vision 기반 잔디 병해 탐지와 이미지·분석·리포트 엔드투엔드 파이프라인.",
+          "React Native 현장 앱, React 관리자, FastAPI/PostgreSQL 백엔드 개발. GPS 작업 추적, 코스 지도, 재고·구매 관리 포함.",
+          "레거시 PHP/MySQL 회사 웹사이트와 관리자를 Next.js, TypeScript, Prisma, PostgreSQL로 재구축. 한·영·중·일 4개 언어, 권한 관리, CMS, 전체 데이터 마이그레이션."
+        ],
+        "stack": "React Native, React, Next.js, FastAPI, PostgreSQL, Prisma, Gemini Vision"
+      },
+      {
+        "id": "quasar",
+        "role": "AI 연구원",
+        "org": "Quasar Inc.",
+        "period": "2025.02",
+        "end": "2025.06",
+        "points": [
+          "구찌, 루이비통, 샤넬 등 명품의 진품 감정과 리셀 가격 예측 모델 개발.",
+          "약 14만 장의 정제된 이미지로 부위별 이미지 분류·세그멘테이션을 학습해 위조품 탐지.",
+          "실시간 의사결정을 위해 모델을 웹 애플리케이션에 통합."
+        ],
+        "stack": "PyTorch, TensorFlow, OpenCV, YOLO"
+      },
+      {
+        "id": "rainbow",
+        "role": "연구원 / 웹 개발자",
+        "org": "레인보우테크",
+        "period": "2023.03",
+        "end": "2024.10",
+        "points": [
+          "구조 엔지니어링 분석을 위한 균열 데이터 시각화 도구 개발.",
+          "Three.js와 React Three Fiber로 브라우저에서 인터랙티브 3D 엔지니어링 모델 렌더링.",
+          "MobX 상태 관리 기반 Next.js 파일 관리 시스템 개발, 엔지니어링 데이터로 ML 모델 학습. 인턴으로 시작."
+        ],
+        "stack": "React, TypeScript, Next.js, Three.js, MobX, GraphQL"
+      }
+    ]
+  },
+  "work": {
+    "title": "주요 작업",
+    "lead": "실서비스 시스템을 먼저, 그다음 그 바탕이 된 실험들.",
+    "private": "비공개",
+    "caseStudy": "케이스 스터디 보기",
+    "details": "프로젝트 상세",
+    "code": "코드 보기",
+    "live": "사이트 방문",
+    "jump": "위에서 보기",
+    "all": "전체 프로젝트 보기",
+    "items": {
+      "greencare": {
+        "title": "GreenCare",
+        "text": "골프장을 위한 AI 잔디 병해 탐지와 코스 운영. 모바일, 관리자, 백엔드."
+      },
+      "daejungSite": {
+        "title": "대정골프 웹사이트·관리자",
+        "text": "레거시 PHP 사이트를 Next.js로 재구축. 4개 언어, CMS, 주문, 쿠폰, 대량 메일."
+      },
+      "luxury": {
+        "title": "명품 가방 진품 감정",
+        "text": "부위 인식 컴퓨터 비전: YOLO 크롭, 텍스처 특징, 분류기 가중 앙상블."
+      },
+      "logs": {
+        "title": "AI 로그 인텔리전스 대시보드",
+        "text": "TF-IDF와 로지스틱 회귀로 로그를 심각도와 이슈 유형별로 분류하고 FastAPI로 제공."
+      },
+      "rainbow3d": {
+        "title": "3D 엔지니어링 뷰어",
+        "text": "브라우저에서 구조 모델과 균열 데이터를 인터랙티브하게 시각화."
+      },
+      "chatbot": {
+        "title": "고객 지원 챗봇",
+        "text": "자주 묻는 지원 질문에 답하는 Python NLP 백엔드와 Vue 프론트엔드."
+      },
+      "tinybert": {
+        "title": "TinyBERT 감성 분류기",
+        "text": "빠르고 가벼운 감성 분류를 위해 파인튜닝한 경량 트랜스포머."
+      }
+    }
+  },
+  "skills": {
+    "title": "주로 쓰는 도구",
+    "groups": [
+      {
+        "name": "프론트엔드·모바일",
+        "items": "TypeScript, React, Next.js, React Native, Three.js, Tailwind, Vue"
+      },
+      {
+        "name": "백엔드·데이터",
+        "items": "Python, FastAPI, Node.js, Prisma, PostgreSQL, MySQL, REST, GraphQL"
+      },
+      {
+        "name": "AI·ML",
+        "items": "PyTorch, TensorFlow, OpenCV, scikit-learn, YOLO, Gemini Vision API"
+      },
+      {
+        "name": "작업 환경",
+        "items": "Git, GitHub, Figma, Vercel, Linux, Docker"
+      }
+    ],
+    "factsTitle": "배경",
+    "facts": [
+      {
+        "name": "학력",
+        "value": "가천대학교 컴퓨터공학 학사, 2019–2023"
+      },
+      {
+        "name": "언어",
+        "value": "영어 (IELTS 7.0), 한국어 (TOPIK 3급)"
+      },
+      {
+        "name": "자격",
+        "value": "Google AI Essentials, Meta Intro to Back-End Development, Coursera Backend Development and API Creation"
+      }
+    ]
+  },
+  "contact": {
+    "title": "연락하기",
+    "lead": "AI·풀스택 엔지니어 포지션과, 실제로 제품을 출시하는 팀과의 협업에 열려 있습니다. 이메일이 가장 빠릅니다.",
+    "email": "itsjk0307@gmail.com",
+    "phone": "+82 10-3254-1777",
+    "copy": "이메일 복사",
+    "copied": "복사됨",
+    "github": "GitHub",
+    "resume": "이력서"
+  },
+  "footer": "© 2026 Jamshid Khaytbaev. 용인에서 React로 만들었습니다."
+}

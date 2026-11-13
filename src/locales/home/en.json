@@ -1,0 +1,220 @@
+{
+  "nav": {
+    "now": "Now",
+    "experience": "Experience",
+    "work": "Work",
+    "skills": "Skills",
+    "contact": "Contact",
+    "skip": "Skip to content",
+    "themeLight": "Switch to light theme",
+    "themeDark": "Switch to dark theme",
+    "about": "About"
+  },
+  "hero": {
+    "headline": "I build AI products end to end: the vision model, the backend, and the apps people use.",
+    "now": "Now: leading GreenCare at the Daejung Golf Engineering AI Lab",
+    "ctaCase": "Read the GreenCare case study",
+    "ctaResume": "Résumé (PDF)",
+    "map": {
+      "aria": "GreenCare system: the field app and admin hub call a FastAPI backend over REST. FastAPI stores data in PostgreSQL and sends turf photos to the Gemini Vision API.",
+      "field": "Field app",
+      "admin": "Admin hub",
+      "steps": [
+        "Crew uploads a turf photo",
+        "FastAPI sends it to Gemini Vision",
+        "The diagnosis comes back",
+        "The report is saved to PostgreSQL"
+      ]
+    }
+  },
+  "now": {
+    "title": "What I'm building now",
+    "lead": "GreenCare is an AI platform for running golf courses. Greenkeepers photograph turf on their phones, mark work zones on the course map and get a disease analysis back in seconds. I lead its design and development across mobile, admin and backend.",
+    "stepsTitle": "How a turf report travels",
+    "steps": [
+      {
+        "title": "Capture",
+        "text": "A field worker photographs the turf. The app tags the photo with GPS and the hole it belongs to."
+      },
+      {
+        "title": "Analyze",
+        "text": "Gemini Vision reads the image and returns the likely disease, its severity and a confidence score."
+      },
+      {
+        "title": "Assign",
+        "text": "The finding becomes a work zone on the course map, with a task for the right crew."
+      },
+      {
+        "title": "Track",
+        "text": "Managers follow progress, inventory and purchasing from the admin, course by course."
+      }
+    ],
+    "surfacesTitle": "Three apps, one system",
+    "surfaces": [
+      {
+        "name": "Field app",
+        "text": "Photo reports, course-map work zones and GPS task tracking.",
+        "stack": "React Native, Expo, TypeScript"
+      },
+      {
+        "name": "Hub and admin",
+        "text": "Super-admin and field-ops panels to oversee courses, approve accounts and monitor activity.",
+        "stack": "React, TypeScript"
+      },
+      {
+        "name": "Backend",
+        "text": "Image pipeline, analysis jobs, reports and the data model behind every course.",
+        "stack": "FastAPI, PostgreSQL, Gemini Vision API"
+      }
+    ],
+    "mapCaption": "Hole 7 on a sample course: two open work zones and one resolved.",
+    "zones": [
+      {
+        "label": "Brown patch",
+        "status": "Open"
+      },
+      {
+        "label": "Dollar spot",
+        "status": "Crew assigned"
+      },
+      {
+        "label": "Dry spot",
+        "status": "Resolved"
+      }
+    ],
+    "privateNote": "GreenCare is a private production system, so the code isn't public. I'm happy to walk through it in a call."
+  },
+  "experience": {
+    "title": "Experience",
+    "present": "Present",
+    "items": [
+      {
+        "id": "daejung",
+        "role": "Senior Researcher, AI Lab",
+        "org": "Daejung Golf Engineering",
+        "period": "May 2026",
+        "end": "",
+        "points": [
+          "Lead design and development of GreenCare: turf-disease detection with Gemini Vision and an end-to-end image, analysis and report pipeline.",
+          "Built the React Native field app, React admin and FastAPI/PostgreSQL backend, including GPS task tracking, course maps, inventory and purchasing.",
+          "Rebuilt the legacy PHP/MySQL company website and admin in Next.js, TypeScript, Prisma and PostgreSQL, in Korean, English, Chinese and Japanese, with roles, a CMS and a full data migration."
+        ],
+        "stack": "React Native, React, Next.js, FastAPI, PostgreSQL, Prisma, Gemini Vision"
+      },
+      {
+        "id": "quasar",
+        "role": "AI Researcher",
+        "org": "Quasar Inc.",
+        "period": "Feb 2025",
+        "end": "Jun 2025",
+        "points": [
+          "Built models for luxury-goods authentication and resale price prediction across brands like Gucci, Louis Vuitton and Chanel.",
+          "Detected counterfeits with part-level image classification and segmentation, trained on about 140,000 curated images.",
+          "Integrated the models into web apps for real-time decision support."
+        ],
+        "stack": "PyTorch, TensorFlow, OpenCV, YOLO"
+      },
+      {
+        "id": "rainbow",
+        "role": "Researcher and Web Developer",
+        "org": "RainbowTech",
+        "period": "Mar 2023",
+        "end": "Oct 2024",
+        "points": [
+          "Built a crack-data visualization tool for structural engineering analysis.",
+          "Rendered interactive 3D engineering models in the browser with Three.js and React Three Fiber.",
+          "Built a Next.js file management system with MobX state, and trained ML models on engineering data. Started as an intern."
+        ],
+        "stack": "React, TypeScript, Next.js, Three.js, MobX, GraphQL"
+      }
+    ]
+  },
+  "work": {
+    "title": "Selected work",
+    "lead": "Production systems first, then the experiments that got me there.",
+    "private": "Private",
+    "caseStudy": "Read case study",
+    "details": "Project details",
+    "code": "View code",
+    "live": "Visit site",
+    "jump": "See above",
+    "all": "Browse all projects",
+    "items": {
+      "greencare": {
+        "title": "GreenCare",
+        "text": "AI turf-disease detection and course operations for golf courses. Mobile, admin and backend."
+      },
+      "daejungSite": {
+        "title": "Daejung Golf website and admin",
+        "text": "Legacy PHP site rebuilt in Next.js with four languages, a CMS, shop orders, coupons and mass mail."
+      },
+      "luxury": {
+        "title": "Luxury bag authentication",
+        "text": "Part-aware computer vision: YOLO crops, texture features and a weighted ensemble of classifiers."
+      },
+      "logs": {
+        "title": "AI log intelligence dashboard",
+        "text": "Classifies raw log lines by severity and issue type with TF-IDF and logistic regression, served by FastAPI."
+      },
+      "rainbow3d": {
+        "title": "3D engineering viewer",
+        "text": "Interactive structural models and crack-data visualization in the browser."
+      },
+      "chatbot": {
+        "title": "Customer support chatbot",
+        "text": "Python NLP backend with a Vue front end for answering common support questions."
+      },
+      "tinybert": {
+        "title": "TinyBERT sentiment classifier",
+        "text": "A distilled transformer fine-tuned for fast, small-footprint sentiment classification."
+      }
+    }
+  },
+  "skills": {
+    "title": "Tools I reach for",
+    "groups": [
+      {
+        "name": "Frontend and mobile",
+        "items": "TypeScript, React, Next.js, React Native, Three.js, Tailwind, Vue"
+      },
+      {
+        "name": "Backend and data",
+        "items": "Python, FastAPI, Node.js, Prisma, PostgreSQL, MySQL, REST, GraphQL"
+      },
+      {
+        "name": "AI and ML",
+        "items": "PyTorch, TensorFlow, OpenCV, scikit-learn, YOLO, Gemini Vision API"
+      },
+      {
+        "name": "Workflow",
+        "items": "Git, GitHub, Figma, Vercel, Linux, Docker"
+      }
+    ],
+    "factsTitle": "Background",
+    "facts": [
+      {
+        "name": "Education",
+        "value": "B.S. Computer Engineering, Gachon University, 2019 to 2023"
+      },
+      {
+        "name": "Languages",
+        "value": "English (IELTS 7.0), Korean (TOPIK 3)"
+      },
+      {
+        "name": "Certificates",
+        "value": "Google AI Essentials, Meta Intro to Back-End Development, Coursera Backend Development and API Creation"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get in touch",
+    "lead": "I'm open to AI and full-stack engineering roles, and to product work with teams that ship. Email is the fastest way to reach me.",
+    "email": "itsjk0307@gmail.com",
+    "phone": "+82 10-3254-1777",
+    "copy": "Copy email",
+    "copied": "Copied",
+    "github": "GitHub",
+    "resume": "Résumé"
+  },
+  "footer": "© 2026 Jamshid Khaytbaev. Built with React in Yongin, Korea."
+}

@@ -4,6 +4,9 @@ import { initReactI18next } from "react-i18next";
 import en from "./locales/en.json";
 import ko from "./locales/ko.json";
 import uz from "./locales/uz.json";
+import homeEn from "./locales/home/en.json";
+import homeKo from "./locales/home/ko.json";
+import homeUz from "./locales/home/uz.json";
 
 /** Must match `lookupLocalStorage` in detection and Navbar / docs. */
 export const LOCALE_STORAGE_KEY = "portfolio-locale";
@@ -18,9 +21,9 @@ export const initPromise = i18n
     ns: ["translation"],
     interpolation: { escapeValue: false },
     resources: {
-      en: { translation: en },
-      ko: { translation: ko },
-      uz: { translation: uz },
+      en: { translation: { ...en, home: homeEn } },
+      ko: { translation: { ...ko, home: homeKo } },
+      uz: { translation: { ...uz, home: homeUz } },
     },
     detection: {
       order: ["localStorage"],

@@ -1,0 +1,220 @@
+{
+  "nav": {
+    "now": "Hozir",
+    "experience": "Tajriba",
+    "work": "Ishlar",
+    "skills": "Ko'nikmalar",
+    "contact": "Aloqa",
+    "skip": "Asosiy qismga o'tish",
+    "themeLight": "Yorug' mavzuga o'tish",
+    "themeDark": "Qorong'i mavzuga o'tish",
+    "about": "Men haqimda"
+  },
+  "hero": {
+    "headline": "AI mahsulotlarini boshidan oxirigacha quraman: kompyuter ko'rish modeli, backend va odamlar ishlatadigan ilovalar.",
+    "now": "Hozir: Daejung Golf Engineering AI laboratoriyasida GreenCare loyihasiga rahbarlik qilyapman",
+    "ctaCase": "GreenCare keys-tadqiqotini o'qish",
+    "ctaResume": "Rezyume (PDF)",
+    "map": {
+      "aria": "GreenCare tizimi: dala ilovasi va admin hub REST orqali FastAPI backendga murojaat qiladi. FastAPI ma'lumotlarni PostgreSQL'da saqlaydi va maysa suratlarini Gemini Vision API'ga yuboradi.",
+      "field": "Dala ilovasi",
+      "admin": "Admin hub",
+      "steps": [
+        "Xodim maysa suratini yuklaydi",
+        "FastAPI uni Gemini Vision'ga yuboradi",
+        "Tashxis qaytadi",
+        "Hisobot PostgreSQL'ga saqlanadi"
+      ]
+    }
+  },
+  "now": {
+    "title": "Hozir nima qurayapman",
+    "lead": "GreenCare golf maydonlarini boshqarish uchun AI platformasi. Maydon xodimlari telefonda maysani suratga oladi, maydon xaritasida ish hududlarini belgilaydi va bir necha soniyada kasallik tahlilini oladi. Mobil ilova, admin panel va backend dizayni hamda ishlab chiqilishiga rahbarlik qilaman.",
+    "stepsTitle": "Maysa hisoboti qanday yo'l bosadi",
+    "steps": [
+      {
+        "title": "Suratga olish",
+        "text": "Xodim maysani suratga oladi. Ilova suratga GPS joylashuv va lunka raqamini biriktiradi."
+      },
+      {
+        "title": "Tahlil",
+        "text": "Gemini Vision rasmni o'qib, ehtimoliy kasallik, uning darajasi va ishonch balini qaytaradi."
+      },
+      {
+        "title": "Topshiriq",
+        "text": "Natija maydon xaritasida ish hududiga aylanadi va mas'ul guruhga vazifa beriladi."
+      },
+      {
+        "title": "Kuzatuv",
+        "text": "Menejerlar har bir maydon bo'yicha jarayon, ombor va xaridlarni admin paneldan kuzatadi."
+      }
+    ],
+    "surfacesTitle": "Uchta ilova, bitta tizim",
+    "surfaces": [
+      {
+        "name": "Dala ilovasi",
+        "text": "Foto hisobotlar, xaritadagi ish hududlari va GPS orqali vazifalarni kuzatish.",
+        "stack": "React Native, Expo, TypeScript"
+      },
+      {
+        "name": "Hub va admin",
+        "text": "Maydonlarni boshqarish, akkauntlarni tasdiqlash va faollikni kuzatish uchun panellar.",
+        "stack": "React, TypeScript"
+      },
+      {
+        "name": "Backend",
+        "text": "Rasm quvuri, tahlil vazifalari, hisobotlar va har bir maydon ma'lumotlar modeli.",
+        "stack": "FastAPI, PostgreSQL, Gemini Vision API"
+      }
+    ],
+    "mapCaption": "Namuna maydonning 7-lunkasi: ikkita ochiq ish hududi va bittasi hal qilingan.",
+    "zones": [
+      {
+        "label": "Jigarrang dog'",
+        "status": "Ochiq"
+      },
+      {
+        "label": "Tanga dog'i",
+        "status": "Guruh tayinlandi"
+      },
+      {
+        "label": "Quruq dog'",
+        "status": "Hal qilindi"
+      }
+    ],
+    "privateNote": "GreenCare yopiq ishlab chiqarish tizimi, shuning uchun kodi ochiq emas. Qo'ng'iroqda batafsil ko'rsatib bera olaman."
+  },
+  "experience": {
+    "title": "Tajriba",
+    "present": "Hozirgacha",
+    "items": [
+      {
+        "id": "daejung",
+        "role": "AI laboratoriyasi katta ilmiy xodimi",
+        "org": "Daejung Golf Engineering",
+        "period": "2026-yil may",
+        "end": "",
+        "points": [
+          "GreenCare dizayni va ishlab chiqilishiga rahbarlik: Gemini Vision bilan maysa kasalliklarini aniqlash va rasm, tahlil, hisobot quvuri.",
+          "React Native dala ilovasi, React admin panel va FastAPI/PostgreSQL backend: GPS vazifa kuzatuvi, maydon xaritalari, ombor va xaridlar.",
+          "Eski PHP/MySQL kompaniya sayti va admin panelini Next.js, TypeScript, Prisma va PostgreSQL'da qayta qurdim: koreys, ingliz, xitoy va yapon tillari, rollar, CMS va to'liq ma'lumot ko'chirish."
+        ],
+        "stack": "React Native, React, Next.js, FastAPI, PostgreSQL, Prisma, Gemini Vision"
+      },
+      {
+        "id": "quasar",
+        "role": "AI tadqiqotchisi",
+        "org": "Quasar Inc.",
+        "period": "2025-yil fev",
+        "end": "2025-yil iyun",
+        "points": [
+          "Gucci, Louis Vuitton, Chanel kabi brendlar uchun hashamatli buyumlarning asl ekanini tekshirish va qayta sotuv narxini bashorat qilish modellari.",
+          "Taxminan 140 000 ta saralangan rasmda qismlar bo'yicha klassifikatsiya va segmentatsiya bilan qalbaki mahsulotlarni aniqlash.",
+          "Modellarni real vaqtda qaror qabul qilish uchun veb-ilovalarga integratsiya qildim."
+        ],
+        "stack": "PyTorch, TensorFlow, OpenCV, YOLO"
+      },
+      {
+        "id": "rainbow",
+        "role": "Tadqiqotchi va veb-dasturchi",
+        "org": "RainbowTech",
+        "period": "2023-yil mart",
+        "end": "2024-yil okt",
+        "points": [
+          "Konstruktiv muhandislik tahlili uchun yoriqlar ma'lumotini vizuallashtirish vositasi.",
+          "Three.js va React Three Fiber bilan brauzerda interaktiv 3D muhandislik modellari.",
+          "MobX holat boshqaruvi bilan Next.js fayl boshqaruv tizimi, muhandislik ma'lumotlarida ML modellarini o'qitish. Amaliyotchi sifatida boshlaganman."
+        ],
+        "stack": "React, TypeScript, Next.js, Three.js, MobX, GraphQL"
+      }
+    ]
+  },
+  "work": {
+    "title": "Tanlangan ishlar",
+    "lead": "Avval ishlab turgan tizimlar, keyin ularga olib kelgan tajribalar.",
+    "private": "Yopiq",
+    "caseStudy": "Keys-tadqiqotni o'qish",
+    "details": "Loyiha tafsilotlari",
+    "code": "Kodni ko'rish",
+    "live": "Saytga o'tish",
+    "jump": "Yuqorida ko'ring",
+    "all": "Barcha loyihalar",
+    "items": {
+      "greencare": {
+        "title": "GreenCare",
+        "text": "Golf maydonlari uchun AI maysa kasalligini aniqlash va maydon boshqaruvi. Mobil, admin va backend."
+      },
+      "daejungSite": {
+        "title": "Daejung Golf sayti va admin paneli",
+        "text": "Eski PHP sayt Next.js'da qayta qurildi: to'rt til, CMS, buyurtmalar, kuponlar va ommaviy xatlar."
+      },
+      "luxury": {
+        "title": "Hashamatli sumkalarni tekshirish",
+        "text": "Qismlarni hisobga oluvchi kompyuter ko'rish: YOLO kesmalar, tekstura belgilari va vaznli ansambl."
+      },
+      "logs": {
+        "title": "AI log tahlili paneli",
+        "text": "Log qatorlarini TF-IDF va logistik regressiya bilan jiddiylik va muammo turiga ajratadi, FastAPI orqali."
+      },
+      "rainbow3d": {
+        "title": "3D muhandislik ko'ruvchisi",
+        "text": "Brauzerda interaktiv konstruktiv modellar va yoriqlar ma'lumoti vizualizatsiyasi."
+      },
+      "chatbot": {
+        "title": "Mijozlarni qo'llab-quvvatlash chatboti",
+        "text": "Ko'p beriladigan savollarga javob beruvchi Python NLP backend va Vue frontend."
+      },
+      "tinybert": {
+        "title": "TinyBERT sentiment klassifikatori",
+        "text": "Tez va yengil sentiment tahlili uchun moslashtirilgan kichik transformer."
+      }
+    }
+  },
+  "skills": {
+    "title": "Ishlatadigan vositalarim",
+    "groups": [
+      {
+        "name": "Frontend va mobil",
+        "items": "TypeScript, React, Next.js, React Native, Three.js, Tailwind, Vue"
+      },
+      {
+        "name": "Backend va ma'lumotlar",
+        "items": "Python, FastAPI, Node.js, Prisma, PostgreSQL, MySQL, REST, GraphQL"
+      },
+      {
+        "name": "AI va ML",
+        "items": "PyTorch, TensorFlow, OpenCV, scikit-learn, YOLO, Gemini Vision API"
+      },
+      {
+        "name": "Ish jarayoni",
+        "items": "Git, GitHub, Figma, Vercel, Linux, Docker"
+      }
+    ],
+    "factsTitle": "Ma'lumot",
+    "facts": [
+      {
+        "name": "Ta'lim",
+        "value": "Gachon universiteti, kompyuter muhandisligi bakalavri, 2019–2023"
+      },
+      {
+        "name": "Tillar",
+        "value": "Ingliz tili (IELTS 7.0), koreys tili (TOPIK 3)"
+      },
+      {
+        "name": "Sertifikatlar",
+        "value": "Google AI Essentials, Meta Intro to Back-End Development, Coursera Backend Development and API Creation"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Bog'lanish",
+    "lead": "AI va full-stack muhandislik lavozimlari hamda mahsulot chiqaradigan jamoalar bilan hamkorlikka ochiqman. Eng tez yo'l elektron pochta.",
+    "email": "itsjk0307@gmail.com",
+    "phone": "+82 10-3254-1777",
+    "copy": "Pochtani nusxalash",
+    "copied": "Nusxalandi",
+    "github": "GitHub",
+    "resume": "Rezyume"
+  },
+  "footer": "© 2026 Jamshid Khaytbaev. Yongin, Koreyada React bilan yaratilgan."
+}

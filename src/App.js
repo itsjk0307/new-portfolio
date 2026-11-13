@@ -1,7 +1,7 @@
 import React from "react";
 import { HashRouter as Router, Navigate, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
-import RightSide from "./components/RightSide/RightSide";
+import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
 import WebDevelopmentProjects from "./components/Projects/WebDevelopmentProjects";
 import DataScienceProjects from "./components/Projects/DataScienceProjects";
@@ -16,8 +16,8 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<RightSide />} />
-        <Route path="/about" element={<RightSide />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<Home />} />
         <Route path="/projects/web-development" element={<WebDevelopmentProjects />} />
         <Route path="/projects/data-science" element={<DataScienceProjects />} />
         <Route path="/projects/ai" element={<AIProjects />} />
@@ -43,7 +43,7 @@ function App() {
           element={<MonitoringDashboardCaseStudy />}
         />
         <Route path="/projects/:slug" element={<ProjectDetailPage />} />
-        <Route path="*" element={<RightSide />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </Router>
   );
