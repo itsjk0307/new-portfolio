@@ -1,0 +1,669 @@
+{
+  "nav": {
+    "brand": "Jamshid",
+    "brandFull": "Jamshid Khaytbaev",
+    "about": "Haqimda",
+    "experience": "Tajriba",
+    "projects": "Loyihalar",
+    "skills": "Ko‘nikmalar",
+    "contact": "Aloqa",
+    "allProjects": "Barcha loyihalar",
+    "menuOpen": "Menyuni ochish",
+    "menuClose": "Menyuni yopish"
+  },
+  "hero": {
+    "name": "Jamshid Khaytbaev",
+    "role": "AI muhandisi va Full-Stack dasturchi",
+    "tagline": "Kompyuter ko‘rish, NLP va masshtablanadigan veb-texnologiyalar yordamida production tayyor AI tizimlarini quraman.",
+    "ctaProjects": "Loyihalarni ko‘rish",
+    "ctaResume": "Rezyumeni yuklab olish"
+  },
+  "about": {
+    "title": "Haqimda",
+    "lead": "Men tadqiqot uslubidagi tajriba va ishonchli dastur yetkazib berish o‘rtasida ko‘prik vazifasini bajaradigan AI muhandisi va full-stack dasturchisiman.",
+    "bullets": [
+      {
+        "title": "Production AI",
+        "text": "CV/NLP uchun uzoqdan-uzoqqa zanjir: ma’lumot, trening, baholash, deploy va monitoring."
+      },
+      {
+        "title": "Full-stack integratsiya",
+        "text": "React/TypeScript frontend va APIlar—modellarni qulay, kuzatiladigan va barqaror qiladi."
+      },
+      {
+        "title": "Hamkorlik",
+        "text": "Aniq muloqot, iteratsiyali yetkazib berish va pragmatik trade-offlar."
+      },
+      {
+        "title": "Sifat va UX",
+        "text": "Qulay interfeyslar, performancega e’tibor va xatolarni to‘g‘ri boshqarish."
+      }
+    ],
+    "closing": "Qiyin masalalar, toza interfeyslar va productionda ishonchli dasturlarni yoqtiraman."
+  },
+  "experience": {
+    "title": "Tajriba",
+    "subtitle": "Modellar, integratsiya va o‘lchanadigan mahsulot ta’siriga e’tibor qaratilgan rollar.",
+    "resume": "To‘liq rezyumeni ko‘rish",
+    "resumeUrl": "https://drive.google.com/file/d/1um1zw9LT1Zi8kQs-EYhjWdFkmR5xjYU6/view?usp=drive_link",
+    "items": [
+      {
+        "id": "quazar",
+        "title": "AI muhandisi",
+        "company": "Quazar Inc.",
+        "period": "2025 fevral — 2025 iyun",
+        "description": "Hashamatli buyumlarni autentifikatsiya qilish va narxni bashorat qilish uchun AI modellarini ishlab chiqdim. Deep learning pipeline’larini qurdim va real vaqt qarorlari uchun veb-ilovalarga integratsiya qildim.",
+        "bullets": [
+          "Autentifikatsiya va narxlash uchun kompyuter ko‘rish modellarini baholash bilan birga yetkazdim.",
+          "Real vaqt qarorlari uchun production REST integratsiyasi bilan DL pipeline’larini qurdim.",
+          "Kechikish, ishonchlilik va saqlash bo‘yicha muhandislar bilan hamkorlik qildim."
+        ],
+        "skills": [
+          "TensorFlow",
+          "PyTorch",
+          "OpenCV",
+          "Computer Vision",
+          "Image Segmentation",
+          "Deep Learning",
+          "REST API",
+          "Web Integration"
+        ]
+      },
+      {
+        "id": "rainbow-intern",
+        "title": "Frontend dasturchi (intern)",
+        "company": "RainbowTech",
+        "period": "2023 mart — 2023 iyul",
+        "description": "Veb-loyihalar uchun interfeyslarni yaratdim va qo‘llab-quvvatladim. Katta dasturchilar bilan birga eng yaxshi amaliyotlarni o‘rgandim va interaktiv 3D tajribalarga hissa qo‘shdim.",
+        "bullets": [
+          "Katta dasturchi ko‘rib chiqishi bilan mijozga yo‘naltirilgan veb mahsulotlar uchun mos UI yetkazdim.",
+          "React Three Fiber va Three.js bilan interaktiv 3D tajribalarga hissa qo‘shdim.",
+          "Ichki loyihalar bo‘yicha UI izchiligi va komponent qayta foydalanishini yaxshiladim."
+        ],
+        "skills": [
+          "JavaScript",
+          "React",
+          "HTML5",
+          "CSS3",
+          "React Three Fiber",
+          "Three.js",
+          "R&D"
+        ]
+      },
+      {
+        "id": "rainbow-researcher",
+        "title": "Frontend dasturchi-tadqiqotchi",
+        "company": "RainbowTech",
+        "period": "2023 iyul — 2024 sentabr",
+        "description": "Yetkazib berishni yaxshilash uchun zamonaviy frontend texnologiyalarini tadqiq qildim. Optimallashtirilgan UI, performance yaxshilanishi va masshtablanadigan arxitektura joriy etdim.",
+        "bullets": [
+          "Next.js, TypeScript, GraphQL kabi zamonaviy stacklarni sinchkovlik bilan qo‘lladim.",
+          "Production ilovalarda optimallashtirilgan UI va o‘lchanadigan performance yutuqlarini joriy etdim.",
+          "Apollo Client, MobX va intizomli Git oqimlari bilan mijoz arxitekturasini kengaytirdim."
+        ],
+        "skills": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "React",
+          "Next.js",
+          "TypeScript",
+          "GraphQL",
+          "Apollo Client",
+          "MobX",
+          "Git",
+          "Responsive Design"
+        ]
+      }
+    ]
+  },
+  "projectsPage": {
+    "title": "Loyihalar",
+    "subtitle": "Kategoriya bo‘yicha ko‘ring. AI loyihalar birinchi o‘rinda.",
+    "backHome": "Bosh sahifaga",
+    "backProjects": "Loyihalar ro‘yxatiga"
+  },
+  "projects": {
+    "title": "Tanlangan loyihalar",
+    "subtitle": "AI/ML, data science va full-stack veb bo‘yicha muammoga yo‘naltirilgan qisqa sharh—aniqlik va ta’sir uchun tartiblangan.",
+    "sectionAi": "AI va mashinali o‘qitish",
+    "sectionDs": "Data science",
+    "sectionWeb": "Veb-dasturlash",
+    "summaryLabel": "Qisqacha",
+    "techLabel": "Texnologiyalar",
+    "demo": "Jonli demo",
+    "source": "GitHub",
+    "viewAll": "Barcha loyihalar",
+    "details": "Batafsil",
+    "items": {
+      "quazarLuxuryAuth": {
+        "title": "Hashamatli sumka autentifikatsiyasi — Quazar AI",
+        "problem": "Qayta sotish va autentifikatsiya SKU, yorug'lik va suratga olish sharoitida barqaror, tushunarli dalil talab qiladi — bitta global klassifikator balli yetarli emas.",
+        "problemShort": "YOLO crop, tekstura, ko'p model balli va og'irlikli ansambul fusion bilan qismni his qiladigan CV quvuri.",
+        "detail": {
+          "overview": "Ushbu keys Quazar autentifikatsiya stekini hujjatlaydi: deteksiya, oldindan ishlash, qism klassifikatorlari, yirik ansambul.",
+          "myRole": "Ma'lumot/yorliq quvuri, YOLO cropping, qismni his qiladigan baholash bilan model eksperimentlari.",
+          "pipeline": [
+            "Deteksiya backbone bilan sumka qismlarini aniqlash.",
+            "ROI standartlashtirish uchun YOLO crop.",
+            "LBP uslubidagi signallar bilan tekstura oldindan ishlash.",
+            "Qism bo'yicha ko'p model klassifikatsiyasi va tanlash.",
+            "Sumka darajasidagi qaror uchun og'irlikli ansambul."
+          ],
+          "results": "Inson siklidagi tekshiruv uchun talqin qilinadigan va threshold bilan sozlanadigan autentifikatsiya qarorlariga yo'naltirilgan operatsion yo'l.",
+          "galleryCaptions": [
+            "Keys figuralari"
+          ]
+        }
+      },
+      "logMonitoringDashboard": {
+        "title": "AI tizim monitoringi paneli",
+        "problem": "Katta hajm tuzilmagan loglar operatorlarni bosadi; qo‘lda saralash regressiya va noto‘g‘ri signalni o‘tkazadi.",
+        "problemShort": "FastAPI da TF-IDF + LR, Next.js panel, Recharts, real-time ishonch.",
+        "detail": {
+          "overview": "NLP log mahsuloti: oldindan ishlash, vektorlash, ikki bosh, SaaS UI.",
+          "myRole": "sklearn dan API va panelgacha.",
+          "pipeline": [
+            "Xom loglar.",
+            "TF-IDF.",
+            "LR severity va kategoriya.",
+            "JSON panel va webhook."
+          ],
+          "results": "Kalit so‘z va graflar bilan tezroq RCA.",
+          "galleryCaptions": [
+            "Panel UI"
+          ]
+        }
+      },
+      "heartDisease": {
+        "title": "Yurak kasalligi bashorati",
+        "problem": "Shifokorlarga strukturalangan bemor ma’lumotidan tez va tushunarli skrining kerak—keyingi qadamlarni rejalashtirish va xavfni kamaytirish uchun.",
+        "problemShort": "Bemor belgilari bo‘yicha yurak kasalligi xavfini ML modellar bilan skrining qilish.",
+        "detail": {
+          "overview": "Tabular bemor alomatlari bo'yicha interpretatsiya qilinadigan baselines yordamida yurak kasalligi xavfini baholashga qaratilgan tuzilgan ML loyihasi (klinik deploy emas).",
+          "myRole": "Ma'lumotlarni tayyorlash, baselines, cross-validation va notebook natijalari bo'yicha metrikalar va cheklovlar hisoboti.",
+          "pipeline": [
+            "Ustunlarni yuklash, tozalash, yo'qlik va masshtablash.",
+            "Logistik regressiya va daraxt asosidagi modellar.",
+            "Stratifikatsiyalangan splitlar, chalkashlik matritsasi.",
+            "Haqiqiy skrining uchun nima kerakligi bilan xulosa."
+          ],
+          "results": "Etalon datasetda aniq baselines va sizib chiqish, klass balansi, tashqi validatsiya ehtiyoji muhokama qilindi.",
+          "galleryCaptions": [
+            "Loyiha vizuali"
+          ]
+        }
+      },
+      "customerChurn": {
+        "title": "Mijoz churn bashorati",
+        "problem": "Saqlab qolish jamoalariga xatti-harakat va shartnoma ma’lumotidan erta churn signal kerak—daromad yo‘qolishidan oldin.",
+        "problemShort": "Klassik ML va aniq metrikalar bilan churnni bashorat qilish.",
+        "detail": {
+          "overview": "Harakat va shartnoma uslubidagi priznaklar bo'yicha churn signalini renewaldan oldin topish mashqi.",
+          "myRole": "Priznaklar, oddiy neyron va klassik modellar, baholash tanlovlari hujjatlari.",
+          "pipeline": [
+            "Taqsimotlar va korrelyatsiya, gorizont yorlig'i.",
+            "Tabular priznaklar va vaqt bo'yicha split.",
+            "Keras/TensorFlow va klassik modellar.",
+            "Retention uchun ranking va tavsiyalar."
+          ],
+          "results": "FN/FP muhokamasi va biznes bilan threshold tanlash kontekstida metrikalar.",
+          "galleryCaptions": [
+            "Modeling"
+          ]
+        }
+      },
+      "edaTitanic": {
+        "title": "Tadqiqotiy tahlil (Titanik)",
+        "problem": "Jadval ma’lumotlarini modelingdan oldin ishonchli grafik va gipotezalarga aylantirish.",
+        "problemShort": "Titanik datasetida omon qolish omillarini ochish uchun EDA va vizualizatsiya.",
+        "detail": {
+          "overview": "Titanic dataset sifati, munosabatlar va gipotezalarni modeldan oldin tekshirish.",
+          "myRole": "Bir va ikki o'zgaruvchili tahlil, vizualizatsiya, takrorlanadigan notebook.",
+          "pipeline": [
+            "Yuklash, dtype, missing, dublikatlar.",
+            "Omon qolish va omillar graflari.",
+            "Outlier va encoding ehtiyoji.",
+            "Modeling uchun asosiy grafiklar."
+          ],
+          "results": "Hayotiy signal bilan mos keladigan ustunlar va cheklovlar aniq aytilgan.",
+          "galleryCaptions": [
+            "EDA",
+            "Grafiklar"
+          ]
+        }
+      },
+      "loanEligibility": {
+        "title": "Kredit mosligi bashorati",
+        "problem": "Kredit mutaxassislariga noto‘g‘ri tasdiqlarni kamaytirish bilan nomzod xususiyatlaridan izchil va tekshiruvga mos signal kerak.",
+        "problemShort": "Xususiyat asosidagi tushunchalar bilan kredit mosligi klassifikatsiyasi.",
+        "detail": {
+          "overview": "Ariza priznaklaridan loan eligibility uchun audit qilinadigan klassifikatsiya o'rganish.",
+          "myRole": "Logistik regressiya, random forest, feature importance, xato tahlili.",
+          "pipeline": [
+            "Klasslar va muvaffaqiyat mezonlari.",
+            "Preprocessing, balans, kalibratsiya.",
+            "Modellar, precision/recall nuqtalari.",
+            "Tasdiq/rad etish omillari."
+          ],
+          "results": "Tasdiq qulayligi va yuqori xavfli tasdiqlarni nazorat qilish o'rtasidagi tradeoff hujjatlangan.",
+          "galleryCaptions": [
+            "Tahlil",
+            "Modellar"
+          ]
+        }
+      },
+      "rainbowAi": {
+        "title": "RainbowTech AI platformasi",
+        "problem": "Maydondagi jamoalarga binoning inspeksiya ma’lumotidan avtomatik tuzilma bahosi, PDF hisobot va xarajat bahosi kerak edi.",
+        "problemShort": "Hisobot va xarajat bahosi bilan AI yordamida tuzilma diagnostikasi.",
+        "detail": {
+          "overview": "Inspeksiya kirishlari uchun tuzilma diagnostikasi, hisobot va baholash oqimlari.",
+          "myRole": "Frontend integratsiyasi, UI oqimlari, performance va UX.",
+          "pipeline": [
+            "Validatsiya holatlari bilan kirish.",
+            "Model/hisobot chaqiruqlari va PDF chiqish.",
+            "Tarmoq uchun yuklash/xato holatlari.",
+            "Dizayn bilan iteratsiya."
+          ],
+          "results": "Operatorlar uchun qo'lda ko'chirish kamaydi, tezroq artefaktlar.",
+          "galleryCaptions": [
+            "Platforma"
+          ]
+        }
+      },
+      "rap3d": {
+        "title": "RAP 3D platforma",
+        "problem": "Foydalanuvchilarga silliq interaksiya, barqaror performance va uyg‘un UI tizimi bilan hamkorlik 3D muhiti kerak edi.",
+        "problemShort": "React va Three.js bilan real vaqt hamkorlik 3D platforma.",
+        "detail": {
+          "overview": "Hamkorlik 3D maydoni: silliq interaksiya, umumiy holat, dizayn tizimi.",
+          "myRole": "R3F sahnalar, interaksiya, UI integratsiyasi.",
+          "pipeline": [
+            "Sahna, materiallar, yorug'lik.",
+            "Kamera va frame byudjeti.",
+            "3D va React chegaralari.",
+            "Past qurilmalarda profil."
+          ],
+          "results": "Maqsadli jihozda barqaror FPS va kutiladigan kechikish.",
+          "galleryCaptions": [
+            "3D"
+          ]
+        }
+      },
+      "rapFiles": {
+        "title": "RAP fayl boshqaruvi",
+        "problem": "Jamolarga xavfsiz ko‘p qurilmali fayl kirish, ilova ichida hujjat ko‘rish va ishonchli sinxron kerak edi.",
+        "problemShort": "PDF ko‘rish integratsiyasi bilan ko‘p platformali fayl boshqaruvi.",
+        "detail": {
+          "overview": "Kross-platform fayl boshqaruvi, xavfsiz kirish, ichki ko'rish, sinxron.",
+          "myRole": "Ro'yxat/detail, PDF preview, optimistik UI.",
+          "pipeline": [
+            "Auth va route guard.",
+            "Virtualized ro'yxat, retry.",
+            "PDF fallback.",
+            "Telemetriya."
+          ],
+          "results": "Mobil va desktopda kamroq ishonchsizlik, aniqroq sinxron xabar.",
+          "galleryCaptions": [
+            "Fayl UI"
+          ]
+        }
+      },
+      "greenShop": {
+        "title": "Green Shop",
+        "problem": "Barqarorlik brendiga tez sezilarli performance va responsive tartib bilan aniq landing tajribasi kerak edi.",
+        "problemShort": "Tailwind va minimal UI bilan ekologik landing.",
+        "detail": {
+          "overview": "Barqarorlik mavzusi, Tailwind, tez yuklanish his qilinadigan landing.",
+          "myRole": "Layout, grid, rasm, CTA ierarxiyasi.",
+          "pipeline": [
+            "Mobile-first va tipografiya.",
+            "Lazy-load.",
+            "Kontrast va fokus.",
+            "Statik hosting."
+          ],
+          "results": "Sodda utility classlar bilan marketing.",
+          "galleryCaptions": [
+            "Hero",
+            "Layout"
+          ]
+        }
+      },
+      "banking": {
+        "title": "Moliya boshqaruv platformasi",
+        "problem": "Foydalanuvchilarga balans, o‘tkazmalar va tranzaksiya tarixini aniq holat va fikr-mulohaza bilan ko‘rsatadigan ishonchli banking UI kerak edi.",
+        "problemShort": "Aniqlik va navigatsiyaga e’tibor qaratilgan responsive banking.",
+        "detail": {
+          "overview": "Balans, o'tkazmalar, tarix uchun ishonchli banking UI.",
+          "myRole": "Navigatsiya, kartalar, jadval, skeleton.",
+          "pipeline": [
+            "Ko'p hisoblar IA.",
+            "Kartalar va jadvallar.",
+            "Mikrointeraksiyalar.",
+            "Responsive."
+          ],
+          "results": "Ma'lumot yo'q paytda ham o'qiladigan patternlar.",
+          "galleryCaptions": [
+            "Dashboard",
+            "UI"
+          ]
+        }
+      },
+      "vizzano": {
+        "title": "Vizzano ilovasi",
+        "problem": "Moda inventariga mobil qurilmada kuchli vizual va silliq ko‘rish bilan zamonaviy vitrina tajribasi kerak edi.",
+        "problemShort": "Yaxshi UI va responsive tartib bilan moda vitrinasi.",
+        "detail": {
+          "overview": "Moda vitrina: kuchli vizual, mobil birinchi grid.",
+          "myRole": "Listing, media, navigatsiya.",
+          "pipeline": [
+            "Grid, aspect ratio.",
+            "Filter/sort.",
+            "Rasm o'lchamlari.",
+            "QA breakpointlar."
+          ],
+          "results": "O'rta segment telefonlarda silliq brauzing.",
+          "galleryCaptions": [
+            "Store",
+            "Layout"
+          ]
+        }
+      },
+      "trillo": {
+        "title": "Trillo — sayohat bron qilish",
+        "problem": "Sayohat xaridorlariga tez filtrlash, ishonchli qisqa ma’lumot va boshidan oxirigacha tushunarli bron oqimi kerak.",
+        "problemShort": "Filtrlar, sharhlar va responsive tartib bilan sayohat UI.",
+        "detail": {
+          "overview": "Sayohat bron qilish: filtrlar, kartalar, sharhlar, tushunarli oqim.",
+          "myRole": "Qidiruv, grid, sharh, CTA progressiyasi.",
+          "pipeline": [
+            "Filter holati.",
+            "Mehmonxona kartalari.",
+            "Bron sidebar.",
+            "Responsive va copy."
+          ],
+          "results": "Sanalar va narxlar bilan yo'lini yo'qotmasdan oqim.",
+          "galleryCaptions": [
+            "Qidiruv",
+            "Bron"
+          ]
+        }
+      },
+      "memory": {
+        "title": "Interaktiv puzzle",
+        "problem": "Yengil kognitiv o‘yin shovqinli UIsiz yoqimli, responsive va bosqichma-bosqich qiyin bo‘lishi kerak.",
+        "problemShort": "Bosqichma-bosqich qiyinlik va silliq animatsiya bilan xotira kartochka o‘yini.",
+        "detail": {
+          "overview": "Yengil xotira kartasi o'yini: qiyinchilik, animatsiya, kam UI shovqin.",
+          "myRole": "State machine, flip animatsiya, ball, qiyinchilik.",
+          "pipeline": [
+            "Shuffle va adolat opsiyasi.",
+            "Match, lockout, modal.",
+            "prefers-reduced-motion.",
+            "Touch va audio-off."
+          ],
+          "results": "Aniq feedback bilan qisqa seanslar.",
+          "galleryCaptions": [
+            "O'yin",
+            "Motion"
+          ]
+        }
+      },
+      "portfolioSite": {
+        "title": "Portfolio veb-sayt",
+        "problem": "Loyihalar va tajribani recruiter uchun qulay tuzilma, performance va qayta foydalaniladigan komponentlar bilan taqdim etish.",
+        "problemShort": "Responsive tartib va toza ma’lumot arxitekturasi bilan shaxsiy portfolio.",
+        "detail": {
+          "overview": "Loyihalar, tajriba, aloqa, i18n bilan shaxsiy portfolio.",
+          "myRole": "IA, tema, ko'p tilli kontent, detail routing.",
+          "pipeline": [
+            "Kontent modeli.",
+            "Tema va nav.",
+            "Galereyali sahifalar.",
+            "Static build."
+          ],
+          "results": "Hero dan dalillar sahifasigacha tez sayt.",
+          "galleryCaptions": [
+            "Sayt",
+            "Struktura"
+          ]
+        }
+      },
+      "monsterRolodex": {
+        "title": "Monster Rolodex",
+        "problem": "Kichik React ilovasida API asosidagi ro‘yxatlar, qidiruv va qayta foydalaniladigan kartochka UI namoyish etish.",
+        "problemShort": "API asosidagi React UI bilan qidiriladigan monster katalogi.",
+        "detail": {
+          "overview": "API ro'yxat, qidiruv, kartochkalar namoyishi.",
+          "myRole": "Fetch, filter, loading/error.",
+          "pipeline": [
+            "JSON normalize.",
+            "Debounced qidiruv.",
+            "Grid fokus.",
+            "Bo'sh va xato."
+          ],
+          "results": "Toza komponentlar va barqaror holat.",
+          "galleryCaptions": [
+            "Directory",
+            "UI"
+          ]
+        }
+      }
+    },
+    "projectDetail": {
+      "backToList": "Barcha loyihalar ro'yxatiga",
+      "overview": "Umumiy tasvir",
+      "problem": "Muammo",
+      "myRole": "Mening vazifam",
+      "pipeline": "Tizim quvuri",
+      "techStack": "Texnologiyalar",
+      "results": "Natijalar",
+      "gallery": "Skrinshotlar",
+      "close": "Yopish",
+      "step": "{{n}}-qadam"
+    }
+  },
+  "skills": {
+    "title": "Ko‘nikmalar",
+    "subtitle": "End-to-end mahsulot uchun AI/ML, backend, frontend va vositalar.",
+    "groups": {
+      "aiMl": {
+        "title": "AI / ML",
+        "items": [
+          "Python",
+          "PyTorch",
+          "TensorFlow",
+          "scikit-learn",
+          "Computer Vision",
+          "NLP",
+          "Model evaluation",
+          "Experiment tracking"
+        ]
+      },
+      "frontend": {
+        "title": "Frontend",
+        "items": [
+          "React",
+          "TypeScript",
+          "Next.js",
+          "HTML / CSS",
+          "Responsive UI",
+          "Performance tuning",
+          "Accessibility basics"
+        ]
+      },
+      "backend": {
+        "title": "Backend",
+        "items": [
+          "REST APIs",
+          "Node.js",
+          "GraphQL",
+          "Authentication patterns",
+          "Integration testing mindset"
+        ]
+      },
+      "tools": {
+        "title": "Vositalar",
+        "items": [
+          "Git",
+          "Docker (basics)",
+          "CI-friendly workflows",
+          "Jupyter",
+          "VS Code"
+        ]
+      }
+    }
+  },
+  "contact": {
+    "title": "Aloqa",
+    "body": "AI muhandisligi, hamkorlik va full-stack mahsulot uchun ochiqman.",
+    "emailLabel": "Email",
+    "email": "itsjk0307@gmail.com",
+    "phoneLabel": "Telefon",
+    "phone": "+821032541777",
+    "githubLabel": "GitHub",
+    "githubValue": "github.com/itsjk0307",
+    "linkedinLabel": "LinkedIn",
+    "linkedinValue": "linkedin.com"
+  },
+  "footer": {
+    "note": "React bilan qurilgan. Tez statik hosting uchun deploy qilingan."
+  },
+  "caseStudyQuazar": {
+    "eyebrow": "Keys · Quazar Inc.",
+    "title": "Hashamatli sumkalar autentifikatsiyasi",
+    "subtitle": "Ishlab chiqarishga yo'naltirilgan kompyuter ko'ri: sumka qismlarini aniqlash, nozik autentifikatsiya signallarini baholash va qism darajasidagi dalillarni real/soxta qaroriga birlashtirish.",
+    "chipsAria": "Loyiha teglari",
+    "chipCv": "Kompyuter ko'rishi",
+    "chipDetection": "Ob'ektni aniqlash",
+    "chipProd": "ML tizimlari",
+    "overviewTitle": "Umumiy tasvir",
+    "overviewBody": "Hashamatli sumkalar autentifikatsiyasi uchun uzoqdan-qisqa AI: ajratuvchi zonalarni lokalizatsiya, tekstura sezuvli xususiyatlar, bir nechta backbone bilan qism klassifikatorlari va operatsion xavfga moslashgan og'irlikli ansambul.",
+    "challengeTitle": "Muammo",
+    "challengeBody": "Soxta nusxalar global ko'rinishni taklif qiladi, lekin furnitura, tikish va mikro-tekstura izchiligi bo'yicha muvaffaqiyatsiz. Qism bo'yicha dalil, crop shovqiniga chidamli va inson tekshiruvi uchun tushunarli signal kerak.",
+    "pipelineTitle": "Inferens quvuri",
+    "pipelineIntro": "Xom tasvirdan yig'ma autentifikatsiyagacha ketma-ket bosqichlar. Har bir bosqich baholash va threshold sozlash uchun asboblangan.",
+    "pipelineSteps": [
+      "Ob'ektni aniqlash modeli sumka va asosiy tuzilma qismlarini (furnitura, panellar, logotip) lokalizatsiya qiladi.",
+      "YOLO asosidagi crop ROI ni standartlashtiradi.",
+      "Tasvirni oldindan ishlash tekstura (masalan, LBP), yorug'lik normalizatsiyasi va sifat filtrlari.",
+      "Qism klassifikatorlari har bir zona uchun bir nechta o'qitilgan modellar bilan autentifikatsiyani baholaydi.",
+      "Offline metrikalar va barqarorlik tekshiruvlari bilan qism bo'yicha eng yaxshi modellar tanlanadi."
+    ],
+    "ensembleTitle": "Ansambul yig'indisi",
+    "ensembleBody": "Qism bo'yicha logitlar kalibrlanadi, validatsiyadan o'rganilgan ishonchlilik prioritetlari bilan og'irlanadi va siyosat (avto rad, eskalatsiya, qabul) uchun ishonch oralig'i bilan sumka darajasidagi ballga birlashtiriladi.",
+    "dataTitle": "Dataset",
+    "dataStatLabel": "Tozalangan tasvirlar",
+    "dataStatValue": "~140,000",
+    "dataLead": "Qattiq gigiena: dublikatlarni olib tashlash, yorliqlarni kelishuv, umumlashtirish uchun sizib chiqishsiz splitlar.",
+    "dataBullets": [
+      "Versiyalangan metadata bilan tozalangan, yorliqlangan va tuzilgan splitlar.",
+      "Geografiya va suratga olish qurilmalari xilma-xilligi kuzatilgan stratifikatsiyalangan train/val/test.",
+      "Chegaraviy juftlar va nazoratli suratlar uchun faol QA tsikllari."
+    ],
+    "modelsTitle": "Modellar va arxitektura",
+    "modelsLead": "Backbone xilma-xilligi qo'shimcha signalni ushlaydi: tikish va logotip muntazamligi uchun konvolyutsion induktiv moyillik va uzoq masofa e'tibori.",
+    "modelResNet": "Furnitura va qirrali crop uchun barqaror chuqur xususiyatlar uchun qoldiq bloklar.",
+    "modelDenseNet": "Charm va qoplamali yuzalar uchun nozik tekstura gradientlari uchun xususiyatni qayta ishlatish.",
+    "modelVit": "Panellar va logotip geometriyasi uchun patch attention.",
+    "perPartTitle": "Har qism uchun bir nechta modellar",
+    "perPartBody": "Har bir tuzilma qismi bir nechta nomzod boshlarni o'qitadi; deploydan oldin hold-out metrikalar, kalibratsiya xatosi va crop jitter barqarorligi bilan eng yaxshilari tanlanadi.",
+    "ensembleArchTitle": "Og'irlikli fusion",
+    "ensembleArchBody": "Chiqishlar qism bo'yicha ajratuvchi kuchni aks ettirgan o'rganilgan yoki qo'lda sozlangan og'irliklar bilan yig'iladi, keyin harorat masshtablash bilan birlashtiriladi.",
+    "architectureTitle": "Arxitektura diagrammasi",
+    "architectureBody": "Xom pikseldan qarorgacha: deteksiya lokalizatsiya, oldindan ishlash standartlashtirish, klassifikatorlar ixtisoslashadi, ansambul audit uchun aniq og'irlik bilan birlashtiradi.",
+    "architectureNote": "Diagramma servis yo'lini qisqacha beradi; o'qitishda crop siyosati, augmentatsiya va qism dropout bo'yicha ablatsiyalar bo'lgan.",
+    "roleTitle": "Mening vazifam",
+    "roleItems": [
+      "Ma'lumotlarni qayta ishlash va yorliqlash quvuri: QC qoidalari, sxema, o'qitish eksport shartnomalari.",
+      "YOLO asosidagi cropping xizmati va annotatorlar uchun crop QA vizualizatsiyasi.",
+      "Model eksperimentlari, metrika panellari va ansambul dizayni uchun qism bo'yicha xato tahlili."
+    ],
+    "figuresTitle": "Figuralar va taqdimot eksporti",
+    "figuresLead": "PPT eksportini imitatsiya qiluvchi slaydlar. public/projects/quazar-luxury/ ichida xuddi shu fayl nomlari (slide-1 … slide-4) bilan PNG qo'ying.",
+    "slideCaptions": [
+      "Tizim konteksti: yig'ish → deteksiya → qaror.",
+      "Dataset hajmi va boshqaruv.",
+      "Model oilalari va ansambul.",
+      "Baholash va deploy monitoring."
+    ]
+  },
+  "caseStudyLogMonitor": {
+    "productBadge": "SaaS · ML platforma",
+    "title": "AI tizim monitoringi paneli",
+    "subtitle": "NLP asosidagi log intellekt: shovqinli qatorlarni yig‘ish, TF-IDF bilan vektorlash, severity va muammo oilasi uchun kalibrlangan ball bilan LR, mahsulat darajasidagi panelda ko‘rsatish.",
+    "pillLive": "Real-time",
+    "pillNlp": "NLP + scikit-learn",
+    "pillApi": "FastAPI",
+    "overviewTitle": "Umumiy",
+    "overviewBody": "Operatsiya jamoalari loglarda cho‘kadi. Har bir qator matn: tokenlarni normallashtirish, TF-IDF, LR boshlari severity (error/warning/info) va muammo toifasi (tarmoq, tizim, ilova, ma’lumotlar bazasi, auth). FastAPI oqimni baholaydi; Next.js ishonch, kalit so‘zlar va grafiklarni chizadi.",
+    "problemTitle": "Muammo",
+    "problemBullets": [
+      "Kunlik juda katta log hajmi.",
+      "Qo‘lda monitoring masshtablanmaydi; muhim signal shovqinda yo‘qoladi.",
+      "Turli format va leksikaga ega tuzilmagan matn."
+    ],
+    "solutionTitle": "Yechim",
+    "solutionSteps": [
+      "Matn oldindan ishlash: kichik harf, maskalash, token tozalash, n-gram nazorati.",
+      "Oqim uchun barqaror TF-IDF sozlamalari.",
+      "Ehtimollik kalibrlangan LR klassifikatorlar.",
+      "Ikki bosh: severity va kategoriya."
+    ],
+    "predictIntro": "UI da bashoratlar:",
+    "predictSeverity": "Severity — error, warning, info",
+    "predictCategory": "Kategoriya — network, system, application, database, auth, …",
+    "pipelineTitle": "Quvur",
+    "pipelineSubtitle": "Xom telemetriyadan panel signaligacha.",
+    "pipelineSteps": [
+      "Xom loglar",
+      "Oldindan ishlash",
+      "TF-IDF",
+      "Klassifikatsiya",
+      "Chiqish"
+    ],
+    "techTitle": "Texnologiyalar",
+    "featuresTitle": "Funksiyalar",
+    "featureItems": [
+      "Oqim va past kechikish bilan real-time tahlil.",
+      "Bashorat uchun ishonch ballari.",
+      "Klassifikatsiya qatori yonida kalit so‘zlar.",
+      "Recharts bilan vizualizatsiya."
+    ],
+    "chartsTitle": "Analitika",
+    "chartsLead": "Namuna ma’lumotlar bilan ko‘rsatma.",
+    "chartVolume": "7 kun hajm",
+    "chartSeverity": "24 soat severity",
+    "chartCategory": "Muammo toifalari",
+    "apiTitle": "API",
+    "apiLead": "FastAPI orqali REST, Next.js uchun JSON.",
+    "apiEndpoints": [
+      {
+        "method": "POST",
+        "path": "/v1/logs/analyze",
+        "desc": "Qatorlar to‘plamini baholash: severity, kategoriya, ishonch, TF-IDF atamalari.",
+        "body": "{\n  \"lines\": [\n    \"2025-05-03 ERROR connection reset peer api-7\",\n    \"WARN disk 87% on db-primary\"\n  ]\n}"
+      },
+      {
+        "method": "GET",
+        "path": "/v1/metrics/summary",
+        "desc": "Jamlanma metrikalar.",
+        "body": ""
+      },
+      {
+        "method": "POST",
+        "path": "/v1/alerts/evaluate",
+        "desc": "Ogohlantirish qoidalari va webhook.",
+        "body": "{\n  \"window_minutes\": 15,\n  \"min_confidence\": 0.82\n}"
+      }
+    ],
+    "uiTitle": "Frontend UI",
+    "uiLead": "public/projects/monitoring-dashboard/ fayllarini PNG bilan almashtiring.",
+    "uiCaptions": [
+      "KPI va oqim.",
+      "Issue feed.",
+      "Kalit so‘zlar va trend."
+    ]
+  }
+}
